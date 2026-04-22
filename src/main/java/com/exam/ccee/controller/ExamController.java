@@ -21,7 +21,10 @@ public class ExamController {
     private final JwtUtil jwtUtil;
     private final TestAttemptRepository testAttemptRepository;
 
-    public ExamController(QuestionService questionService, JwtUtil jwtUtil, TestAttemptRepository testAttemptRepository) {
+    public ExamController(
+            QuestionService questionService,
+            JwtUtil jwtUtil,
+            TestAttemptRepository testAttemptRepository) {
         this.testAttemptRepository = testAttemptRepository;
         this.questionService = questionService;
         this.jwtUtil = jwtUtil;
@@ -67,16 +70,11 @@ public class ExamController {
 
         List<TestAttempt> attempts = testAttemptRepository.findByUserId(username);
 
-        Map<String, Integer> weakTopics = new HashMap<>();
+        Map<String, Integer> weakTopics = buildWeakTopicSummary(attempts);
         int totalScore = 0;
 
         for (TestAttempt t : attempts) {
             totalScore += t.getScore();
-
-            for (String topic : t.getWrongPerTopic().keySet()) {
-                weakTopics.put(topic,
-                        weakTopics.getOrDefault(topic, 0) + t.getWrongPerTopic().get(topic));
-            }
         }
 
         double avgScore = attempts.isEmpty() ? 0 : (double) totalScore / attempts.size();
@@ -86,6 +84,23 @@ public class ExamController {
                 "averageScore", avgScore,
                 "weakTopics", weakTopics
         );
+    }
+
+    private Map<String, Integer> buildWeakTopicSummary(List<TestAttempt> attempts) {
+        Map<String, Integer> weakTopics = new HashMap<>();
+
+        for (TestAttempt t : attempts) {
+            if (t.getWrongPerTopic() == null) {
+                continue;
+            }
+
+            for (String topic : t.getWrongPerTopic().keySet()) {
+                weakTopics.put(topic,
+                        weakTopics.getOrDefault(topic, 0) + t.getWrongPerTopic().get(topic));
+            }
+        }
+
+        return weakTopics;
     }
 
     private TestQuestionResponse toTestQuestionResponse(Question question) {

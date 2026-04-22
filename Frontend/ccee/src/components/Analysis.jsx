@@ -107,6 +107,26 @@ function Analysis({ onBack, onRetake }) {
                             Retake
                           </button>
                         </div>
+                        <div className="attempt-review-list">
+                          {(attempt.questionReviews || []).map((review, index) => (
+                            <div className="attempt-review-item" key={`${attempt.id}-${review.questionId}-${index}`}>
+                              <div>
+                                <p className="review-topic">{review.topic}</p>
+                                <strong>{index + 1}. {review.questionText}</strong>
+                              </div>
+                              <div className="review-answer-grid">
+                                <div className={review.correct ? "review-answer is-correct" : "review-answer is-wrong"}>
+                                  <span>Your response</span>
+                                  <strong>{review.selectedAnswer || "Not answered"}</strong>
+                                </div>
+                                <div className="review-answer is-correct">
+                                  <span>Correct response</span>
+                                  <strong>{review.correctAnswer}</strong>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     ))}
                 </div>

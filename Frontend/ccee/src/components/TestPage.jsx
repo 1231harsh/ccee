@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { submitTest } from "../services/api";
 
 const TEST_DURATION_SECONDS = 60 * 60;
@@ -26,7 +26,7 @@ function TestPage({ session, onCancel, onComplete }) {
     return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   }, [timeLeft]);
 
-  const handleSubmit = async (reason = "manual") => {
+  const handleSubmit = useCallback(async (reason = "manual") => {
     setSubmitting(true);
     setError("");
 
@@ -43,7 +43,7 @@ function TestPage({ session, onCancel, onComplete }) {
     } finally {
       setSubmitting(false);
     }
-  };
+  }, [answers, onComplete, subject]);
 
   useEffect(() => {
     if (submitting) {
@@ -71,7 +71,7 @@ function TestPage({ session, onCancel, onComplete }) {
 
     autoSubmittedRef.current = true;
     handleSubmit("timer");
-  }, [submitting, timeLeft]);
+  }, [handleSubmit, submitting, timeLeft]);
 
   if (!questions.length) {
     return (
@@ -140,7 +140,12 @@ function TestPage({ session, onCancel, onComplete }) {
             </p>
             <h3>{currentQuestion.topic}</h3>
           </div>
-          <span className="subject-pill">{currentQuestion.subject}</span>
+          <div className="question-header-actions">
+            <span className="subject-pill">{currentQuestion.subject}</span>
+            <button className="button button-secondary" onClick={onCancel} type="button">
+              Exit Test
+            </button>
+          </div>
         </div>
 
         <p className="question-text">{currentQuestion.question}</p>
@@ -170,22 +175,24 @@ function TestPage({ session, onCancel, onComplete }) {
         {error ? <div className="banner banner-error">{error}</div> : null}
 
         <div className="test-nav">
-          <button
-            className="button button-secondary"
-            disabled={currentIndex === 0}
-            onClick={() => setCurrentIndex((prev) => prev - 1)}
-            type="button"
-          >
-            Previous
-          </button>
-          <button
-            className="button button-primary"
-            disabled={currentIndex === questions.length - 1}
-            onClick={() => setCurrentIndex((prev) => prev + 1)}
-            type="button"
-          >
-            Next
-          </button>
+          {currentIndex > 0 ? (
+            <button
+              className="button button-secondary"
+              onClick={() => setCurrentIndex((prev) => prev - 1)}
+              type="button"
+            >
+              Previous
+            </button>
+          ) : null}
+          {currentIndex < questions.length - 1 ? (
+            <button
+              className="button button-primary"
+              onClick={() => setCurrentIndex((prev) => prev + 1)}
+              type="button"
+            >
+              Next
+            </button>
+          ) : null}
         </div>
       </section>
     </main>

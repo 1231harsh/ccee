@@ -1,5 +1,6 @@
 package com.exam.ccee.service;
 
+import com.exam.ccee.entity.AttemptQuestionReview;
 import com.exam.ccee.entity.Question;
 import com.exam.ccee.entity.TestAttempt;
 import com.exam.ccee.repository.TestAttemptRepository;
@@ -189,22 +190,24 @@ public class QuestionService {
 
         int score = 0;
         Map<String, Integer> wrongPerTopic = new HashMap<>();
+        List<AttemptQuestionReview> questionReviews = new ArrayList<>();
         Set<Integer> issuedQuestionIds = issuedQuestions.stream()
                 .map(q -> q.id)
                 .collect(Collectors.toSet());
 
         for (Question q : issuedQuestions) {
+            Integer selected = answers.get(q.id);
+            boolean answered = selected != null;
+            boolean correct = answered && selected == q.answer;
 
-            if (!answers.containsKey(q.id)) continue;
-
-            int selected = answers.get(q.id);
-
-            if (selected == q.answer) {
+            if (correct) {
                 score++;
-            } else {
+            } else if (answered) {
                 wrongPerTopic.put(q.topic,
                         wrongPerTopic.getOrDefault(q.topic, 0) + 1);
             }
+
+            questionReviews.add(toQuestionReview(q, selected, correct));
         }
 
         for (Integer submittedQuestionId : answers.keySet()) {
@@ -222,6 +225,7 @@ public class QuestionService {
         attempt.setTotal(total);
         attempt.setTimestamp(LocalDateTime.now());
         attempt.setWrongPerTopic(wrongPerTopic);
+        attempt.setQuestionReviews(questionReviews);
 
         testAttemptRepository.save(attempt);
 
@@ -231,6 +235,32 @@ public class QuestionService {
         result.put("wrongPerTopic", wrongPerTopic);
 
         return result;
+    }
+
+    private AttemptQuestionReview toQuestionReview(Question question, Integer selectedOption, boolean correct) {
+        AttemptQuestionReview review = new AttemptQuestionReview();
+        review.setQuestionId(question.id);
+        review.setQuestionText(question.question);
+        review.setSubject(question.subject);
+        review.setTopic(question.topic);
+        review.setSelectedOption(selectedOption);
+        review.setSelectedAnswer(getOptionText(question, selectedOption));
+        review.setCorrectOption(question.answer);
+        review.setCorrectAnswer(getOptionText(question, question.answer));
+        review.setCorrect(correct);
+        return review;
+    }
+
+    private String getOptionText(Question question, Integer optionIndex) {
+        if (optionIndex == null) {
+            return "Not answered";
+        }
+
+        if (optionIndex < 0 || optionIndex >= question.options.size()) {
+            return "Invalid option";
+        }
+
+        return question.options.get(optionIndex);
     }
 
     private String buildAttemptKey(String userId, String subject) {

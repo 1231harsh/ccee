@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Entity
@@ -28,4 +30,9 @@ public class TestAttempt {
     @MapKeyColumn(name = "topic")
     @Column(name = "wrong_count")
     private Map<String, Integer> wrongPerTopic;
+
+    @ElementCollection
+    @CollectionTable(name = "attempt_question_reviews", joinColumns = @JoinColumn(name = "attempt_id"))
+    @OrderColumn(name = "question_order")
+    private List<AttemptQuestionReview> questionReviews = new ArrayList<>();
 }
