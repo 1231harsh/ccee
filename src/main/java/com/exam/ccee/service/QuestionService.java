@@ -77,74 +77,92 @@ public class QuestionService {
             case "DBMS" -> getDBMSBlueprint();
             case "JAVA" -> getJavaBlueprint();
             case "WEB" -> getWebBlueprint();
+            case "DSA" -> getDSABlueprint();
             default -> new HashMap<>();
         };
     }
 
     private Map<String, Integer> getCPPBlueprint() {
-        Map<String, Integer> map = new HashMap<>();
-
-        map.put("OOP Basics", 8); // classes, objects
-        map.put("Constructors", 4);
-        map.put("Inheritance & Polymorphism", 8);
-        map.put("Operator Overloading", 4);
-        map.put("Templates", 4);
-        map.put("Exception Handling", 3);
-        map.put("STL", 6);
-        map.put("File Handling", 3);
-        map.put("Dynamic Memory", 3);
-        map.put("Misc", 2);
-
-        return map;
+        return buildBalancedBlueprint(
+                "Structure of C++ Programs",
+                "Classes & Objects",
+                "Constructors",
+                "Inheritance & Polymorphism",
+                "Operator Overloading",
+                "Function & Class Templates",
+                "Exception Handling & Namespaces",
+                "Standard Template Library",
+                "File Handling",
+                "Dynamic Memory & OOP Applications"
+        );
     }
 
     private Map<String, Integer> getDBMSBlueprint() {
-        Map<String, Integer> map = new HashMap<>();
-
-        map.put("ER Modeling", 5);
-        map.put("SQL", 10);
-        map.put("Joins", 5);
-        map.put("Indexes", 3);
-        map.put("Transactions", 5);
-        map.put("Normalization", 5);
-        map.put("PLSQL", 5);
-        map.put("Query Optimization", 3);
-        map.put("NoSQL", 2);
-        map.put("Misc", 2);
-
-        return map;
+        return buildBalancedBlueprint(
+                "Database Design",
+                "ER Modeling",
+                "SQL Commands",
+                "Joins & Views",
+                "Indexes",
+                "Stored Procedures & Functions",
+                "Triggers",
+                "Transactions & ACID",
+                "Query Optimization",
+                "PL/SQL, Normalization & NoSQL"
+        );
     }
 
     private Map<String, Integer> getJavaBlueprint() {
-        Map<String, Integer> map = new HashMap<>();
-
-        map.put("Basics", 6);
-        map.put("OOP", 8);
-        map.put("Inheritance & Interfaces", 6);
-        map.put("Exception Handling", 4);
-        map.put("Collections", 6);
-        map.put("Generics", 3);
-        map.put("Multithreading", 5);
-        map.put("File IO", 3);
-        map.put("JDBC", 2);
-        map.put("Misc", 2);
-
-        return map;
+        return buildBalancedBlueprint(
+                "Java Syntax",
+                "Data Types",
+                "Classes & Objects",
+                "Constructors",
+                "Inheritance",
+                "Interfaces",
+                "Exception Handling",
+                "Collections",
+                "OOP Principles",
+                "Java Practice Patterns"
+        );
     }
 
     private Map<String, Integer> getWebBlueprint() {
-        Map<String, Integer> map = new HashMap<>();
+        return buildBalancedBlueprint(
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+                "JavaScript ES6",
+                "DOM Manipulation",
+                "Responsive Web Design",
+                "AJAX & JSON",
+                "Client-Server Architecture",
+                "Frontend Validation",
+                "Web Hosting Basics"
+        );
+    }
 
-        map.put("Servlets", 8);
-        map.put("JSP", 6);
-        map.put("JSTL", 3);
-        map.put("MVC", 5);
-        map.put("Sessions & Cookies", 5);
-        map.put("Filters", 3);
-        map.put("JDBC Integration", 4);
-        map.put("Security", 3);
-        map.put("REST API", 4);
-        map.put("Misc", 4);
+    private Map<String, Integer> getDSABlueprint() {
+        return buildBalancedBlueprint(
+                "Arrays",
+                "Linked Lists",
+                "Stacks & Queues",
+                "Trees",
+                "Graphs",
+                "Sorting & Searching",
+                "Recursion",
+                "Greedy & Divide and Conquer",
+                "Dynamic Programming",
+                "Complexity & Java Patterns"
+        );
+    }
+
+    private Map<String, Integer> buildBalancedBlueprint(String... topics) {
+        Map<String, Integer> map = new LinkedHashMap<>();
+
+        for (int i = 0; i < topics.length; i++) {
+            map.put(topics[i], i < 5 ? 5 : 4);
+        }
 
         return map;
     }

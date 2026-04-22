@@ -1,23 +1,28 @@
 const SUBJECTS = [
   {
     code: "JAVA",
-    title: "Java Programming",
-    summary: "Core syntax, OOP, collections, multithreading, JDBC, and file handling.",
+    title: "Object Oriented Programming with Java",
+    summary: "Syntax, data types, classes, objects, constructors, inheritance, interfaces, exceptions, and collections.",
   },
   {
     code: "DBMS",
-    title: "Database Management Systems",
-    summary: "Modeling, SQL, joins, transactions, normalization, and query optimization.",
+    title: "Database Technologies",
+    summary: "Design, ER modeling, SQL, joins, views, indexes, routines, triggers, transactions, optimization, PL/SQL, and NoSQL.",
   },
   {
     code: "CPP",
     title: "C++ Programming",
-    summary: "OOP basics, templates, STL, exceptions, polymorphism, and memory handling.",
+    summary: "Program structure, classes, constructors, inheritance, polymorphism, overloading, templates, exceptions, STL, files, and memory.",
   },
   {
     code: "WEB",
-    title: "Web Technologies",
-    summary: "Servlets, JSP, MVC, sessions, JDBC integration, security, and REST APIs.",
+    title: "Web Programming Technologies",
+    summary: "HTML5, CSS3, Bootstrap, JavaScript ES6, DOM, responsive design, AJAX, JSON, validation, hosting, and client-server basics.",
+  },
+  {
+    code: "DSA",
+    title: "Algorithms and Data Structures",
+    summary: "Arrays, linked lists, stacks, queues, trees, graphs, sorting, searching, recursion, greedy, divide and conquer, dynamic programming, and complexity.",
   },
 ];
 

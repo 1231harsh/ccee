@@ -138,7 +138,6 @@ function TestPage({ session, onCancel, onComplete }) {
             <p className="eyebrow">
               Question {currentIndex + 1} of {questions.length}
             </p>
-            <h3>{currentQuestion.topic}</h3>
           </div>
           <div className="question-header-actions">
             <span className="subject-pill">{currentQuestion.subject}</span>
