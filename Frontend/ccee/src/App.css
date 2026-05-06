@@ -372,6 +372,20 @@ body {
   margin: 24px 0 20px;
 }
 
+.rich-text {
+  white-space: pre-wrap;
+}
+
+.question-code {
+  background: #17324a;
+  border-radius: 18px;
+  color: #f8fafc;
+  margin: 14px 0;
+  overflow-x: auto;
+  padding: 16px;
+  white-space: pre-wrap;
+}
+
 .question-tools {
   align-items: center;
   display: flex;
@@ -442,6 +456,13 @@ body {
 .attempt-card {
   align-items: stretch;
   flex-direction: column;
+}
+
+.attempt-head {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
 }
 
 .attempt-card > .attempt-meta {
@@ -560,6 +581,12 @@ body {
 .review-answer.is-wrong {
   background: #fff0f0;
   color: #b42318;
+}
+
+.review-question {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto 1fr;
 }
 
 .insight-meta {

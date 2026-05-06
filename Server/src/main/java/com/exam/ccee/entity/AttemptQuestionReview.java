@@ -2,6 +2,7 @@ package com.exam.ccee.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import jakarta.persistence.Lob;
 import lombok.Data;
 
 @Embeddable
@@ -10,7 +11,7 @@ public class AttemptQuestionReview {
 
     private int questionId;
 
-    @Column(length = 1000)
+    @Lob
     private String questionText;
 
     private String subject;
@@ -18,12 +19,12 @@ public class AttemptQuestionReview {
 
     private Integer selectedOption;
 
-    @Column(length = 1000)
+    @Lob
     private String selectedAnswer;
 
     private int correctOption;
 
-    @Column(length = 1000)
+    @Lob
     private String correctAnswer;
 
     private boolean correct;

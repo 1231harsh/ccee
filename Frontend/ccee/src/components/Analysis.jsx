@@ -14,6 +14,7 @@ function Analysis({ onBack, onRetake }) {
   const [attempts, setAttempts] = useState([]);
   const [summary, setSummary] = useState(null);
   const [selectedSubject, setSelectedSubject] = useState("ALL");
+  const [expandedAttemptId, setExpandedAttemptId] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
 
@@ -278,11 +279,24 @@ function Analysis({ onBack, onRetake }) {
               <div className="attempt-list">
                 {filteredAttempts.map((attempt) => (
                   <div className="attempt-card" key={attempt.id}>
-                    <div>
-                      <p className="attempt-subject">{attempt.subject}</p>
-                      <strong>
-                        {attempt.score} / {attempt.total}
-                      </strong>
+                    <div className="attempt-head">
+                      <div>
+                        <p className="attempt-subject">{attempt.subject}</p>
+                        <strong>
+                          {attempt.score} / {attempt.total}
+                        </strong>
+                      </div>
+                      <button
+                        className="button button-secondary"
+                        onClick={() =>
+                          setExpandedAttemptId((current) =>
+                            current === attempt.id ? null : attempt.id
+                          )
+                        }
+                        type="button"
+                      >
+                        {expandedAttemptId === attempt.id ? "Hide Review" : "View Review"}
+                      </button>
                     </div>
                     <div className="attempt-meta">
                       <span>{formatDate(attempt.timestamp)}</span>
@@ -294,31 +308,34 @@ function Analysis({ onBack, onRetake }) {
                         Retake
                       </button>
                     </div>
-                    <div className="attempt-review-list">
-                      {(attempt.questionReviews || []).map((review, index) => (
-                        <div
-                          className="attempt-review-item"
-                          key={`${attempt.id}-${review.questionId}-${index}`}
-                        >
-                          <div>
-                            <p className="review-topic">{review.topic}</p>
-                            <strong>
-                              {index + 1}. {review.questionText}
-                            </strong>
-                          </div>
-                          <div className="review-answer-grid">
-                            <div className={review.correct ? "review-answer is-correct" : "review-answer is-wrong"}>
-                              <span>Your response</span>
-                              <strong>{review.selectedAnswer || "Not answered"}</strong>
+                    {expandedAttemptId === attempt.id ? (
+                      <div className="attempt-review-list">
+                        {(attempt.questionReviews || []).map((review, index) => (
+                          <div
+                            className="attempt-review-item"
+                            key={`${attempt.id}-${review.questionId}-${index}`}
+                          >
+                            <div>
+                              <p className="review-topic">{review.topic}</p>
+                              <div className="review-question">
+                                <strong>{index + 1}.</strong>
+                                <div>{renderRichText(review.questionText)}</div>
+                              </div>
                             </div>
-                            <div className="review-answer is-correct">
-                              <span>Correct response</span>
-                              <strong>{review.correctAnswer}</strong>
+                            <div className="review-answer-grid">
+                              <div className={review.correct ? "review-answer is-correct" : "review-answer is-wrong"}>
+                                <span>Your response</span>
+                                <div>{renderRichText(review.selectedAnswer || "Not answered")}</div>
+                              </div>
+                              <div className="review-answer is-correct">
+                                <span>Correct response</span>
+                                <div>{renderRichText(review.correctAnswer)}</div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      ))}
-                    </div>
+                        ))}
+                      </div>
+                    ) : null}
                   </div>
                 ))}
               </div>
@@ -330,6 +347,45 @@ function Analysis({ onBack, onRetake }) {
       )}
     </main>
   );
+}
+
+function renderRichText(text) {
+  const value = String(text ?? "");
+  const regex = /```(\w+)?\n?([\s\S]*?)```/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(value)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(
+        <span className="rich-text" key={`text-${lastIndex}`}>
+          {value.slice(lastIndex, match.index)}
+        </span>
+      );
+    }
+
+    parts.push(
+      <pre className="question-code" key={`code-${match.index}`}>
+        <code>{match[2].trim()}</code>
+      </pre>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (!parts.length) {
+    return <span className="rich-text">{value}</span>;
+  }
+
+  if (lastIndex < value.length) {
+    parts.push(
+      <span className="rich-text" key={`text-${lastIndex}`}>
+        {value.slice(lastIndex)}
+      </span>
+    );
+  }
+
+  return parts;
 }
 
 function sortAttemptsAscending(left, right) {

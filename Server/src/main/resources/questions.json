@@ -627,10 +627,10 @@
     "id": 48,
     "question": "Which statement best describes default constructor in C++ Programming?",
     "options": [
-      "It is a core idea used in Constructors.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A constructor that can be called without passing arguments.",
+      "A constructor that initializes an object using values supplied as arguments.",
+      "A constructor that creates a new object as a copy of an existing object of the same class.",
+      "Providing multiple constructors with different parameter lists in the same class."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -640,12 +640,12 @@
     "id": 49,
     "question": "When working with parameterized constructor, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Constructors.",
-      "It is mainly a hardware replacement."
+      "A constructor that initializes an object using values supplied as arguments.",
+      "A constructor that can be called without passing arguments.",
+      "A constructor that creates a new object as a copy of an existing object of the same class.",
+      "Providing multiple constructors with different parameter lists in the same class."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Constructors"
   },
@@ -653,10 +653,10 @@
     "id": 50,
     "question": "Which use of copy constructor is most appropriate?",
     "options": [
-      "It helps solve problems related to Constructors.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A constructor that creates a new object as a copy of an existing object of the same class.",
+      "A constructor that can be called without passing arguments.",
+      "A constructor that initializes an object using values supplied as arguments.",
+      "Providing multiple constructors with different parameter lists in the same class."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -666,12 +666,12 @@
     "id": 51,
     "question": "What is the main purpose of constructor overloading?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Constructors.",
-      "It has no effect on readability or correctness."
+      "Providing multiple constructors with different parameter lists in the same class.",
+      "A constructor that can be called without passing arguments.",
+      "A constructor that initializes an object using values supplied as arguments.",
+      "A constructor that creates a new object as a copy of an existing object of the same class."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Constructors"
   },
@@ -679,10 +679,10 @@
     "id": 52,
     "question": "Which statement best describes member initializer list in C++ Programming?",
     "options": [
-      "It is a core idea used in Constructors.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A constructor syntax used to initialize data members before the constructor body executes.",
+      "A constructor that can be called without passing arguments.",
+      "A constructor that initializes an object using values supplied as arguments.",
+      "A constructor that creates a new object as a copy of an existing object of the same class."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -692,12 +692,12 @@
     "id": 53,
     "question": "When working with destructor, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Constructors.",
-      "It is mainly a hardware replacement."
+      "A special member function that runs when an object is destroyed to release resources.",
+      "A constructor that can be called without passing arguments.",
+      "A constructor that initializes an object using values supplied as arguments.",
+      "A constructor that creates a new object as a copy of an existing object of the same class."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Constructors"
   },
@@ -705,10 +705,10 @@
     "id": 54,
     "question": "Which use of explicit constructor is most appropriate?",
     "options": [
-      "It helps solve problems related to Constructors.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A constructor that prevents unwanted implicit conversions when called with a single argument.",
+      "A constructor that can be called without passing arguments.",
+      "A constructor that initializes an object using values supplied as arguments.",
+      "A constructor that creates a new object as a copy of an existing object of the same class."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -716,25 +716,25 @@
   },
   {
     "id": 55,
-    "question": "What is the main purpose of delegating constructor?",
+    "question": "What is the main purpose of a delegating constructor in C++?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Constructors.",
-      "It has no effect on readability or correctness."
+      "To transfer memory ownership from one object to another.",
+      "To let one constructor call another constructor of the same class and reuse initialization logic.",
+      "To automatically make a class abstract.",
+      "To disable constructor overloading for the class."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Constructors"
   },
   {
     "id": 56,
-    "question": "Which statement best describes base constructor call in C++ Programming?",
+    "question": "Which statement best describes a base constructor call in C++?",
     "options": [
-      "It is a core idea used in Constructors.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "It initializes the base-class part of a derived object before the derived constructor body runs.",
+      "It is used only when overloading stream operators.",
+      "It converts a derived object into a pointer automatically.",
+      "It delays all base-class initialization until the object is destroyed."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -744,23 +744,23 @@
     "id": 57,
     "question": "When working with RAII, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Constructors.",
-      "It is mainly a hardware replacement."
+      "A design technique where resource acquisition and release are tied to object lifetime.",
+      "A constructor that can be called without passing arguments.",
+      "A constructor that initializes an object using values supplied as arguments.",
+      "A constructor that creates a new object as a copy of an existing object of the same class."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Constructors"
   },
   {
     "id": 58,
-    "question": "Which use of resource initialization is most appropriate?",
+    "question": "Which use of resource initialization is most appropriate in C++ object construction?",
     "options": [
-      "It helps solve problems related to Constructors.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Acquiring required resources during object initialization so the object starts in a valid state.",
+      "Postponing every resource allocation until program termination.",
+      "Allocating resources only inside comments for documentation.",
+      "Using global variables instead of constructors for all resources."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -768,14 +768,14 @@
   },
   {
     "id": 59,
-    "question": "What is the main purpose of temporary object?",
+    "question": "What is the main purpose of a temporary object in C++?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Constructors.",
-      "It has no effect on readability or correctness."
+      "To permanently store data in a file stream.",
+      "To represent a short-lived object created during expression evaluation or function returns.",
+      "To replace all named variables in a class.",
+      "To prevent constructors from being called."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Constructors"
   },
@@ -1067,12 +1067,12 @@
   },
   {
     "id": 82,
-    "question": "Which statement best describes operator function in C++ Programming?",
+    "question": "The dynamic_cast operator",
     "options": [
-      "It is a core idea used in Operator Overloading.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "allows only upcasting in the class hierarchy",
+      "allows only downcasting in the class hierarchy",
+      "allows both upcasting and downcasting",
+      "none of the above"
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1080,38 +1080,38 @@
   },
   {
     "id": 83,
-    "question": "When working with binary operator, which option is correct?",
+    "question": "Which of the following should be the return type of friend operator << for proper working of the operator?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Operator Overloading.",
-      "It is mainly a hardware replacement."
-    ],
-    "answer": 2,
-    "subject": "CPP",
-    "topic": "Operator Overloading"
-  },
-  {
-    "id": 84,
-    "question": "Which use of unary operator is most appropriate?",
-    "options": [
-      "It helps solve problems related to Operator Overloading.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "ostream&",
+      "istream&",
+      "ostream",
+      "istream"
     ],
     "answer": 0,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
   {
-    "id": 85,
-    "question": "What is the main purpose of assignment operator?",
+    "id": 84,
+    "question": "A good reason for overloading an operator is to enable it to",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Operator Overloading.",
-      "It has no effect on readability or correctness."
+      "outperform its C language counter parts",
+      "work in its usual way, but with programmer-defined data types",
+      "operate on more operands than in its standard definitions",
+      "operate on no operands"
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Operator Overloading"
+  },
+  {
+    "id": 85,
+    "question": "The operator >> is called",
+    "options": [
+      "an extraction operator",
+      "a get from operator",
+      "either a or b",
+      "get to operator"
     ],
     "answer": 2,
     "subject": "CPP",
@@ -1119,25 +1119,25 @@
   },
   {
     "id": 86,
-    "question": "Which statement best describes stream insertion in C++ Programming?",
+    "question": "In c++ the = operator indicate",
     "options": [
-      "It is a core idea used in Operator Overloading.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "a. Equality",
+      "b. Assignment",
+      "c. Subtraction",
+      "d. Negation"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
   {
     "id": 87,
-    "question": "When working with stream extraction, which option is correct?",
+    "question": "Whereas < is called relational operator , x < y is called a(n) _____ .",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Operator Overloading.",
-      "It is mainly a hardware replacement."
+      "a. Arithmetic operator",
+      "b. Relative operator",
+      "c. Relational Expression",
+      "d. Lageness Test"
     ],
     "answer": 2,
     "subject": "CPP",
@@ -1145,14 +1145,14 @@
   },
   {
     "id": 88,
-    "question": "Which use of comparison operator is most appropriate?",
+    "question": "Which of the following ia not a C++ operator?",
     "options": [
-      "It helps solve problems related to Operator Overloading.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "^=",
+      ".*",
+      "&=",
+      ">>"
     ],
-    "answer": 0,
+    "answer": 3,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
@@ -1160,12 +1160,12 @@
     "id": 89,
     "question": "What is the main purpose of subscript operator?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Operator Overloading.",
-      "It has no effect on readability or correctness."
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "A non-member operator function declared as friend so it can access private members.",
+      "Returning a reference so the caller can avoid copies and sometimes modify the original object."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
@@ -1173,10 +1173,10 @@
     "id": 90,
     "question": "Which statement best describes increment operator in C++ Programming?",
     "options": [
-      "It is a core idea used in Operator Overloading.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "A non-member operator function declared as friend so it can access private members.",
+      "Returning a reference so the caller can avoid copies and sometimes modify the original object."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1186,38 +1186,38 @@
     "id": 91,
     "question": "When working with friend operator, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Operator Overloading.",
-      "It is mainly a hardware replacement."
-    ],
-    "answer": 2,
-    "subject": "CPP",
-    "topic": "Operator Overloading"
-  },
-  {
-    "id": 92,
-    "question": "Which use of member operator is most appropriate?",
-    "options": [
-      "It helps solve problems related to Operator Overloading.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A non-member operator function declared as friend so it can access private members.",
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "Returning a reference so the caller can avoid copies and sometimes modify the original object."
     ],
     "answer": 0,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
   {
-    "id": 93,
-    "question": "What is the main purpose of non-member operator?",
+    "id": 92,
+    "question": "Which use of a member operator overload is most appropriate in C++?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Operator Overloading.",
-      "It has no effect on readability or correctness."
+      "To overload every operator globally, even when C++ forbids it.",
+      "To define operator behavior inside the class when the left operand should be the current object.",
+      "To replace constructors with operator calls.",
+      "To disable encapsulation for all members."
     ],
-    "answer": 2,
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Operator Overloading"
+  },
+  {
+    "id": 93,
+    "question": "What is the main purpose of a non-member operator in C++?",
+    "options": [
+      "To ensure operators can only access private members directly.",
+      "To define operator behavior outside the class, often when symmetric conversions are desirable.",
+      "To convert every object into a pointer automatically.",
+      "To prevent overloaded operators from returning values."
+    ],
+    "answer": 1,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
@@ -1225,10 +1225,10 @@
     "id": 94,
     "question": "Which statement best describes return by reference in C++ Programming?",
     "options": [
-      "It is a core idea used in Operator Overloading.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "Returning a reference so the caller can avoid copies and sometimes modify the original object.",
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "A non-member operator function declared as friend so it can access private members."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1238,12 +1238,12 @@
     "id": 95,
     "question": "When working with const correctness, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Operator Overloading.",
-      "It is mainly a hardware replacement."
+      "Marking functions and parameters appropriately so objects are not modified unintentionally.",
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "A non-member operator function declared as friend so it can access private members."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
@@ -1251,10 +1251,10 @@
     "id": 96,
     "question": "Which use of compound assignment is most appropriate?",
     "options": [
-      "It helps solve problems related to Operator Overloading.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "An overloaded operator such as += that updates an object and usually returns a reference to it.",
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "A non-member operator function declared as friend so it can access private members."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1264,12 +1264,12 @@
     "id": 97,
     "question": "What is the main purpose of conversion operator?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Operator Overloading.",
-      "It has no effect on readability or correctness."
+      "An overloaded operator that defines how an object can be converted to another type.",
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "A non-member operator function declared as friend so it can access private members."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Operator Overloading"
   },
@@ -1277,10 +1277,10 @@
     "id": 98,
     "question": "Which statement best describes function call operator in C++ Programming?",
     "options": [
-      "It is a core idea used in Operator Overloading.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "An overloaded operator() that lets an object behave like a function.",
+      "An overloaded operator[] that provides indexed access to elements of an object.",
+      "An overloaded ++ operator that advances an object to the next logical state.",
+      "A non-member operator function declared as friend so it can access private members."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1288,12 +1288,12 @@
   },
   {
     "id": 99,
-    "question": "When working with overload restriction, which option is correct?",
+    "question": "When working with overload restrictions, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Operator Overloading.",
-      "It is mainly a hardware replacement."
+      "C++ allows developers to create brand-new operator symbols at will.",
+      "Any operator can be overloaded for built-in types without a user-defined type.",
+      "Some operators cannot be overloaded, and operator precedence and arity cannot be changed.",
+      "Overload restrictions apply only to stream operators."
     ],
     "answer": 2,
     "subject": "CPP",
@@ -1418,14 +1418,14 @@
   },
   {
     "id": 109,
-    "question": "Which statement best describes function template in C++ Programming?",
+    "question": "Which statement best describes a function template in C++?",
     "options": [
-      "It is a core idea used in Function & Class Templates.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "It is a file-handling routine that must return void.",
+      "It defines a generic function that can work with different data types through type parameters.",
+      "It is a constructor that initializes template classes only.",
+      "It is a namespace reserved for the standard library."
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Function & Class Templates"
   },
@@ -1433,12 +1433,12 @@
     "id": 110,
     "question": "When working with class template, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Function & Class Templates.",
-      "It is mainly a hardware replacement."
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used.",
+      "Writing algorithms and classes so they work with many data types through templates."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Function & Class Templates"
   },
@@ -1446,10 +1446,10 @@
     "id": 111,
     "question": "Which use of type parameter is most appropriate?",
     "options": [
-      "It helps solve problems related to Function & Class Templates.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A placeholder type used inside a template definition.",
+      "A blueprint for creating classes that work with different data types.",
+      "The actual type or value supplied when a template is used.",
+      "Writing algorithms and classes so they work with many data types through templates."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1459,12 +1459,12 @@
     "id": 112,
     "question": "What is the main purpose of template argument?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Function & Class Templates.",
-      "It has no effect on readability or correctness."
+      "The actual type or value supplied when a template is used.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "Writing algorithms and classes so they work with many data types through templates."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Function & Class Templates"
   },
@@ -1472,10 +1472,10 @@
     "id": 113,
     "question": "Which statement best describes generic programming in C++ Programming?",
     "options": [
-      "It is a core idea used in Function & Class Templates.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "Writing algorithms and classes so they work with many data types through templates.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1485,12 +1485,12 @@
     "id": 114,
     "question": "When working with template instantiation, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Function & Class Templates.",
-      "It is mainly a hardware replacement."
+      "Generating a concrete version of a template for specific arguments.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Function & Class Templates"
   },
@@ -1498,10 +1498,10 @@
     "id": 115,
     "question": "Which use of specialization is most appropriate?",
     "options": [
-      "It helps solve problems related to Function & Class Templates.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Providing a custom template implementation for a particular type or case.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1511,12 +1511,12 @@
     "id": 116,
     "question": "What is the main purpose of non-type parameter?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Function & Class Templates.",
-      "It has no effect on readability or correctness."
+      "A template parameter whose value is not a type, such as an integer constant.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Function & Class Templates"
   },
@@ -1524,10 +1524,10 @@
     "id": 117,
     "question": "Which statement best describes typename keyword in C++ Programming?",
     "options": [
-      "It is a core idea used in Function & Class Templates.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A keyword used in templates to indicate that a dependent name represents a type.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1537,12 +1537,12 @@
     "id": 118,
     "question": "When working with template deduction, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Function & Class Templates.",
-      "It is mainly a hardware replacement."
+      "The compiler process of inferring template arguments from a function call.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Function & Class Templates"
   },
@@ -1550,10 +1550,10 @@
     "id": 119,
     "question": "Which use of default template argument is most appropriate?",
     "options": [
-      "It helps solve problems related to Function & Class Templates.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A template argument value that is used automatically if none is supplied.",
+      "A blueprint for creating classes that work with different data types.",
+      "A placeholder type used inside a template definition.",
+      "The actual type or value supplied when a template is used."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1732,10 +1732,10 @@
     "id": 133,
     "question": "Which statement best describes try block in C++ Programming?",
     "options": [
-      "It is a core idea used in Exception Handling & Namespaces.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A block that contains code monitored for exceptions.",
+      "A handler that processes an exception thrown from a related try block.",
+      "A statement that signals an exception and transfers control to a handler.",
+      "A library-provided exception type from the C++ standard exception hierarchy."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1745,12 +1745,12 @@
     "id": 134,
     "question": "When working with catch block, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Exception Handling & Namespaces.",
-      "It is mainly a hardware replacement."
+      "A handler that processes an exception thrown from a related try block.",
+      "A block that contains code monitored for exceptions.",
+      "A statement that signals an exception and transfers control to a handler.",
+      "A library-provided exception type from the C++ standard exception hierarchy."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Exception Handling & Namespaces"
   },
@@ -1758,10 +1758,10 @@
     "id": 135,
     "question": "Which use of throw expression is most appropriate?",
     "options": [
-      "It helps solve problems related to Exception Handling & Namespaces.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A statement that signals an exception and transfers control to a handler.",
+      "A block that contains code monitored for exceptions.",
+      "A handler that processes an exception thrown from a related try block.",
+      "A library-provided exception type from the C++ standard exception hierarchy."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1771,12 +1771,12 @@
     "id": 136,
     "question": "What is the main purpose of standard exception?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Exception Handling & Namespaces.",
-      "It has no effect on readability or correctness."
+      "A library-provided exception type from the C++ standard exception hierarchy.",
+      "A block that contains code monitored for exceptions.",
+      "A handler that processes an exception thrown from a related try block.",
+      "A statement that signals an exception and transfers control to a handler."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Exception Handling & Namespaces"
   },
@@ -1784,10 +1784,10 @@
     "id": 137,
     "question": "Which statement best describes exception propagation in C++ Programming?",
     "options": [
-      "It is a core idea used in Exception Handling & Namespaces.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "The process of an exception moving up the call stack until it is handled.",
+      "A block that contains code monitored for exceptions.",
+      "A handler that processes an exception thrown from a related try block.",
+      "A statement that signals an exception and transfers control to a handler."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -1797,12 +1797,12 @@
     "id": 138,
     "question": "When working with catch order, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Exception Handling & Namespaces.",
-      "It is mainly a hardware replacement."
+      "The rule that more specific exception handlers should appear before more general ones.",
+      "A block that contains code monitored for exceptions.",
+      "A handler that processes an exception thrown from a related try block.",
+      "A statement that signals an exception and transfers control to a handler."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Exception Handling & Namespaces"
   },
@@ -1810,10 +1810,10 @@
     "id": 139,
     "question": "Which use of stack unwinding is most appropriate?",
     "options": [
-      "It helps solve problems related to Exception Handling & Namespaces.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Automatic destruction of local objects as control leaves nested scopes during exception handling.",
+      "A block that contains code monitored for exceptions.",
+      "A handler that processes an exception thrown from a related try block.",
+      "A statement that signals an exception and transfers control to a handler."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2133,12 +2133,12 @@
   },
   {
     "id": 164,
-    "question": "Which statement best describes ifstream in C++ Programming?",
+    "question": "explain the effect of the following ios::ate",
     "options": [
-      "It is a core idea used in File Handling.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "go to the end of the file on opening",
+      "add to the end of the file",
+      "open fails if file already exits",
+      "none of the above"
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2146,14 +2146,14 @@
   },
   {
     "id": 165,
-    "question": "When working with ofstream, which option is correct?",
+    "question": "void min() { cout << sizeof(bool); } What will be the output?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in File Handling.",
-      "It is mainly a hardware replacement."
+      "1",
+      "2",
+      "4",
+      "none of the above"
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "File Handling"
   },
@@ -2161,10 +2161,10 @@
     "id": 166,
     "question": "Which use of fstream is most appropriate?",
     "options": [
-      "It helps solve problems related to File Handling.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary.",
+      "An open mode that writes new data at the end of the file."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2172,14 +2172,14 @@
   },
   {
     "id": 167,
-    "question": "What is the main purpose of text file?",
+    "question": "What is the main purpose of a text file in C++ file handling?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in File Handling.",
-      "It has no effect on readability or correctness."
+      "To store human-readable character data using textual representation.",
+      "To guarantee smaller size than every binary file.",
+      "To disable newline processing during reads.",
+      "To store only compiled machine instructions."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "File Handling"
   },
@@ -2187,10 +2187,10 @@
     "id": 168,
     "question": "Which statement best describes binary file in C++ Programming?",
     "options": [
-      "It is a core idea used in File Handling.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A file that stores raw bytes without text translation.",
+      "A stream class that supports both input and output file operations.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary.",
+      "An open mode that writes new data at the end of the file."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2200,12 +2200,12 @@
     "id": 169,
     "question": "When working with open mode, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in File Handling.",
-      "It is mainly a hardware replacement."
+      "A flag that controls how a file is opened, such as read, write, append, or binary.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "An open mode that writes new data at the end of the file."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "File Handling"
   },
@@ -2213,10 +2213,10 @@
     "id": 170,
     "question": "Which use of ios::app is most appropriate?",
     "options": [
-      "It helps solve problems related to File Handling.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "An open mode that writes new data at the end of the file.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2224,14 +2224,14 @@
   },
   {
     "id": 171,
-    "question": "What is the main purpose of ios::binary?",
+    "question": "What is the main purpose of ios::binary in C++?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in File Handling.",
-      "It has no effect on readability or correctness."
+      "To force all numeric values to become text strings.",
+      "To open a file in binary mode so data is read or written without text translation.",
+      "To append data only at the end of a text file.",
+      "To automatically compress the file contents."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "File Handling"
   },
@@ -2239,10 +2239,10 @@
     "id": 172,
     "question": "Which statement best describes getline in C++ Programming?",
     "options": [
-      "It is a core idea used in File Handling.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A function that reads an entire line of text from a stream.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2252,12 +2252,12 @@
     "id": 173,
     "question": "When working with stream state, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in File Handling.",
-      "It is mainly a hardware replacement."
+      "The set of status flags that show whether a stream is good, failed, or at end-of-file.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "File Handling"
   },
@@ -2265,10 +2265,10 @@
     "id": 174,
     "question": "Which use of eof check is most appropriate?",
     "options": [
-      "It helps solve problems related to File Handling.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Testing whether the end of a file stream has been reached.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2278,12 +2278,12 @@
     "id": 175,
     "question": "What is the main purpose of close operation?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in File Handling.",
-      "It has no effect on readability or correctness."
+      "Releasing the file resource and flushing buffered output associated with a stream.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "File Handling"
   },
@@ -2291,10 +2291,10 @@
     "id": 176,
     "question": "Which statement best describes read operation in C++ Programming?",
     "options": [
-      "It is a core idea used in File Handling.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "Extracting data from a file stream into program memory.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2304,23 +2304,23 @@
     "id": 177,
     "question": "When working with write operation, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in File Handling.",
-      "It is mainly a hardware replacement."
+      "Sending data from program memory into a file stream.",
+      "A stream class that supports both input and output file operations.",
+      "A file that stores raw bytes without text translation.",
+      "A flag that controls how a file is opened, such as read, write, append, or binary."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "File Handling"
   },
   {
     "id": 178,
-    "question": "Which use of file pointer is most appropriate?",
+    "question": "Which use of a file pointer is most appropriate in C++ file handling?",
     "options": [
-      "It helps solve problems related to File Handling.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "To track the current read or write position within a file stream.",
+      "To replace every iterator in the STL.",
+      "To store only the file name as a C++ object.",
+      "To prevent random access in binary files."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2328,14 +2328,14 @@
   },
   {
     "id": 179,
-    "question": "What is the main purpose of seekg?",
+    "question": "What is the main purpose of seekg in C++?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in File Handling.",
-      "It has no effect on readability or correctness."
+      "To write binary records to the end of a file.",
+      "To move the input position pointer to a specified location in a stream.",
+      "To close a file stream after reading.",
+      "To test whether a file stream is writable."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "File Handling"
   },
@@ -2510,12 +2510,12 @@
   },
   {
     "id": 193,
-    "question": "Which statement best describes new operator in C++ Programming?",
+    "question": "Identify the true statements about a this pointer. i)It is initialized automatically to the memory address of the object in which it is contained. ii)It is a pointer to an object's member functions. iii)It can't be used explicitly in a program. iv)It is of the same type as the object in which it is contained.",
     "options": [
-      "It is a core idea used in Dynamic Memory & OOP Applications.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "i and iv.",
+      "ii, iii and iv.",
+      "i, ii, iii and iv.",
+      "i and iii"
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2523,14 +2523,14 @@
   },
   {
     "id": 194,
-    "question": "When working with delete operator, which option is correct?",
+    "question": "Identify the true statements about a link/next pointer.? i)Its value should be changed only if the linked list's head changes? ii)It is a self-referential class data member? iii)It is used to reference a node in a linked list? iv)If it belongs to the last node in the list, it should have a NULL value",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Dynamic Memory & OOP Applications.",
-      "It is mainly a hardware replacement."
+      "i,ii and iv.",
+      "ii, iii and iv",
+      "i, ii and iii",
+      "i and iii"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Dynamic Memory & OOP Applications"
   },
@@ -2538,10 +2538,10 @@
     "id": 195,
     "question": "Which use of heap allocation is most appropriate?",
     "options": [
-      "It helps solve problems related to Dynamic Memory & OOP Applications.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Creating objects or arrays in dynamic memory at runtime.",
+      "A situation where dynamically allocated memory is no longer reachable and cannot be freed.",
+      "A pointer that still refers to memory after the memory has been freed or gone out of scope.",
+      "An object that manages dynamic memory ownership automatically."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2551,12 +2551,12 @@
     "id": 196,
     "question": "What is the main purpose of memory leak?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Dynamic Memory & OOP Applications.",
-      "It has no effect on readability or correctness."
+      "A situation where dynamically allocated memory is no longer reachable and cannot be freed.",
+      "Creating objects or arrays in dynamic memory at runtime.",
+      "A pointer that still refers to memory after the memory has been freed or gone out of scope.",
+      "An object that manages dynamic memory ownership automatically."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Dynamic Memory & OOP Applications"
   },
@@ -2564,10 +2564,10 @@
     "id": 197,
     "question": "Which statement best describes dangling pointer in C++ Programming?",
     "options": [
-      "It is a core idea used in Dynamic Memory & OOP Applications.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A pointer that still refers to memory after the memory has been freed or gone out of scope.",
+      "Creating objects or arrays in dynamic memory at runtime.",
+      "A situation where dynamically allocated memory is no longer reachable and cannot be freed.",
+      "An object that manages dynamic memory ownership automatically."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2577,12 +2577,12 @@
     "id": 198,
     "question": "When working with smart pointer, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Dynamic Memory & OOP Applications.",
-      "It is mainly a hardware replacement."
+      "An object that manages dynamic memory ownership automatically.",
+      "Creating objects or arrays in dynamic memory at runtime.",
+      "A situation where dynamically allocated memory is no longer reachable and cannot be freed.",
+      "A pointer that still refers to memory after the memory has been freed or gone out of scope."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Dynamic Memory & OOP Applications"
   },
@@ -2590,10 +2590,10 @@
     "id": 199,
     "question": "Which use of unique_ptr is most appropriate?",
     "options": [
-      "It helps solve problems related to Dynamic Memory & OOP Applications.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A smart pointer that owns one object exclusively and cannot be copied.",
+      "Creating objects or arrays in dynamic memory at runtime.",
+      "A situation where dynamically allocated memory is no longer reachable and cannot be freed.",
+      "A pointer that still refers to memory after the memory has been freed or gone out of scope."
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2991,12 +2991,12 @@
   },
   {
     "id": 230,
-    "question": "Which statement best describes entity set in Database Technologies?",
+    "question": "Which normal form ensures that each attribute in a table is dependent only on the primary key and not on any other non-key attributes?",
     "options": [
-      "It is a core idea used in ER Modeling.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)"
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3004,27 +3004,27 @@
   },
   {
     "id": 231,
-    "question": "When working with relationship set, which option is correct?",
+    "question": "Which normal form requires that every non-key attribute should be fully functionally dependent on the primary key?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in ER Modeling.",
-      "It is mainly a hardware replacement."
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
   {
     "id": 232,
-    "question": "Which use of key attribute is most appropriate?",
+    "question": "Which normal form deals with multi-valued dependencies between non-key attributes?",
     "options": [
-      "It helps solve problems related to ER Modeling.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Third Normal Form (3NF)",
+      "Fourth Normal Form (4NF)"
     ],
-    "answer": 0,
+    "answer": 3,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
@@ -3032,12 +3032,12 @@
     "id": 233,
     "question": "What is the main purpose of multivalued attribute?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in ER Modeling.",
-      "It has no effect on readability or correctness."
+      "An attribute that can store multiple values for a single entity occurrence.",
+      "An attribute whose value can be computed from other stored attributes.",
+      "An entity type that depends on another entity for identification.",
+      "A relationship that connects a weak entity to its owner entity for identification."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
@@ -3045,10 +3045,10 @@
     "id": 234,
     "question": "Which statement best describes derived attribute in Database Technologies?",
     "options": [
-      "It is a core idea used in ER Modeling.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "An attribute whose value can be computed from other stored attributes.",
+      "An attribute that can store multiple values for a single entity occurrence.",
+      "An entity type that depends on another entity for identification.",
+      "A relationship that connects a weak entity to its owner entity for identification."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3058,12 +3058,12 @@
     "id": 235,
     "question": "When working with weak entity, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in ER Modeling.",
-      "It is mainly a hardware replacement."
+      "An entity type that depends on another entity for identification.",
+      "An attribute that can store multiple values for a single entity occurrence.",
+      "An attribute whose value can be computed from other stored attributes.",
+      "A relationship that connects a weak entity to its owner entity for identification."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
@@ -3071,10 +3071,10 @@
     "id": 236,
     "question": "Which use of identifying relationship is most appropriate?",
     "options": [
-      "It helps solve problems related to ER Modeling.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A relationship that connects a weak entity to its owner entity for identification.",
+      "An attribute that can store multiple values for a single entity occurrence.",
+      "An attribute whose value can be computed from other stored attributes.",
+      "An entity type that depends on another entity for identification."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3084,12 +3084,12 @@
     "id": 237,
     "question": "What is the main purpose of one-to-one relationship?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in ER Modeling.",
-      "It has no effect on readability or correctness."
+      "A relationship where each entity on both sides is associated with at most one entity on the other side.",
+      "An attribute that can store multiple values for a single entity occurrence.",
+      "An attribute whose value can be computed from other stored attributes.",
+      "An entity type that depends on another entity for identification."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
@@ -3097,10 +3097,10 @@
     "id": 238,
     "question": "Which statement best describes one-to-many relationship in Database Technologies?",
     "options": [
-      "It is a core idea used in ER Modeling.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A relationship where one entity can be associated with many entities on the other side.",
+      "An attribute that can store multiple values for a single entity occurrence.",
+      "An attribute whose value can be computed from other stored attributes.",
+      "An entity type that depends on another entity for identification."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3110,12 +3110,12 @@
     "id": 239,
     "question": "When working with many-to-many relationship, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in ER Modeling.",
-      "It is mainly a hardware replacement."
+      "A relationship where entities on both sides can associate with many entities on the other side.",
+      "An attribute that can store multiple values for a single entity occurrence.",
+      "An attribute whose value can be computed from other stored attributes.",
+      "An entity type that depends on another entity for identification."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
@@ -4683,10 +4683,10 @@
     "id": 360,
     "question": "Which statement best describes query optimizer in Database Technologies?",
     "options": [
-      "It is a core idea used in Query Optimization.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan.",
+      "Reading every row in the table to evaluate the condition."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4696,12 +4696,12 @@
     "id": 361,
     "question": "When working with execution plan, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Query Optimization.",
-      "It is mainly a hardware replacement."
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan.",
+      "Reading every row in the table to evaluate the condition."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -4709,10 +4709,10 @@
     "id": 362,
     "question": "Which use of cost estimate is most appropriate?",
     "options": [
-      "It helps solve problems related to Query Optimization.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A predicted measure of resource usage such as I/O or CPU for a query plan.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "Reading every row in the table to evaluate the condition."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4722,12 +4722,12 @@
     "id": 363,
     "question": "What is the main purpose of table scan?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Query Optimization.",
-      "It has no effect on readability or correctness."
+      "Reading every row in the table to evaluate the condition.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -4735,10 +4735,10 @@
     "id": 364,
     "question": "Which statement best describes index scan in Database Technologies?",
     "options": [
-      "It is a core idea used in Query Optimization.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "Using an index structure to locate required rows more efficiently than scanning the whole table.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4748,23 +4748,23 @@
     "id": 365,
     "question": "When working with join order, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Query Optimization.",
-      "It is mainly a hardware replacement."
+      "The optimizer can change join order to reduce intermediate result sizes and overall cost.",
+      "Join order is fixed by table creation order and never affects performance.",
+      "Join order matters only for INSERT statements.",
+      "Changing join order automatically removes the need for indexes."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
   {
     "id": 366,
-    "question": "Which use of selectivity is most appropriate?",
+    "question": "Which use of selectivity is most appropriate in query optimization?",
     "options": [
-      "It helps solve problems related to Query Optimization.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "To estimate how strongly a predicate filters rows so the optimizer can choose good access paths.",
+      "To store selected rows permanently in a new table.",
+      "To prevent WHERE clauses from using indexes.",
+      "To define foreign-key relationships between two relations."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4772,14 +4772,14 @@
   },
   {
     "id": 367,
-    "question": "What is the main purpose of statistics?",
+    "question": "What is the main purpose of statistics in query optimization?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Query Optimization.",
-      "It has no effect on readability or correctness."
+      "To encrypt SQL queries before execution.",
+      "To help the optimizer estimate data distribution and choose efficient execution plans.",
+      "To store user passwords separately from tables.",
+      "To prevent indexes from being used in joins."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -4787,10 +4787,10 @@
     "id": 368,
     "question": "Which statement best describes predicate pushdown in Database Technologies?",
     "options": [
-      "It is a core idea used in Query Optimization.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "Applying filter conditions as early as possible in the plan to reduce processed rows.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4798,25 +4798,25 @@
   },
   {
     "id": 369,
-    "question": "When working with projection, which option is correct?",
+    "question": "When working with composite indexes, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Query Optimization.",
-      "It is mainly a hardware replacement."
+      "They can index only one column at a time.",
+      "They are useful when queries filter or sort using multiple indexed columns in order.",
+      "They always perform worse than full table scans.",
+      "They can be created only on temporary tables."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
   {
     "id": 370,
-    "question": "Which use of covering index is most appropriate?",
+    "question": "Which use of predicate pushdown is most appropriate?",
     "options": [
-      "It helps solve problems related to Query Optimization.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Applying filters as early as possible so fewer rows move through the execution plan.",
+      "Delaying every WHERE condition until after all joins complete.",
+      "Replacing indexes with larger table scans.",
+      "Moving validation rules from SQL into HTML forms."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4824,14 +4824,14 @@
   },
   {
     "id": 371,
-    "question": "What is the main purpose of subquery?",
+    "question": "What is the main purpose of a temporary table during query execution?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Query Optimization.",
-      "It has no effect on readability or correctness."
+      "To permanently replace the original base table.",
+      "To store intermediate results needed while processing a query.",
+      "To disable sorting and grouping operations.",
+      "To ensure every query uses a full scan."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -4839,10 +4839,10 @@
     "id": 372,
     "question": "Which statement best describes correlated subquery in Database Technologies?",
     "options": [
-      "It is a core idea used in Query Optimization.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A subquery that depends on values from the outer query row being processed.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4852,12 +4852,12 @@
     "id": 373,
     "question": "When working with denormalization, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Query Optimization.",
-      "It is mainly a hardware replacement."
+      "Intentionally adding redundancy to improve read performance in specific scenarios.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -4865,10 +4865,10 @@
     "id": 374,
     "question": "Which use of EXPLAIN plan is most appropriate?",
     "options": [
-      "It helps solve problems related to Query Optimization.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "A DBMS output that shows how a query is expected to be executed.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4878,12 +4878,12 @@
     "id": 375,
     "question": "What is the main purpose of temporary table?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Query Optimization.",
-      "It has no effect on readability or correctness."
+      "An intermediate storage structure used during query processing.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -4891,10 +4891,10 @@
     "id": 376,
     "question": "Which statement best describes sort cost in Database Technologies?",
     "options": [
-      "It is a core idea used in Query Optimization.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "The resource overhead incurred while ordering rows during query execution.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4904,12 +4904,12 @@
     "id": 377,
     "question": "When working with aggregation cost, which option is correct?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Query Optimization.",
-      "It is mainly a hardware replacement."
+      "The resource overhead needed to compute grouped results such as SUM or COUNT.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -4917,10 +4917,10 @@
     "id": 378,
     "question": "Which use of plan caching is most appropriate?",
     "options": [
-      "It helps solve problems related to Query Optimization.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Reusing a previously compiled query plan to reduce parsing and optimization work.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4930,12 +4930,12 @@
     "id": 379,
     "question": "What is the main purpose of query rewrite?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Query Optimization.",
-      "It has no effect on readability or correctness."
+      "Transforming a query into a logically equivalent but more efficient form.",
+      "The DBMS component that chooses an efficient execution strategy for a query.",
+      "The ordered set of operations the DBMS will use to execute a query.",
+      "A predicted measure of resource usage such as I/O or CPU for a query plan."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
@@ -5643,7 +5643,7 @@
   },
   {
     "id": 434,
-    "question": "What will be the output of the following code snippet? '''java int x = 10; if (x > 5) { System.out.println(\"x is greater than 5\"); } else if (x > 0) { System.out.println(\"x is positive\"); } else { System.out.println(\"x is negative\"); } '''",
+    "question": "What will be the output of the following code snippet? ```java\nint x = 10;\nif (x > 5) {\n  System.out.println(\"x is greater than 5\");\n} else if (x > 0) {\n  System.out.println(\"x is positive\");\n} else {\n  System.out.println(\"x is negative\");\n}\n```",
     "options": [
       "x is greater than 5",
       "x is positive",
@@ -5656,7 +5656,7 @@
   },
   {
     "id": 435,
-    "question": "What will be the output of the following code snippet? '''java int age = 25; if (age < 18) { System.out.println(\"You are a minor.\"); } else if (age >= 18 && age < 60) { System.out.println(\"You are an adult.\"); } else { System.out.println(\"You are a senior citizen.\"); } '''",
+    "question": "What will be the output of the following code snippet? ```java\nint age = 25;\nif (age < 18) {\n  System.out.println(\"You are a minor.\");\n} else if (age >= 18 && age < 60) {\n  System.out.println(\"You are an adult.\");\n} else {\n  System.out.println(\"You are a senior citizen.\");\n}\n```",
     "options": [
       "You are a minor.",
       "You are an adult.",
@@ -5669,7 +5669,7 @@
   },
   {
     "id": 436,
-    "question": "What will be the output of the following code snippet? '''java int day = 2; switch (day) { case 1: System.out.println(\"Monday\"); break; case 2: System.out.println(\"Tuesday\"); break; case 3: System.out.println(\"Wednesday\"); break; default: System.out.println(\"Invalid day\"); break; } '''",
+    "question": "What will be the output of the following code snippet? ```java\nint day = 2;\nswitch (day) {\n \ncase 1: System.out.println(\"Monday\");\nbreak;\ncase 2: System.out.println(\"Tuesday\");\nbreak;\ncase 3: System.out.println(\"Wednesday\");\nbreak;\ndefault: System.out.println(\"Invalid day\");\nbreak;\n}\n```",
     "options": [
       "Monday",
       "Tuesday",
@@ -5695,7 +5695,7 @@
   },
   {
     "id": 438,
-    "question": "What will be the value of 'result' after the following code is executed? '''java int a = 5; int b = 8; int result = (a > b) ? a : b; '''",
+    "question": "What will be the value of 'result' after the following code is executed? ```java\nint a = 5;\nint b = 8;\nint result = (a > b) ? a : b;\n```",
     "options": [
       "5",
       "8",
@@ -5708,7 +5708,7 @@
   },
   {
     "id": 439,
-    "question": "How many times will the following 'for' loop be executed? '''java for (int i = 0; i < 5; i++) { System.out.println(\"Hello\"); } '''",
+    "question": "How many times will the following 'for' loop be executed? ```java\nfor (int i = 0;\ni < 5;\ni++) {\n  System.out.println(\"Hello\");\n}\n```",
     "options": [
       "5 times",
       "6 times",
@@ -5903,7 +5903,7 @@
   },
   {
     "id": 454,
-    "question": "What is the result of the following code snippet? '''java class MyClass { static int count = 0; MyClass() { count++; } } public class Main { public static void main(String[] args) { MyClass obj1 = new MyClass(); MyClass obj2 = new MyClass(); System.out.println(MyClass.count); } } '''",
+    "question": "What is the result of the following code snippet? ```java\nclass MyClass {\n  static int count = 0;\nMyClass() {\n  count++;\n}\n} public class Main {\n  public static void main(String[] args) {\n  MyClass obj1 = new MyClass();\nMyClass obj2 = new MyClass();\nSystem.out.println(MyClass.count);\n}\n}\n```",
     "options": [
       "0",
       "1",
@@ -6124,79 +6124,79 @@
   },
   {
     "id": 471,
-    "question": "Which statement best describes default constructor in Object Oriented Programming with Java?",
+    "question": "Consider the following code snippet: ```java\nclass Parent {\n  int x;\nParent(int x) {\n  this.x = x;\n}\n} class Child extends Parent {\n  int y;\nChild(int x, int y) {\n  super(x);\nthis.y = y;\n}\n}\n``` What is the purpose of the \"super(x)\" statement in the Child class constructor?",
     "options": [
-      "It is a core idea used in Constructors.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "It calls the default constructor of the Parent class.",
+      "It sets the value of x in the Parent class to the value passed in the Child class constructor.",
+      "It creates a new object of the Parent class.",
+      "It is not a valid statement in Java."
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 472,
-    "question": "When working with parameterized constructor, which option is correct?",
+    "question": "What happens if the \"super\" keyword is not used in a subclass constructor in Java?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Constructors.",
-      "It is mainly a hardware replacement."
+      "The subclass constructor will automatically call the default constructor of the superclass.",
+      "The compiler will generate an error, and the subclass constructor won't compile.",
+      "The subclass constructor will throw a runtime exception.",
+      "The subclass constructor will have no effect, and it won't be able to create instances of the subclass."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 473,
-    "question": "Which use of constructor overloading is most appropriate?",
+    "question": "In Java, is it possible to use both \"this\" and \"super\" in the same constructor?",
     "options": [
-      "It helps solve problems related to Constructors.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Yes, but only if the superclass has a parameterless constructor.",
+      "No, using both \"this\" and \"super\" in the same constructor is not allowed.",
+      "Yes, using \"this\" and \"super\" together is common when chaining constructors in a class.",
+      "Yes, but only if the superclass has a constructor with the same number of parameters as the subclass."
     ],
-    "answer": 0,
+    "answer": 2,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 474,
-    "question": "What is the main purpose of this constructor call?",
+    "question": "MCQ: How do you call a superclass constructor from a subclass constructor in Java?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Constructors.",
-      "It has no effect on readability or correctness."
+      "'call super();'",
+      "'super();'",
+      "'invoke super();'",
+      "'superclass();'"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 475,
-    "question": "Which statement best describes super constructor call in Object Oriented Programming with Java?",
+    "question": "MCQ (Coding): Which of the following code snippets correctly defines a user -defined checked exception? ```java\n// Option 1 class MyCheckedException extends RuntimeException {\n  // Constructor and other methods\n} // Option 2 class MyCheckedException extends Exception {\n  // Constructor and other methods\n} // Option 3 class MyCheckedException extends Error {\n  // Constructor and other methods\n}\n```",
     "options": [
-      "It is a core idea used in Constructors.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "Option 1",
+      "Option 2",
+      "Option 3",
+      "Both Option 1 and Option 2"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 476,
-    "question": "When working with constructor chaining, which option is correct?",
+    "question": "MCQ (Coding): Which of the following code snippets correctly defines a user -defined unchecked exception? ```java\n// Option 1 class MyUncheckedException extends RuntimeException {\n  // Constructor and other methods\n} // Option 2 class MyUncheckedException extends Exception {\n  // Constructor and other methods\n} // Option 3 class MyUncheckedException extends Error {\n  // Constructor and other methods\n}\n```",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Constructors.",
-      "It is mainly a hardware replacement."
+      "Option 1",
+      "Option 2",
+      "Option 3",
+      "Both Option 1 and Option 2"
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "JAVA",
     "topic": "Constructors"
   },
@@ -6204,10 +6204,10 @@
     "id": 477,
     "question": "Which use of field initialization is most appropriate?",
     "options": [
-      "It helps solve problems related to Constructors.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "Assigning initial values to instance variables when an object is created.",
+      "An ordered collection interface that allows duplicates and positional access.",
+      "A constructor that receives arguments to initialize object state.",
+      "Defining multiple constructors with different parameter lists in one class."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6215,25 +6215,25 @@
   },
   {
     "id": 478,
-    "question": "What is the main purpose of object creation?",
+    "question": "What is the main purpose of object creation in Java?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Constructors.",
-      "It has no effect on readability or correctness."
+      "To reserve heap memory for an instance and initialize it through a constructor.",
+      "To convert every class into an interface automatically.",
+      "To copy bytecode into the JDK source directory.",
+      "To prevent methods from accessing instance fields."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 479,
-    "question": "Which statement best describes constructor return type rule in Object Oriented Programming with Java?",
+    "question": "Which statement best describes instance initialization in Java?",
     "options": [
-      "It is a core idea used in Constructors.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "It is the process of assigning initial state to an object through field initializers, blocks, and constructors.",
+      "It means turning all instance members into static members.",
+      "It happens only when the garbage collector runs.",
+      "It can occur only in abstract classes."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6709,12 +6709,12 @@
   },
   {
     "id": 516,
-    "question": "Consider the following abstract class: '''java abstract class Shape { int sides; abstract void draw(); void displaySides() { System.out.println(\"Number of sides: \" + sides); } } ''' Which of the following subclass definitions is correct?",
+    "question": "Consider the following abstract class: ```java\nabstract class Shape {\n  int sides;\nabstract void draw();\nvoid displaySides() {\n  System.out.println(\"Number of sides: \" + sides);\n}\n}\n``` Which of the following subclass definitions is correct?",
     "options": [
-      "'''java class Circle extends Shape { void draw() { System.out.println(\"Drawing a circle.\"); } } '''",
-      "'''java class Triangle extends Shape { void draw() { System.out.println(\"Drawing a triangle.\"); } void displaySides() { System.out.println(\"Number of sides: 3\"); } } '''",
-      "'''java class Square extends Shape { void displaySides() { System.out.println(\"Number of sides: 4\"); } } '''",
-      "'''java class Rectangle extends Shape { void draw() { System.out.println(\"Drawing a rectangle.\"); } } '''"
+      "```java\nclass Circle extends Shape {\n  void draw() {\n  System.out.println(\"Drawing a circle.\");\n}\n}\n```",
+      "```java\nclass Triangle extends Shape {\n  void draw() {\n  System.out.println(\"Drawing a triangle.\");\n} void displaySides() {\n  System.out.println(\"Number of sides: 3\");\n}\n}\n```",
+      "```java\nclass Square extends Shape {\n  void displaySides() {\n  System.out.println(\"Number of sides: 4\");\n}\n}\n```",
+      "```java\nclass Rectangle extends Shape {\n  void draw() {\n  System.out.println(\"Drawing a rectangle.\");\n}\n}\n```"
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6722,7 +6722,7 @@
   },
   {
     "id": 517,
-    "question": "What will be the output of the following code? '''java abstract class Animal { abstract void makeSound(); } class Dog extends Animal { void makeSound() { System.out.println(\"Dog barks.\"); } } class Cat extends Animal { void makeSound() { System.out.println(\"Cat meows.\"); } } public class Main { public static void main(String[] args) { Animal dog = new Dog(); Animal cat = new Cat(); dog.makeSound(); cat.makeSound(); } } '''",
+    "question": "What will be the output of the following code? ```java\nabstract class Animal {\n  abstract void makeSound();\n} class Dog extends Animal {\n  void makeSound() {\n  System.out.println(\"Dog barks.\");\n}\n} class Cat extends Animal {\n  void makeSound() {\n  System.out.println(\"Cat meows.\");\n}\n} public class Main {\n  public static void main(String[] args) {\n  Animal dog = new Dog();\nAnimal cat = new Cat();\ndog.makeSound();\ncat.makeSound();\n}\n}\n```",
     "options": [
       "\"Dog barks. Cat meows.\"",
       "\"Dog barks. Dog barks.\"",
@@ -6737,10 +6737,10 @@
     "id": 518,
     "question": "Which of the following is a valid way to declare and initialize an array of abstract class type in Java?",
     "options": [
-      "'''java Animal[] animals = new Animal[]; '''",
-      "'''java Animal[] animals = new Animal[5]; '''",
-      "'''java Animal[] animals = { new Dog(), new Cat() }; '''",
-      "'''java Animal[] animals = new Animal[5] { new Dog(), new Cat() }; '''"
+      "```java\nAnimal[] animals = new Animal[];\n```",
+      "```java\nAnimal[] animals = new Animal[5];\n```",
+      "```java\nAnimal[] animals = {\n  new Dog(), new Cat()\n};\n```",
+      "```java\nAnimal[] animals = new Animal[5] {\n  new Dog(), new Cat()\n};\n```"
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -6748,7 +6748,7 @@
   },
   {
     "id": 519,
-    "question": "Consider the following code: '''java abstract class Vehicle { abstract void start(); } class Car extends Vehicle { void start() { System.out.println(\"Car started.\"); } } class Bike extends Vehicle { void start() { System.out.println(\"Bike started.\"); } } public class Main { public static void main(String[] args) { Vehicle vehicle = new Car(); vehicle.start(); } } ''' What will be the output when the Main class is executed?",
+    "question": "Consider the following code: ```java\nabstract class Vehicle {\n  abstract void start();\n} class Car extends Vehicle {\n  void start() {\n  System.out.println(\"Car started.\");\n}\n} class Bike extends Vehicle {\n  void start() {\n  System.out.println(\"Bike started.\");\n}\n} public class Main {\n  public static void main(String[] args) {\n  Vehicle vehicle = new Car();\nvehicle.start();\n}\n}\n``` What will be the output when the Main class is executed?",
     "options": [
       "\"Car started.\"",
       "\"Bike started.\"",
@@ -6800,7 +6800,7 @@
   },
   {
     "id": 523,
-    "question": "Consider the following code: '''java class Animal { void makeSound() { System.out.println(\"Animal makes a sound\"); } } class Dog extends Animal { void makeSound() { System.out.println(\"Dog barks\"); } } class Cat extends Animal { void makeSound() { System.out.println(\"Cat meows\"); } } ''' What will happen when you try to compile and run the following code snippet? '''java Animal animal = new Dog(); Cat cat = (Cat) animal; cat.makeSound(); '''",
+    "question": "Consider the following code: ```java\nclass Animal {\n  void makeSound() {\n  System.out.println(\"Animal makes a sound\");\n}\n} class Dog extends Animal {\n  void makeSound() {\n  System.out.println(\"Dog barks\");\n}\n} class Cat extends Animal {\n  void makeSound() {\n  System.out.println(\"Cat meows\");\n}\n}\n``` What will happen when you try to compile and run the following code snippet? ```java\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\ncat.makeSound();\n```",
     "options": [
       "It will print \"Animal makes a sound.\"",
       "It will print \"Dog barks.\"",
@@ -6930,7 +6930,7 @@
   },
   {
     "id": 533,
-    "question": "MCQ (Coding): Which of the following statements correctly demonstrates an unchecked exception in Java? '''java // Option 1 int result = 10 / 0; // Option 2 String str = null; int length = str.length(); // Option 3 int[] arr = { 1, 2, 3 }; int value = arr[5]; '''",
+    "question": "MCQ (Coding): Which of the following statements correctly demonstrates an unchecked exception in Java? ```java\n// Option 1 int result = 10 / 0;\n// Option 2 String str = null;\nint length = str.length();\n// Option 3 int[] arr = {\n  1, 2, 3\n};\nint value = arr[5];\n```",
     "options": [
       "Option 1",
       "Option 2",
@@ -6982,7 +6982,7 @@
   },
   {
     "id": 537,
-    "question": "MCQ (Coding): What is the output of the following Java code snippet? '''java public void performOperation() throws IOException { // Some code that may throw an IOException } public static void main(String[] args) { try { performOperation(); System.out.println(\"Operation successful.\"); } catch (IOException e) { System.out.println(\"An error occurred: \" + e.getMessage()); } } '''",
+    "question": "MCQ (Coding): What is the output of the following Java code snippet? ```java\npublic void performOperation() throws IOException {\n  // Some code that may throw an IOException\n} public static void main(String[] args) {\n  try {\n  performOperation();\nSystem.out.println(\"Operation successful.\");\n} catch (IOException e) {\n  System.out.println(\"An error occurred: \" + e.getMessage());\n}\n}\n```",
     "options": [
       "Operation successful.",
       "An error occurred: (the error message)",
@@ -7008,7 +7008,7 @@
   },
   {
     "id": 539,
-    "question": "MCQ (Coding): What will happen if an exception is thrown from a method, and the method does not have a try-catch block to handle it? '''java public void methodA() { throw new RuntimeException(\"Exception in methodA\"); } public void methodB() { methodA(); } '''",
+    "question": "MCQ (Coding): What will happen if an exception is thrown from a method, and the method does not have a try-catch block to handle it? ```java\npublic void methodA() {\n  throw new RuntimeException(\"Exception in methodA\");\n} public void methodB() {\n  methodA();\n}\n```",
     "options": [
       "The program will terminate abruptly with an error message.",
       "The exception will be caught and handled by the JVM.",
@@ -7270,10 +7270,10 @@
     "id": 559,
     "question": "Which statement best describes List interface in Object Oriented Programming with Java?",
     "options": [
-      "It is a core idea used in Collections.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "An ordered collection interface that allows duplicates and positional access.",
+      "An unordered collection interface that does not allow duplicate elements.",
+      "A key-value mapping interface where each key must be unique.",
+      "A traversal object used to move through collection elements one by one."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -12416,12 +12416,12 @@
   },
   {
     "id": 955,
-    "question": "Which statement best describes greedy choice in Algorithms and Data Structures Using Java?",
+    "question": "The \"Merge Sort\" algorithm is an example of which technique?",
     "options": [
-      "It is a core idea used in Greedy & Divide and Conquer.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "Divide and Conquer algorithm",
+      "Greedy algorithm",
+      "Dynamic Programming algorithm",
+      "Brute force algorithm"
     ],
     "answer": 0,
     "subject": "DSA",
@@ -12429,12 +12429,12 @@
   },
   {
     "id": 956,
-    "question": "When working with local optimum, which option is correct?",
+    "question": "Merge Sort has a time complexity of O(n log n). What does this mean?",
     "options": [
-      "It guarantees every program runs in constant time.",
-      "It can only be used inside comments.",
-      "It supports the behavior expected in Greedy & Divide and Conquer.",
-      "It is mainly a hardware replacement."
+      "The algorithm always performs n log n operations.",
+      "The algorithm is most efficient for small input sizes.",
+      "The algorithm's performance grows at a linear rate with the input size.",
+      "The algorithm's performance grows at a logarithmic rate with the input size."
     ],
     "answer": 2,
     "subject": "DSA",
@@ -12444,10 +12444,10 @@
     "id": 957,
     "question": "Which use of global optimum is most appropriate?",
     "options": [
-      "It helps solve problems related to Greedy & Divide and Conquer.",
-      "It prevents all syntax errors automatically.",
-      "It is valid only when no data is stored.",
-      "It disables normal control flow."
+      "The best overall solution among all feasible solutions to the problem.",
+      "The best immediate choice made at a single step of a greedy algorithm.",
+      "A greedy problem of selecting the maximum number of non-overlapping activities.",
+      "A greedy problem where fractions of items may be taken to maximize value."
     ],
     "answer": 0,
     "subject": "DSA",
@@ -12457,12 +12457,12 @@
     "id": 958,
     "question": "What is the main purpose of activity selection?",
     "options": [
-      "It is used only to make code longer.",
-      "It works only without variables.",
-      "It is applied to improve correctness or organization in Greedy & Divide and Conquer.",
-      "It has no effect on readability or correctness."
+      "A greedy problem of selecting the maximum number of non-overlapping activities.",
+      "The best overall solution among all feasible solutions to the problem.",
+      "A method that always explores every possible schedule by brute force only.",
+      "A greedy problem where fractions of items may be taken to maximize value."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DSA",
     "topic": "Greedy & Divide and Conquer"
   },
@@ -12470,10 +12470,10 @@
     "id": 959,
     "question": "Which statement best describes fractional knapsack in Algorithms and Data Structures Using Java?",
     "options": [
-      "It is a core idea used in Greedy & Divide and Conquer.",
-      "It is used only for changing font colors.",
-      "It always removes the need for testing.",
-      "It is unrelated to program design."
+      "A greedy problem where fractions of items may be taken to maximize value.",
+      "A dynamic-programming problem that forbids taking partial items.",
+      "The best overall solution among all feasible solutions to the problem.",
+      "A greedy problem of selecting the maximum number of non-overlapping activities."
     ],
     "answer": 0,
     "subject": "DSA",

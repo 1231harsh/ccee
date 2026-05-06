@@ -149,7 +149,7 @@ function TestPage({ session, onCancel, onComplete }) {
           </div>
         </div>
 
-        <p className="question-text">{currentQuestion.question}</p>
+        <div className="question-text">{renderRichText(currentQuestion.question)}</div>
 
         <div className="question-tools">
           <p className="muted answer-status">
@@ -186,7 +186,7 @@ function TestPage({ session, onCancel, onComplete }) {
                 type="button"
               >
                 <span className="option-badge">{String.fromCharCode(65 + optionIndex)}</span>
-                <span>{option}</span>
+                <span className="option-content">{renderRichText(option)}</span>
               </button>
             );
           })}
@@ -220,6 +220,45 @@ function TestPage({ session, onCancel, onComplete }) {
       </section>
     </main>
   );
+}
+
+function renderRichText(text) {
+  const value = String(text ?? "");
+  const regex = /```(\w+)?\n?([\s\S]*?)```/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(value)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(
+        <span className="rich-text" key={`text-${lastIndex}`}>
+          {value.slice(lastIndex, match.index)}
+        </span>
+      );
+    }
+
+    parts.push(
+      <pre className="question-code" key={`code-${match.index}`}>
+        <code>{match[2].trim()}</code>
+      </pre>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (!parts.length) {
+    return <span className="rich-text">{value}</span>;
+  }
+
+  if (lastIndex < value.length) {
+    parts.push(
+      <span className="rich-text" key={`text-${lastIndex}`}>
+        {value.slice(lastIndex)}
+      </span>
+    );
+  }
+
+  return parts;
 }
 
 export default TestPage;

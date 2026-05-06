@@ -66,7 +66,9 @@ public class ExamController {
 
         String username = jwtUtil.extractUsername(token.replace("Bearer ", ""));
 
-        return testAttemptRepository.findByUserIdOrderByTimestampAsc(username);
+        return questionService.hydrateAttemptReviews(
+                testAttemptRepository.findByUserIdOrderByTimestampAsc(username)
+        );
     }
 
     @GetMapping("/analysis-summary")

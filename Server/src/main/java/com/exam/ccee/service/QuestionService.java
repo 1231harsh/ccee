@@ -255,16 +255,39 @@ public class QuestionService {
         return result;
     }
 
+    public List<TestAttempt> hydrateAttemptReviews(List<TestAttempt> attempts) {
+        Map<Integer, Question> questionsById = questions.stream()
+                .collect(Collectors.toMap(question -> question.id, question -> question, (left, right) -> left));
+
+        for (TestAttempt attempt : attempts) {
+            if (attempt.getQuestionReviews() == null) {
+                continue;
+            }
+
+            for (AttemptQuestionReview review : attempt.getQuestionReviews()) {
+                Question question = questionsById.get(review.getQuestionId());
+                if (question == null) {
+                    continue;
+                }
+
+                review.setQuestionText(question.question);
+                review.setSubject(question.subject);
+                review.setTopic(question.topic);
+                review.setSelectedAnswer(getOptionText(question, review.getSelectedOption()));
+                review.setCorrectAnswer(getOptionText(question, review.getCorrectOption()));
+            }
+        }
+
+        return attempts;
+    }
+
     private AttemptQuestionReview toQuestionReview(Question question, Integer selectedOption, boolean correct) {
         AttemptQuestionReview review = new AttemptQuestionReview();
         review.setQuestionId(question.id);
-        review.setQuestionText(question.question);
         review.setSubject(question.subject);
         review.setTopic(question.topic);
         review.setSelectedOption(selectedOption);
-        review.setSelectedAnswer(getOptionText(question, selectedOption));
         review.setCorrectOption(question.answer);
-        review.setCorrectAnswer(getOptionText(question, question.answer));
         review.setCorrect(correct);
         return review;
     }
