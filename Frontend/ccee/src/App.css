@@ -176,7 +176,8 @@ body {
 .subject-code,
 .subject-pill,
 .option-badge,
-.question-chip {
+.question-chip,
+.subject-filter {
   align-items: center;
   display: inline-flex;
   justify-content: center;
@@ -465,6 +466,28 @@ body {
   grid-template-columns: 1fr 1.4fr;
 }
 
+.subject-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subject-filter {
+  background: #edf3f8;
+  border: none;
+  border-radius: 999px;
+  color: #56708a;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.subject-filter.is-active {
+  background: linear-gradient(135deg, #15803d, #0f766e);
+  box-shadow: 0 12px 24px rgba(15, 118, 110, 0.18);
+  color: #fff;
+}
+
 .attempt-meta {
   align-items: flex-end;
   color: #56708a;
@@ -537,6 +560,10 @@ body {
 .review-answer.is-wrong {
   background: #fff0f0;
   color: #b42318;
+}
+
+.insight-meta {
+  margin: 6px 0 0;
 }
 
 .empty-state {

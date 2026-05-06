@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface TestAttemptRepository extends JpaRepository<TestAttempt, Long> {
 
-    List<TestAttempt> findByUserId(String userId);
+    List<TestAttempt> findByUserIdOrderByTimestampAsc(String userId);
 
 }
