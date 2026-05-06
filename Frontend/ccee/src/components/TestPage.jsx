@@ -26,6 +26,8 @@ function TestPage({ session, onCancel, onComplete }) {
     return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   }, [timeLeft]);
 
+  const currentAnswer = answers[currentQuestion?.id];
+
   const handleSubmit = useCallback(async (reason = "manual") => {
     setSubmitting(true);
     setError("");
@@ -148,6 +150,28 @@ function TestPage({ session, onCancel, onComplete }) {
         </div>
 
         <p className="question-text">{currentQuestion.question}</p>
+
+        <div className="question-tools">
+          <p className="muted answer-status">
+            {currentAnswer === undefined
+              ? "No option selected for this question yet."
+              : `Selected option ${String.fromCharCode(65 + currentAnswer)}.`}
+          </p>
+          <button
+            className="button button-secondary"
+            disabled={currentAnswer === undefined}
+            onClick={() =>
+              setAnswers((prev) => {
+                const next = { ...prev };
+                delete next[currentQuestion.id];
+                return next;
+              })
+            }
+            type="button"
+          >
+            Clear Selection
+          </button>
+        </div>
 
         <div className="options-list">
           {currentQuestion.options.map((option, optionIndex) => {

@@ -371,6 +371,19 @@ body {
   margin: 24px 0 20px;
 }
 
+.question-tools {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.answer-status {
+  margin: 0;
+}
+
 .options-list,
 .insight-list,
 .attempt-list {
@@ -550,6 +563,11 @@ body {
   .auth-hero,
   .auth-panel {
     padding: 18px;
+  }
+
+  .question-tools {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .question-grid {
