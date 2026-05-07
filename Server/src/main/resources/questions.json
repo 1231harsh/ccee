@@ -1,38 +1,38 @@
 [
   {
     "id": 0,
-    "question": "'for' loop in C++",
+    "question": "Which statement about the C++ for loop is correct?",
     "options": [
-      "all parameters of a for loop are to be specified.",
-      "the initialization part is compulsory.",
-      "if test expression is omitted then the value 'false' is used instead.",
-      "all parameters of a 'for' loop are optional."
+      "All three expressions are mandatory.",
+      "Only the condition expression is mandatory.",
+      "All three expressions are optional.",
+      "A for loop cannot be nested."
     ],
-    "answer": 3,
+    "answer": 2,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 1,
-    "question": "In the array representation of circular queue when we can say that queue is full ?",
+    "question": "Which header is typically included to use std::cout and std::cin in modern C++?",
     "options": [
-      "Front = Rear.",
-      "Front = Rear - 1.",
-      "Rear = Front ? 1.",
-      "Can?t say."
+      "<stdio.h>",
+      "<iostream>",
+      "<fstream>",
+      "<iomanip>"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 2,
-    "question": "Which is False ?",
+    "question": "What is the correct return type of main in a hosted C++ program?",
     "options": [
-      "Multilevel inheritance happens when a derived class becomes a base class",
-      "Hierarchical inheritance leads to multiple derived classes from a base class",
-      "A derived class can not be used as a base class",
-      "Hybrid inheritance is a special case of multiple inheritance"
+      "void",
+      "main",
+      "int",
+      "auto"
     ],
     "answer": 2,
     "subject": "CPP",
@@ -40,77 +40,77 @@
   },
   {
     "id": 3,
-    "question": "A _____ is a function that invokes itself repeatedly",
+    "question": "What does the break statement do inside a loop?",
     "options": [
-      "inline",
-      "virtual",
-      "constructor",
-      "recursion"
+      "Skips the current iteration only",
+      "Terminates the nearest enclosing loop",
+      "Restarts the loop from the beginning",
+      "Exits the entire program"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 4,
-    "question": "Which is false?",
+    "question": "What does the continue statement do inside a loop?",
     "options": [
-      "Default constructor doesnot contain any arguments",
-      "a constructor must be a public member",
-      "a parameterized constructor must not return anything",
-      "a dynamic constructor doesnot make any DMA calls"
+      "Ends the loop immediately",
+      "Skips the rest of the current iteration",
+      "Pauses the loop until input is given",
+      "Transfers control to a function"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 5,
-    "question": "Which is false",
+    "question": "Which loop is guaranteed to execute its body at least once?",
     "options": [
-      "A destructor doesnot take any argument",
-      "A destructor must be a public member",
-      "A destructor must not return anything",
-      "A destructor needs to be invoked explicitly"
-    ],
-    "answer": 3,
-    "subject": "CPP",
-    "topic": "Structure of C++ Programs"
-  },
-  {
-    "id": 6,
-    "question": "What will be the C++ output of the following code #include < iostrem.h > int tt=1; main() { bool tt=false; { tt=1; } cout << tt; return(0); }",
-    "options": [
-      "0",
-      "false",
-      "true",
-      "1"
-    ],
-    "answer": 3,
-    "subject": "CPP",
-    "topic": "Structure of C++ Programs"
-  },
-  {
-    "id": 7,
-    "question": "what will be the c++ output of the following code... int x1=1000.2500; main() { int x1=1110; x1=1100.35; cout << (::x1)+x1; }",
-    "options": [
-      "2101",
-      "2111",
-      "2100",
-      "compilation error"
+      "for",
+      "while",
+      "do-while",
+      "range-for"
     ],
     "answer": 2,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
-    "id": 8,
-    "question": "What will be the output? int a=10; do { ; cout << \"hello\"; }while(a < 10);",
+    "id": 6,
+    "question": "Which operator is used for scope resolution in C++?",
     "options": [
-      "Compiler Error",
-      "hello",
-      "Endless loop",
-      "Nothing will be displayed"
+      ".",
+      "::",
+      "->",
+      "?:"
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Structure of C++ Programs"
+  },
+  {
+    "id": 7,
+    "question": "What is the purpose of the using namespace std; directive?",
+    "options": [
+      "It creates a new namespace named std.",
+      "It imports names from the std namespace into the current scope.",
+      "It enables dynamic memory allocation.",
+      "It is required before every function definition."
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Structure of C++ Programs"
+  },
+  {
+    "id": 8,
+    "question": "Which statement about variables with block scope is correct?",
+    "options": [
+      "They can be accessed from any file in the project.",
+      "They are visible only inside the block where they are declared.",
+      "They must be declared with the static keyword.",
+      "They are stored only in heap memory."
     ],
     "answer": 1,
     "subject": "CPP",
@@ -118,25 +118,25 @@
   },
   {
     "id": 9,
-    "question": "Q What will be the output of the following code #include < iostream.h > main() { bool tt = true; { float tt = 23.45; ::tt = tt - 20.45; } cout < < tt; return(0); }",
+    "question": "Which of the following is a valid bool literal in C++?",
     "options": [
-      "0",
-      "compilation error",
-      "3",
-      "1"
+      "TRUE",
+      "False",
+      "bool",
+      "true"
     ],
-    "answer": 1,
+    "answer": 3,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 10,
-    "question": "What will be the C++ output of the following code #include < iostream.h > int fooling(int i,int &j,int k) { return (i=j=(++k)--); } void fooling_result(int i) { cout << i; } main() { int j=3; int x=fooling(1,j,4); fooling_result(x); return (0); }",
+    "question": "What is the value of the expression 7 % 3 in C++?",
     "options": [
-      "5",
+      "1",
+      "2",
       "3",
-      "4",
-      "compilation error"
+      "4"
     ],
     "answer": 0,
     "subject": "CPP",
@@ -144,25 +144,25 @@
   },
   {
     "id": 11,
-    "question": "what will be the c++ output of following code float x1=1000.30; { float x1=1110; x1=1100.36; cout<<((::x1)+x1)/3; }",
+    "question": "Which statement about switch is correct?",
     "options": [
-      "700.00",
-      "700.12",
-      "700.22",
-      "compile error"
+      "switch works only with floating-point expressions.",
+      "Each case label must be a constant expression.",
+      "default is mandatory.",
+      "break cannot be used inside switch."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 12,
-    "question": "the output of a linker is",
+    "question": "Which tool combines object files and libraries into an executable program?",
     "options": [
-      "an object file",
-      "assemblt language(binary)output",
-      "an executable file",
-      "none of the above"
+      "Preprocessor",
+      "Compiler",
+      "Linker",
+      "Debugger"
     ],
     "answer": 2,
     "subject": "CPP",
@@ -170,25 +170,25 @@
   },
   {
     "id": 13,
-    "question": "Detect the true statement pretaining to Constant",
+    "question": "What does the preprocessor do before compilation?",
     "options": [
-      "Integer Constant should not contain a decimal point",
-      "A Decimal integer constant can not start with a leading zero.",
-      "By default,Hexa-decimal integer Constant can be positive",
-      "All of the above"
+      "Executes the program",
+      "Expands directives such as #include and #define",
+      "Allocates heap memory",
+      "Links object files"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 14,
-    "question": "what will be the c++ output of the following code? cout << \"Testing\" << o36;",
+    "question": "Which statement correctly describes a const variable?",
     "options": [
-      "Testing036",
-      "Testing30",
-      "compilation error",
-      "Testing36"
+      "It must be initialized only at run time.",
+      "Its value cannot be changed after initialization.",
+      "It is always stored in register memory.",
+      "It can never be passed to a function."
     ],
     "answer": 1,
     "subject": "CPP",
@@ -196,12 +196,12 @@
   },
   {
     "id": 15,
-    "question": "C++ name was suggested by",
+    "question": "What is printed by this code? int x = 5; if (x > 3) cout << \"Yes\"; else cout << \"No\";",
     "options": [
-      "Rrick Mascitti",
-      "Bjarne Stroustrup",
-      "Donald Knuth",
-      "Ken Thompson"
+      "Yes",
+      "No",
+      "5",
+      "Compilation error"
     ],
     "answer": 0,
     "subject": "CPP",
@@ -209,53 +209,53 @@
   },
   {
     "id": 16,
-    "question": "The input act of cin gets terminated by",
+    "question": "Which statement about references in C++ is correct?",
     "options": [
-      "an space",
-      "an enter kay",
-      "both 1 & 2",
-      "none of the above"
+      "A reference can be left uninitialized.",
+      "A reference is another name for an existing object.",
+      "A reference always stores a null value by default.",
+      "A reference can be reseated to refer to another object later."
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Structure of C++ Programs"
+  },
+  {
+    "id": 17,
+    "question": "What is the output of cout << (5 < 3); assuming default formatting?",
+    "options": [
+      "true",
+      "false",
+      "0",
+      "1"
     ],
     "answer": 2,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
-    "id": 17,
-    "question": "A derivered class",
-    "options": [
-      "contain base class as well as its own features.",
-      "contain its own feature.",
-      "contain the base class feature.",
-      "none of above."
-    ],
-    "answer": 0,
-    "subject": "CPP",
-    "topic": "Structure of C++ Programs"
-  },
-  {
     "id": 18,
-    "question": "Find the odd one out",
+    "question": "Which of the following is a valid single-line comment in C++?",
     "options": [
-      "stack",
-      "arrays.",
-      "Linked list.",
-      "functions."
+      "/* comment */",
+      "# comment",
+      "// comment",
+      "<!-- comment -->"
     ],
-    "answer": 3,
+    "answer": 2,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
   {
     "id": 19,
-    "question": "Auto variable are stored in computer memory knows as",
+    "question": "What is the default flow of execution for statements in a C++ program?",
     "options": [
-      "new memory",
-      "stack",
-      "volatile address",
-      "indecent memory"
+      "Bottom to top",
+      "Random order",
+      "Top to bottom",
+      "Right to left"
     ],
-    "answer": 1,
+    "answer": 2,
     "subject": "CPP",
     "topic": "Structure of C++ Programs"
   },
@@ -1821,38 +1821,38 @@
   },
   {
     "id": 140,
-    "question": "What must you do to access CTriangle::SetAngles() using the base-class pointer?",
+    "question": "What is the Standard Template Library (STL) in C++?",
     "options": [
-      "Assign NULL or 0 to the base-class pointer.",
-      "Declare the base-class pointer as a virtual pointer.",
-      "Temporarily cast the base-class pointer as a CTriangle pointer.",
-      "There is no way to do this."
+      "A library only for file handling",
+      "A collection of generic containers, iterators, algorithms, and function objects",
+      "A graphics library for games",
+      "A debugger bundled with the compiler"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
     "id": 141,
-    "question": "What advantages do linked lists have over fixed arrays?? i)You do not need to declare the size of a linked list before compilation? ii)Linked lists do not need to be stored in contiguous memory? iii)Linked lists can be accessed using pointer arithmetic? iv)A linked list reduces memory waste",
+    "question": "Which STL container stores elements in contiguous memory and supports fast random access?",
     "options": [
-      "i,ii and iv.",
-      "i,ii,iii and iv.",
-      "i, ii and iii.",
-      "i and iii."
+      "std::list",
+      "std::vector",
+      "std::map",
+      "std::set"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
     "id": 142,
-    "question": "What will be the c++ output of the following code int x1=044; { cout << setprecision(6); cout << setiosflags(ios::showpos); cout << setiosflags(ios::showpoint); cout << setiosflags(ios::fixed); cout << setfill(*); cout << setiosflags(ios::oct); cout << setiosflags(ios::internal); cout << setw(8) << int (x1); }",
+    "question": "Which STL container stores unique keys in sorted order?",
     "options": [
-      "+*****54",
-      "******54",
-      "******44",
-      "54"
+      "std::queue",
+      "std::vector",
+      "std::set",
+      "std::stack"
     ],
     "answer": 2,
     "subject": "CPP",
@@ -1860,25 +1860,25 @@
   },
   {
     "id": 143,
-    "question": "A doubly linked list keeps track of the next node in the list, as well as",
+    "question": "Which STL container stores key-value pairs with unique keys in sorted order?",
     "options": [
-      "itself",
-      "the head node",
-      "the tail node",
-      "the previous node"
+      "std::map",
+      "std::deque",
+      "std::array",
+      "std::forward_list"
     ],
-    "answer": 3,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
     "id": 144,
-    "question": "The advantage a linked list has over the vector is",
+    "question": "Which member function adds an element to the end of a std::vector?",
     "options": [
-      "A linked list can dynamically shrinks or grows,and a vector cannot",
-      "A linked list is smaller than a vector",
-      "A node can be inserted into or removed from a linked list faster than from a vector",
-      "Data removal and insertion are more accurate with a linked list than with a vector"
+      "append()",
+      "push()",
+      "push_back()",
+      "insert_end()"
     ],
     "answer": 2,
     "subject": "CPP",
@@ -1886,12 +1886,12 @@
   },
   {
     "id": 145,
-    "question": "The ___________ of a linked list points to the first node in the list.",
+    "question": "What does begin() return for an STL container?",
     "options": [
-      "Starter",
-      "Head",
-      "Tail",
-      "Declaration"
+      "The number of elements",
+      "An iterator to the first element",
+      "A copy of the first element",
+      "An iterator to the last element"
     ],
     "answer": 1,
     "subject": "CPP",
@@ -1899,12 +1899,12 @@
   },
   {
     "id": 146,
-    "question": "A _________ is used to travel through a linked list and search for data",
+    "question": "Which STL algorithm is commonly used to sort a range of elements?",
     "options": [
-      "Node",
-      "Pointer",
-      "Null",
-      "Traversal operator"
+      "find()",
+      "sort()",
+      "count()",
+      "merge()"
     ],
     "answer": 1,
     "subject": "CPP",
@@ -1912,155 +1912,155 @@
   },
   {
     "id": 147,
-    "question": "A map in C++ is",
+    "question": "Which header is commonly included to use STL algorithms such as sort and find?",
     "options": [
-      "container of pair of values",
-      "representation of programming country",
-      "graphical function of C++",
-      "none of the above"
+      "<string>",
+      "<algorithm>",
+      "<iterator>",
+      "<memory>"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
     "id": 148,
-    "question": "When traversing a linked list, the pointer to the current node is generally initialized to the memory address of the ______.",
+    "question": "What is an iterator in the STL?",
     "options": [
-      "Last node.",
-      "Sought node.",
-      "Head",
-      "It can be anywhere in the list."
+      "A special kind of class constructor",
+      "An object used to traverse elements in a container",
+      "A function that automatically sorts containers",
+      "A macro used for templates"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
     "id": 149,
-    "question": "A _____ is a linear list in which additions and deletions always take place at the same end",
+    "question": "Which container adapter follows the Last-In, First-Out (LIFO) rule?",
     "options": [
-      "stack",
-      "queue",
-      "linkedlist",
-      "none"
+      "std::queue",
+      "std::priority_queue",
+      "std::stack",
+      "std::set"
     ],
-    "answer": 0,
+    "answer": 2,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
     "id": 150,
-    "question": "what will be the output of the following code? float x1=111.1234567; { cout << setprecision(8); cout << setiosflags(ios::showpos); cout << setiosflags(ios::showpoint); cout << setiosflags(ios::fixed); cout << setfill(*); cout << setiosflags(ios::internal); cout << setw(15) << (int x1); }",
+    "question": "Which container adapter follows the First-In, First-Out (FIFO) rule?",
     "options": [
-      "+111.12346*****",
-      "*****+111.12346",
-      "*****111.12346",
-      "**111.1234567"
-    ],
-    "answer": 2,
-    "subject": "CPP",
-    "topic": "Standard Template Library"
-  },
-  {
-    "id": 151,
-    "question": "Which feature of C++ you will use for creating a reusable linked list",
-    "options": [
-      "metaclasses",
-      "instantiation",
-      "templates",
-      "All of the above"
-    ],
-    "answer": 3,
-    "subject": "CPP",
-    "topic": "Standard Template Library"
-  },
-  {
-    "id": 152,
-    "question": "The algorithms provided by the STL are implementd as_____________'and perform various operations on elements of containers",
-    "options": [
-      "Virtual functions",
-      "function templates",
-      "global variables",
-      "private data members"
-    ],
-    "answer": 1,
-    "subject": "CPP",
-    "topic": "Standard Template Library"
-  },
-  {
-    "id": 153,
-    "question": "To append a node to a list means to__________.",
-    "options": [
-      "Delete a node from the begining of the list",
-      "delete a node from the end of the list",
-      "Add a node to the begining of the list",
-      "Add a node to the end of the list"
-    ],
-    "answer": 3,
-    "subject": "CPP",
-    "topic": "Standard Template Library"
-  },
-  {
-    "id": 154,
-    "question": "In a linked list",
-    "options": [
-      "the links are stored in an array",
-      "each link contains data or pointer to data",
-      "an array of pointers points to links",
-      "each link contains a pointer to the next link"
-    ],
-    "answer": 1,
-    "subject": "CPP",
-    "topic": "Standard Template Library"
-  },
-  {
-    "id": 155,
-    "question": "Variation of the singly-linked list are",
-    "options": [
-      "Doubly-linked list",
-      "circular linked list",
-      "backword linked list",
-      "a and b"
-    ],
-    "answer": 3,
-    "subject": "CPP",
-    "topic": "Standard Template Library"
-  },
-  {
-    "id": 156,
-    "question": "In case of linked lists",
-    "options": [
-      "every linked node has a pointer to the next link node",
-      "links have array of pointer to next link",
-      "array are used to hold the list",
-      "all of the above"
+      "std::queue",
+      "std::stack",
+      "std::set",
+      "std::vector"
     ],
     "answer": 0,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
-    "id": 157,
-    "question": "To set object values which is more efficient",
+    "id": 151,
+    "question": "Which STL container is typically preferred for frequent insertion and deletion at both ends?",
     "options": [
-      "assignment",
-      "use of = operator",
-      "initialization",
-      "any of the above"
+      "std::map",
+      "std::deque",
+      "std::set",
+      "std::array"
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Standard Template Library"
+  },
+  {
+    "id": 152,
+    "question": "Which function returns the number of elements currently stored in a container?",
+    "options": [
+      "length()",
+      "count()",
+      "size()",
+      "capacity()"
     ],
     "answer": 2,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
   {
-    "id": 158,
-    "question": "The __________ is a binary tree is similar to the head pointer in a linked list .",
+    "id": 153,
+    "question": "Which container member function removes all elements from the container?",
     "options": [
-      "root pointer",
-      "leaf pointer",
-      "null pointer",
-      "binary pointer"
+      "erase_all()",
+      "reset()",
+      "clear()",
+      "delete()"
+    ],
+    "answer": 2,
+    "subject": "CPP",
+    "topic": "Standard Template Library"
+  },
+  {
+    "id": 154,
+    "question": "Which statement about std::array is correct?",
+    "options": [
+      "Its size can grow dynamically at run time.",
+      "It stores elements on disk.",
+      "Its size is fixed at compile time.",
+      "It cannot be used with STL algorithms."
+    ],
+    "answer": 2,
+    "subject": "CPP",
+    "topic": "Standard Template Library"
+  },
+  {
+    "id": 155,
+    "question": "Which algorithm is used to search for a value in a range and returns an iterator to the match?",
+    "options": [
+      "sort",
+      "find",
+      "copy",
+      "reverse"
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Standard Template Library"
+  },
+  {
+    "id": 156,
+    "question": "Which statement about std::unordered_map is correct?",
+    "options": [
+      "It stores keys in sorted order.",
+      "It usually provides average-case constant-time lookup.",
+      "It does not allow key-value pairs.",
+      "It is a container adapter."
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Standard Template Library"
+  },
+  {
+    "id": 157,
+    "question": "What is the main advantage of using generic STL algorithms?",
+    "options": [
+      "They work only with vectors.",
+      "They can operate on different containers through iterators.",
+      "They automatically allocate heap memory.",
+      "They replace all loops in C++."
+    ],
+    "answer": 1,
+    "subject": "CPP",
+    "topic": "Standard Template Library"
+  },
+  {
+    "id": 158,
+    "question": "Which container would you typically use to maintain elements in sorted order while allowing duplicates?",
+    "options": [
+      "std::multiset",
+      "std::queue",
+      "std::vector",
+      "std::stack"
     ],
     "answer": 0,
     "subject": "CPP",
@@ -2068,14 +2068,14 @@
   },
   {
     "id": 159,
-    "question": "A Binary tree is a non linear linked list where each node may point to _______ other nodes.",
+    "question": "What does end() return for a standard STL container?",
     "options": [
-      "no",
-      "one",
-      "two",
-      "All of these"
+      "An iterator to the last element",
+      "An iterator one past the last element",
+      "The index of the last element",
+      "A null iterator"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "CPP",
     "topic": "Standard Template Library"
   },
@@ -2991,25 +2991,25 @@
   },
   {
     "id": 230,
-    "question": "Which normal form ensures that each attribute in a table is dependent only on the primary key and not on any other non-key attributes?",
+    "question": "Which normal form ensures that no non-key attribute depends transitively on the primary key?",
     "options": [
       "First Normal Form (1NF)",
       "Second Normal Form (2NF)",
       "Third Normal Form (3NF)",
       "Boyce-Codd Normal Form (BCNF)"
     ],
-    "answer": 0,
+    "answer": 2,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
   {
     "id": 231,
-    "question": "Which normal form requires that every non-key attribute should be fully functionally dependent on the primary key?",
+    "question": "Which normal form requires every non-key attribute to be fully functionally dependent on the whole primary key?",
     "options": [
       "First Normal Form (1NF)",
       "Second Normal Form (2NF)",
       "Third Normal Form (3NF)",
-      "Boyce-Codd Normal Form (BCNF)"
+      "Fifth Normal Form (5NF)"
     ],
     "answer": 1,
     "subject": "DBMS",
@@ -3017,25 +3017,25 @@
   },
   {
     "id": 232,
-    "question": "Which normal form deals with multi-valued dependencies between non-key attributes?",
+    "question": "Which normal form specifically addresses multivalued dependencies?",
     "options": [
-      "First Normal Form (1NF)",
       "Second Normal Form (2NF)",
       "Third Normal Form (3NF)",
-      "Fourth Normal Form (4NF)"
+      "Fourth Normal Form (4NF)",
+      "Fifth Normal Form (5NF)"
     ],
-    "answer": 3,
+    "answer": 2,
     "subject": "DBMS",
     "topic": "ER Modeling"
   },
   {
     "id": 233,
-    "question": "What is the main purpose of multivalued attribute?",
+    "question": "What is a multivalued attribute in ER modeling?",
     "options": [
-      "An attribute that can store multiple values for a single entity occurrence.",
-      "An attribute whose value can be computed from other stored attributes.",
-      "An entity type that depends on another entity for identification.",
-      "A relationship that connects a weak entity to its owner entity for identification."
+      "An attribute that can hold several values for a single entity instance.",
+      "An attribute whose value is derived from other attributes.",
+      "An attribute that must always be part of the primary key.",
+      "An attribute used only in weak entities."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3043,12 +3043,12 @@
   },
   {
     "id": 234,
-    "question": "Which statement best describes derived attribute in Database Technologies?",
+    "question": "What is a derived attribute in ER modeling?",
     "options": [
-      "An attribute whose value can be computed from other stored attributes.",
-      "An attribute that can store multiple values for a single entity occurrence.",
-      "An entity type that depends on another entity for identification.",
-      "A relationship that connects a weak entity to its owner entity for identification."
+      "An attribute whose value is computed from other stored attributes.",
+      "An attribute that stores multiple values in one row.",
+      "An attribute that uniquely identifies weak entities only.",
+      "An attribute that cannot be shown in an ER diagram."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3056,12 +3056,12 @@
   },
   {
     "id": 235,
-    "question": "When working with weak entity, which option is correct?",
+    "question": "What best describes a weak entity?",
     "options": [
-      "An entity type that depends on another entity for identification.",
-      "An attribute that can store multiple values for a single entity occurrence.",
-      "An attribute whose value can be computed from other stored attributes.",
-      "A relationship that connects a weak entity to its owner entity for identification."
+      "An entity that cannot be uniquely identified without a related owner entity.",
+      "An entity with no attributes except a primary key.",
+      "An entity that participates only in one-to-one relationships.",
+      "An entity that stores derived attributes only."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3069,12 +3069,12 @@
   },
   {
     "id": 236,
-    "question": "Which use of identifying relationship is most appropriate?",
+    "question": "What is an identifying relationship in ER modeling?",
     "options": [
-      "A relationship that connects a weak entity to its owner entity for identification.",
-      "An attribute that can store multiple values for a single entity occurrence.",
-      "An attribute whose value can be computed from other stored attributes.",
-      "An entity type that depends on another entity for identification."
+      "A relationship that helps uniquely identify a weak entity through its owner.",
+      "A relationship used only between two strong entities.",
+      "A relationship that converts a one-to-many mapping into many-to-many.",
+      "A relationship that contains only derived attributes."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3082,12 +3082,12 @@
   },
   {
     "id": 237,
-    "question": "What is the main purpose of one-to-one relationship?",
+    "question": "What is a one-to-one relationship?",
     "options": [
-      "A relationship where each entity on both sides is associated with at most one entity on the other side.",
-      "An attribute that can store multiple values for a single entity occurrence.",
-      "An attribute whose value can be computed from other stored attributes.",
-      "An entity type that depends on another entity for identification."
+      "Each entity instance on either side can be related to at most one instance on the other side.",
+      "One entity can relate to many instances, but only in one direction.",
+      "Both entities can relate to many instances on the opposite side.",
+      "A relationship that must always involve a weak entity."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3095,12 +3095,12 @@
   },
   {
     "id": 238,
-    "question": "Which statement best describes one-to-many relationship in Database Technologies?",
+    "question": "What is a one-to-many relationship?",
     "options": [
-      "A relationship where one entity can be associated with many entities on the other side.",
-      "An attribute that can store multiple values for a single entity occurrence.",
-      "An attribute whose value can be computed from other stored attributes.",
-      "An entity type that depends on another entity for identification."
+      "One entity instance can be related to many instances of another entity, while each of those points back to one.",
+      "Each entity instance can relate to at most one instance on the other side.",
+      "Both entity sets can relate to many instances of each other.",
+      "A relationship used only when no foreign key exists."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3108,12 +3108,12 @@
   },
   {
     "id": 239,
-    "question": "When working with many-to-many relationship, which option is correct?",
+    "question": "What is a many-to-many relationship?",
     "options": [
-      "A relationship where entities on both sides can associate with many entities on the other side.",
-      "An attribute that can store multiple values for a single entity occurrence.",
-      "An attribute whose value can be computed from other stored attributes.",
-      "An entity type that depends on another entity for identification."
+      "Instances on both sides may be associated with multiple instances on the other side.",
+      "A relationship where exactly one side contains optional participation.",
+      "A relationship between only weak entities.",
+      "A relationship that cannot be implemented in a relational schema."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -3394,11 +3394,11 @@
   },
   {
     "id": 261,
-    "question": "Which normal form deals with the elimination of join dependencies between multi -valued attributes?",
+    "question": "Which normal form removes join dependencies that are not implied by candidate keys?",
     "options": [
-      "First Normal Form (1NF)",
-      "Second Normal Form (2NF)",
       "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)",
+      "Fourth Normal Form (4NF)",
       "Fifth Normal Form (5NF)"
     ],
     "answer": 3,
@@ -3524,12 +3524,12 @@
   },
   {
     "id": 271,
-    "question": "In an outer join, the non-matching rows have NULL values in the columns from which table?",
+    "question": "In a LEFT OUTER JOIN, rows from the left table with no match in the right table are returned with what in the right-table columns?",
     "options": [
-      "Only the left table",
-      "Only the right table",
-      "Both left and right tables",
-      "None of the above"
+      "Zero values",
+      "Empty strings",
+      "NULL values",
+      "Duplicate rows from the left table"
     ],
     "answer": 2,
     "subject": "DBMS",
@@ -3914,14 +3914,14 @@
   },
   {
     "id": 301,
-    "question": "What is the primary benefit of using stored procedures in a database?",
+    "question": "What is a key benefit of using stored procedures?",
     "options": [
-      "Improved data security",
-      "Reduced database size",
-      "Faster execution of complex queries",
-      "Simplified data backup and recovery"
+      "They allow reusable server-side logic and can reduce repeated SQL in applications.",
+      "They remove the need for indexes on all tables.",
+      "They automatically normalize the database schema.",
+      "They can run only SELECT statements, not DML statements."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Stored Procedures & Functions"
   },
@@ -4434,14 +4434,14 @@
   },
   {
     "id": 341,
-    "question": "According to Codd's rules, the capability of handling multiple users and concurrent transactions is addressed by which rule?",
+    "question": "Which ACID property ensures that concurrent transactions do not interfere with each other as if they were executed serially?",
     "options": [
-      "Rule 3",
-      "Rule 4",
-      "Rule 5",
-      "Rule 6"
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
     ],
-    "answer": 3,
+    "answer": 2,
     "subject": "DBMS",
     "topic": "Transactions & ACID"
   },
@@ -4538,14 +4538,14 @@
   },
   {
     "id": 349,
-    "question": "What happens when a COMMIT command is executed in SQL?",
+    "question": "What does `COMMIT` do in SQL transaction control?",
     "options": [
-      "The changes made in the current transaction are undone",
-      "The changes made in the current transaction are saved permanently",
-      "A new transaction is started",
-      "The database connection is closed"
+      "It permanently saves changes made in the current transaction.",
+      "It undoes all changes made in the current transaction.",
+      "It closes the current database session immediately.",
+      "It changes all locks into read-only locks."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Transactions & ACID"
   },
@@ -4681,12 +4681,12 @@
   },
   {
     "id": 360,
-    "question": "Which statement best describes query optimizer in Database Technologies?",
+    "question": "What does the query optimizer do in a DBMS?",
     "options": [
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan.",
-      "Reading every row in the table to evaluate the condition."
+      "Chooses an efficient execution strategy for a query.",
+      "Executes every query exactly as written without transformation.",
+      "Stores query output permanently in the database.",
+      "Prevents indexes from being considered during planning."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4694,12 +4694,12 @@
   },
   {
     "id": 361,
-    "question": "When working with execution plan, which option is correct?",
+    "question": "What is an execution plan?",
     "options": [
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan.",
-      "Reading every row in the table to evaluate the condition."
+      "The sequence of operations the DBMS will use to run a query.",
+      "A list of all tables present in the current schema.",
+      "A backup script generated before running a query.",
+      "A trigger that logs query cost estimates."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4707,12 +4707,12 @@
   },
   {
     "id": 362,
-    "question": "Which use of cost estimate is most appropriate?",
+    "question": "What is a cost estimate in query optimization?",
     "options": [
-      "A predicted measure of resource usage such as I/O or CPU for a query plan.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "Reading every row in the table to evaluate the condition."
+      "An estimate of resource usage such as I/O, CPU, or rows processed for a candidate plan.",
+      "The final bill charged by the database vendor per query.",
+      "A measure of how many foreign keys exist in a schema.",
+      "A count of how many triggers fire during query execution."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4720,12 +4720,12 @@
   },
   {
     "id": 363,
-    "question": "What is the main purpose of table scan?",
+    "question": "What is a table scan?",
     "options": [
-      "Reading every row in the table to evaluate the condition.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "Reading every row of a table to evaluate a query condition.",
+      "Scanning only index pages without touching table data.",
+      "A join strategy used only for outer joins.",
+      "A backup operation that copies the entire table to another server."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4733,12 +4733,12 @@
   },
   {
     "id": 364,
-    "question": "Which statement best describes index scan in Database Technologies?",
+    "question": "What is an index scan?",
     "options": [
-      "Using an index structure to locate required rows more efficiently than scanning the whole table.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "Using an index to find required rows instead of scanning the entire table.",
+      "Reading every row in physical storage order.",
+      "Dropping and recreating an index during query execution.",
+      "A scan that can be used only on clustered indexes."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4746,12 +4746,12 @@
   },
   {
     "id": 365,
-    "question": "When working with join order, which option is correct?",
+    "question": "Why does join order matter in query optimization?",
     "options": [
-      "The optimizer can change join order to reduce intermediate result sizes and overall cost.",
-      "Join order is fixed by table creation order and never affects performance.",
-      "Join order matters only for INSERT statements.",
-      "Changing join order automatically removes the need for indexes."
+      "Different join orders can change the size of intermediate results and therefore the total cost.",
+      "Join order affects only formatting of the final output, not performance.",
+      "SQL requires joins to run in table-creation order.",
+      "Changing join order automatically disables indexes."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4759,12 +4759,12 @@
   },
   {
     "id": 366,
-    "question": "Which use of selectivity is most appropriate in query optimization?",
+    "question": "What does selectivity mean in query optimization?",
     "options": [
-      "To estimate how strongly a predicate filters rows so the optimizer can choose good access paths.",
-      "To store selected rows permanently in a new table.",
-      "To prevent WHERE clauses from using indexes.",
-      "To define foreign-key relationships between two relations."
+      "How strongly a predicate filters rows from a table or intermediate result.",
+      "The number of columns returned by a SELECT statement.",
+      "The percentage of tables that contain primary keys.",
+      "The amount of transaction log used by a query."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4772,25 +4772,25 @@
   },
   {
     "id": 367,
-    "question": "What is the main purpose of statistics in query optimization?",
+    "question": "Why are statistics important to the query optimizer?",
     "options": [
-      "To encrypt SQL queries before execution.",
-      "To help the optimizer estimate data distribution and choose efficient execution plans.",
-      "To store user passwords separately from tables.",
-      "To prevent indexes from being used in joins."
+      "They help estimate data distribution and choose better execution plans.",
+      "They guarantee every query will use an index.",
+      "They are used only to enforce referential integrity.",
+      "They replace the need for execution plans."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
   {
     "id": 368,
-    "question": "Which statement best describes predicate pushdown in Database Technologies?",
+    "question": "What is predicate pushdown?",
     "options": [
-      "Applying filter conditions as early as possible in the plan to reduce processed rows.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "Applying filters as early as possible to reduce the number of rows processed later.",
+      "Moving all WHERE conditions to the end of query execution.",
+      "Replacing predicates with stored procedure calls.",
+      "A method for converting row locks into table locks."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4798,25 +4798,25 @@
   },
   {
     "id": 369,
-    "question": "When working with composite indexes, which option is correct?",
+    "question": "When is a composite index especially useful?",
     "options": [
-      "They can index only one column at a time.",
-      "They are useful when queries filter or sort using multiple indexed columns in order.",
-      "They always perform worse than full table scans.",
-      "They can be created only on temporary tables."
+      "When queries filter, join, or sort on multiple columns in a meaningful order.",
+      "When only one column ever appears in predicates.",
+      "When the table contains no repeated values at all.",
+      "Only when the DBMS does not support single-column indexes."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
   {
     "id": 370,
-    "question": "Which use of predicate pushdown is most appropriate?",
+    "question": "Why is applying filters early in a query plan usually beneficial?",
     "options": [
-      "Applying filters as early as possible so fewer rows move through the execution plan.",
-      "Delaying every WHERE condition until after all joins complete.",
-      "Replacing indexes with larger table scans.",
-      "Moving validation rules from SQL into HTML forms."
+      "It reduces intermediate result sizes and can lower overall execution cost.",
+      "It forces the optimizer to avoid all indexes.",
+      "It guarantees the query becomes transaction-free.",
+      "It removes the need for join conditions."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4824,25 +4824,25 @@
   },
   {
     "id": 371,
-    "question": "What is the main purpose of a temporary table during query execution?",
+    "question": "What is a temporary table during query execution?",
     "options": [
-      "To permanently replace the original base table.",
-      "To store intermediate results needed while processing a query.",
-      "To disable sorting and grouping operations.",
-      "To ensure every query uses a full scan."
+      "An intermediate structure used to hold rows needed while processing a query.",
+      "A permanent replacement for a base table.",
+      "A table that can contain only one column.",
+      "A table used only for rollback operations."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "Query Optimization"
   },
   {
     "id": 372,
-    "question": "Which statement best describes correlated subquery in Database Technologies?",
+    "question": "What is a correlated subquery?",
     "options": [
-      "A subquery that depends on values from the outer query row being processed.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "A subquery that depends on values from the current row of the outer query.",
+      "A subquery that can run only once and never per-row.",
+      "A subquery that contains no WHERE clause.",
+      "A subquery used only in trigger bodies."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4850,12 +4850,12 @@
   },
   {
     "id": 373,
-    "question": "When working with denormalization, which option is correct?",
+    "question": "What is denormalization?",
     "options": [
-      "Intentionally adding redundancy to improve read performance in specific scenarios.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "Intentionally introducing controlled redundancy to improve read performance in some cases.",
+      "Removing all foreign keys from a schema.",
+      "Converting every table into first normal form only.",
+      "Replacing SQL queries with stored procedures."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4863,12 +4863,12 @@
   },
   {
     "id": 374,
-    "question": "Which use of EXPLAIN plan is most appropriate?",
+    "question": "What is the purpose of `EXPLAIN` or an execution-plan display tool?",
     "options": [
-      "A DBMS output that shows how a query is expected to be executed.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "To show how the DBMS intends to execute a query.",
+      "To rewrite the schema automatically into BCNF.",
+      "To remove temporary tables from memory.",
+      "To disable cost-based optimization for the session."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4876,12 +4876,12 @@
   },
   {
     "id": 375,
-    "question": "What is the main purpose of temporary table?",
+    "question": "In query processing, what is the purpose of a temporary table or intermediate result set?",
     "options": [
-      "An intermediate storage structure used during query processing.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "To hold rows needed between steps of execution such as sorting, grouping, or joining.",
+      "To permanently archive query results for all future sessions.",
+      "To replace all indexes on the base tables.",
+      "To enforce foreign-key constraints automatically."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4889,12 +4889,12 @@
   },
   {
     "id": 376,
-    "question": "Which statement best describes sort cost in Database Technologies?",
+    "question": "What does sort cost refer to in query optimization?",
     "options": [
-      "The resource overhead incurred while ordering rows during query execution.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "The resource overhead of ordering rows during execution.",
+      "The number of columns in the ORDER BY clause only.",
+      "The time needed to create a primary key.",
+      "The disk space used by the transaction log."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4902,12 +4902,12 @@
   },
   {
     "id": 377,
-    "question": "When working with aggregation cost, which option is correct?",
+    "question": "What does aggregation cost refer to in query optimization?",
     "options": [
-      "The resource overhead needed to compute grouped results such as SUM or COUNT.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "The work required to compute grouped results such as SUM, COUNT, AVG, MIN, or MAX.",
+      "The cost of enforcing every foreign key before insertion.",
+      "The time needed to scan only metadata tables.",
+      "The cost of creating a backup after GROUP BY."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4915,12 +4915,12 @@
   },
   {
     "id": 378,
-    "question": "Which use of plan caching is most appropriate?",
+    "question": "What is plan caching?",
     "options": [
-      "Reusing a previously compiled query plan to reduce parsing and optimization work.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "Reusing a previously compiled or optimized plan to reduce repeated planning overhead.",
+      "Saving a plan as a new table in the schema.",
+      "Running every query twice to verify correctness.",
+      "A process that forces the optimizer to ignore indexes."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4928,12 +4928,12 @@
   },
   {
     "id": 379,
-    "question": "What is the main purpose of query rewrite?",
+    "question": "What is query rewrite?",
     "options": [
-      "Transforming a query into a logically equivalent but more efficient form.",
-      "The DBMS component that chooses an efficient execution strategy for a query.",
-      "The ordered set of operations the DBMS will use to execute a query.",
-      "A predicted measure of resource usage such as I/O or CPU for a query plan."
+      "Transforming a query into a logically equivalent form that may execute more efficiently.",
+      "Changing SQL into another programming language before execution.",
+      "Replacing a query with a stored procedure permanently.",
+      "Deleting joins that appear expensive without checking semantics."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -4980,24 +4980,24 @@
   },
   {
     "id": 383,
-    "question": "Codd's rule that ensures that each value in a relational database is guaranteed to be accessible by using a combination of table name, primary key value, and column name is",
+    "question": "Which of Codd's rules states that every atomic value should be accessible by table name, primary key, and column name?",
     "options": [
       "Rule 0",
       "Rule 1",
       "Rule 2",
       "Rule 3"
     ],
-    "answer": 0,
+    "answer": 2,
     "subject": "DBMS",
     "topic": "PL/SQL, Normalization & NoSQL"
   },
   {
     "id": 384,
-    "question": "According to Codd's rules, a relational database management system (RDBMS) must provide a declarative query language. Which rule addresses this requirement?",
+    "question": "Which Codd rule requires a comprehensive relational language that supports data definition, view definition, data manipulation, integrity constraints, authorization, and transaction boundaries?",
     "options": [
+      "Rule 3",
+      "Rule 4",
       "Rule 5",
-      "Rule 6",
-      "Rule 7",
       "Rule 8"
     ],
     "answer": 2,
@@ -5006,12 +5006,12 @@
   },
   {
     "id": 385,
-    "question": "Which of Codd's rules addresses the ability to uniquely identify each row in a relational table using a primary key?",
+    "question": "Which statement best reflects the role of primary keys in relational design?",
     "options": [
-      "Rule 5",
-      "Rule 6",
-      "Rule 7",
-      "Rule 8"
+      "A primary key uniquely identifies each row in a table.",
+      "A primary key is optional in every normalized table.",
+      "A primary key can contain duplicate values as long as they are indexed.",
+      "A primary key is used only for sorting query results."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -5019,40 +5019,40 @@
   },
   {
     "id": 386,
-    "question": "According to Codd's rules, which rule ensures that the database management system must provide facilities to define integrity constraints?",
+    "question": "What are integrity constraints in a relational database?",
     "options": [
-      "Rule 2",
-      "Rule 3",
-      "Rule 4",
-      "Rule 9"
+      "Rules such as key, entity, domain, and referential constraints that keep data valid and consistent.",
+      "Temporary filters applied only while a query executes.",
+      "Compression rules used to reduce table size.",
+      "Formatting options for displaying query output."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "PL/SQL, Normalization & NoSQL"
   },
   {
     "id": 387,
-    "question": "Codd's rule that requires support for set-level, or non-procedural, manipulation of data is",
+    "question": "What does set-level or non-procedural data manipulation mean in relational systems?",
     "options": [
-      "Rule 7",
-      "Rule 8",
-      "Rule 9",
-      "Rule 10"
+      "Operations can work on sets of rows declaratively without specifying step-by-step navigation.",
+      "Every row must be updated one record at a time using loops.",
+      "Only procedural languages can modify relational data.",
+      "Queries cannot contain predicates when working with sets."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "PL/SQL, Normalization & NoSQL"
   },
   {
     "id": 388,
-    "question": "According to Codd's rules, which rule addresses the ability to access and manipulate the data in a database using a high-level query language?",
+    "question": "Why is a high-level query language important in an RDBMS?",
     "options": [
-      "Rule 4",
-      "Rule 5",
-      "Rule 6",
-      "Rule 7"
+      "It lets users express what data they want without describing low-level storage access steps.",
+      "It prevents the use of joins and grouping.",
+      "It removes the need for indexes and constraints completely.",
+      "It is required only for backup, not for querying data."
     ],
-    "answer": 3,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "PL/SQL, Normalization & NoSQL"
   },
@@ -5123,12 +5123,12 @@
   },
   {
     "id": 394,
-    "question": "In a normalized database, data redundancy is",
+    "question": "In a well-normalized design, what happens to redundancy?",
     "options": [
-      "Completely eliminated",
-      "Minimized to some extent",
-      "Necessary for efficient data retrieval",
-      "Intentionally introduced for security purposes"
+      "It is reduced as much as practical to avoid anomalies.",
+      "It is intentionally maximized for faster updates.",
+      "It becomes mandatory in every table.",
+      "It is unrelated to anomalies or consistency."
     ],
     "answer": 0,
     "subject": "DBMS",
@@ -5177,25 +5177,25 @@
     "id": 398,
     "question": "What is the primary goal of database normalization?",
     "options": [
-      "To increase data redundancy",
-      "To minimize data integrity",
-      "To reduce data anomalies and inconsistencies",
-      "To optimize query performance"
+      "To reduce redundancy and minimize update, insert, and delete anomalies.",
+      "To increase duplication so queries return faster by default.",
+      "To replace all foreign keys with multivalued attributes.",
+      "To eliminate the need for indexes and joins."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "PL/SQL, Normalization & NoSQL"
   },
   {
     "id": 399,
-    "question": "Normalization is a process of",
+    "question": "What is normalization in database design?",
     "options": [
-      "Converting data into a readable format",
-      "Removing redundant data from a database",
-      "Introducing data anomalies for security reasons",
-      "Creating data redundancies to improve data access"
+      "Organizing data into well-structured relations to reduce redundancy and anomalies.",
+      "Converting encrypted data into readable text.",
+      "Backing up all tables before running queries.",
+      "Adding repeated columns so more data fits in one row."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "DBMS",
     "topic": "PL/SQL, Normalization & NoSQL"
   },
@@ -5643,7 +5643,7 @@
   },
   {
     "id": 434,
-    "question": "What will be the output of the following code snippet? ```java\nint x = 10;\nif (x > 5) {\n  System.out.println(\"x is greater than 5\");\n} else if (x > 0) {\n  System.out.println(\"x is positive\");\n} else {\n  System.out.println(\"x is negative\");\n}\n```",
+    "question": "What will be the output of the following code snippet? ```java\nint x = 10;\nif (x > 5) {\n    System.out.println(\"x is greater than 5\");\n} else if (x > 0) {\n    System.out.println(\"x is positive\");\n} else {\n    System.out.println(\"x is negative\");\n}\n```",
     "options": [
       "x is greater than 5",
       "x is positive",
@@ -5656,7 +5656,7 @@
   },
   {
     "id": 435,
-    "question": "What will be the output of the following code snippet? ```java\nint age = 25;\nif (age < 18) {\n  System.out.println(\"You are a minor.\");\n} else if (age >= 18 && age < 60) {\n  System.out.println(\"You are an adult.\");\n} else {\n  System.out.println(\"You are a senior citizen.\");\n}\n```",
+    "question": "What will be the output of the following code snippet? ```java\nint age = 25;\nif (age < 18) {\n    System.out.println(\"You are a minor.\");\n} else if (age >= 18 && age < 60) {\n    System.out.println(\"You are an adult.\");\n} else {\n    System.out.println(\"You are a senior citizen.\");\n}\n```",
     "options": [
       "You are a minor.",
       "You are an adult.",
@@ -5669,7 +5669,7 @@
   },
   {
     "id": 436,
-    "question": "What will be the output of the following code snippet? ```java\nint day = 2;\nswitch (day) {\n \ncase 1: System.out.println(\"Monday\");\nbreak;\ncase 2: System.out.println(\"Tuesday\");\nbreak;\ncase 3: System.out.println(\"Wednesday\");\nbreak;\ndefault: System.out.println(\"Invalid day\");\nbreak;\n}\n```",
+    "question": "What will be the output of the following code snippet? ```java\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Monday\");\n        break;\n    case 2:\n        System.out.println(\"Tuesday\");\n        break;\n    case 3:\n        System.out.println(\"Wednesday\");\n        break;\n    default:\n        System.out.println(\"Invalid day\");\n}\n```",
     "options": [
       "Monday",
       "Tuesday",
@@ -5695,7 +5695,7 @@
   },
   {
     "id": 438,
-    "question": "What will be the value of 'result' after the following code is executed? ```java\nint a = 5;\nint b = 8;\nint result = (a > b) ? a : b;\n```",
+    "question": "What will be the value of `result` after the following code is executed? ```java\nint a = 5;\nint b = 8;\nint result = (a > b) ? a : b;\n```",
     "options": [
       "5",
       "8",
@@ -5708,12 +5708,12 @@
   },
   {
     "id": 439,
-    "question": "How many times will the following 'for' loop be executed? ```java\nfor (int i = 0;\ni < 5;\ni++) {\n  System.out.println(\"Hello\");\n}\n```",
+    "question": "How many times will the following loop execute? ```java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(\"Hello\");\n}\n```",
     "options": [
       "5 times",
       "6 times",
       "4 times",
-      "Infinite times (loop never terminates)"
+      "Infinite times"
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -5903,7 +5903,7 @@
   },
   {
     "id": 454,
-    "question": "What is the result of the following code snippet? ```java\nclass MyClass {\n  static int count = 0;\nMyClass() {\n  count++;\n}\n} public class Main {\n  public static void main(String[] args) {\n  MyClass obj1 = new MyClass();\nMyClass obj2 = new MyClass();\nSystem.out.println(MyClass.count);\n}\n}\n```",
+    "question": "What is the output of the following code? ```java\nclass MyClass {\n    static int count = 0;\n\n    MyClass() {\n        count++;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        MyClass obj1 = new MyClass();\n        MyClass obj2 = new MyClass();\n        System.out.println(MyClass.count);\n    }\n}\n```",
     "options": [
       "0",
       "1",
@@ -6111,38 +6111,38 @@
   },
   {
     "id": 470,
-    "question": "MCQ: Can constructor chaining be used to call a private constructor in the same class?",
+    "question": "Can constructor chaining call a private constructor in the same Java class?",
     "options": [
-      "Yes, but only if the constructors have the same number of parameters.",
-      "Yes, constructor chaining can always access private constructors.",
-      "No, constructor chaining cannot access private constructors.",
-      "Yes, but only if the constructors have different access modifiers."
+      "Yes. A constructor in the same class can call a private constructor using `this(...)`.",
+      "No. Private constructors can only be called by subclasses.",
+      "No. Constructor chaining works only with public constructors.",
+      "Yes, but only if both constructors have no parameters."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 471,
-    "question": "Consider the following code snippet: ```java\nclass Parent {\n  int x;\nParent(int x) {\n  this.x = x;\n}\n} class Child extends Parent {\n  int y;\nChild(int x, int y) {\n  super(x);\nthis.y = y;\n}\n}\n``` What is the purpose of the \"super(x)\" statement in the Child class constructor?",
+    "question": "In the following code, what is the role of `super(x)`? ```java\nclass Parent {\n    int x;\n\n    Parent(int x) {\n        this.x = x;\n    }\n}\n\nclass Child extends Parent {\n    int y;\n\n    Child(int x, int y) {\n        super(x);\n        this.y = y;\n    }\n}\n```",
     "options": [
-      "It calls the default constructor of the Parent class.",
-      "It sets the value of x in the Parent class to the value passed in the Child class constructor.",
-      "It creates a new object of the Parent class.",
-      "It is not a valid statement in Java."
+      "It invokes the `Parent(int x)` constructor to initialize the inherited part of `Child`.",
+      "It creates a second `Parent` object inside the `Child` object.",
+      "It calls the default constructor of `Parent` regardless of arguments.",
+      "It is invalid because `super(...)` cannot be used in constructors."
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 472,
-    "question": "What happens if the \"super\" keyword is not used in a subclass constructor in Java?",
+    "question": "What happens if a subclass constructor does not explicitly call `super(...)` in Java?",
     "options": [
-      "The subclass constructor will automatically call the default constructor of the superclass.",
-      "The compiler will generate an error, and the subclass constructor won't compile.",
-      "The subclass constructor will throw a runtime exception.",
-      "The subclass constructor will have no effect, and it won't be able to create instances of the subclass."
+      "The compiler inserts a call to the no-argument superclass constructor, if one exists.",
+      "The subclass skips superclass initialization entirely.",
+      "The program compiles, but the superclass fields remain uninitialized.",
+      "The JVM automatically chooses any superclass constructor at runtime."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6150,25 +6150,25 @@
   },
   {
     "id": 473,
-    "question": "In Java, is it possible to use both \"this\" and \"super\" in the same constructor?",
+    "question": "Can `this(...)` and `super(...)` both be used in the same Java constructor body?",
     "options": [
-      "Yes, but only if the superclass has a parameterless constructor.",
-      "No, using both \"this\" and \"super\" in the same constructor is not allowed.",
-      "Yes, using \"this\" and \"super\" together is common when chaining constructors in a class.",
-      "Yes, but only if the superclass has a constructor with the same number of parameters as the subclass."
+      "Yes, if `this(...)` is written first and `super(...)` is written second.",
+      "No, because both must appear as the first statement in the constructor.",
+      "Yes, but only in abstract classes.",
+      "No, unless the superclass constructor is private."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Constructors"
   },
   {
     "id": 474,
-    "question": "MCQ: How do you call a superclass constructor from a subclass constructor in Java?",
+    "question": "How do you call a superclass constructor from a subclass constructor in Java?",
     "options": [
-      "'call super();'",
-      "'super();'",
-      "'invoke super();'",
-      "'superclass();'"
+      "`call super();`",
+      "`super();`",
+      "`invoke super();`",
+      "`superclass();`"
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -6176,12 +6176,12 @@
   },
   {
     "id": 475,
-    "question": "MCQ (Coding): Which of the following code snippets correctly defines a user -defined checked exception? ```java\n// Option 1 class MyCheckedException extends RuntimeException {\n  // Constructor and other methods\n} // Option 2 class MyCheckedException extends Exception {\n  // Constructor and other methods\n} // Option 3 class MyCheckedException extends Error {\n  // Constructor and other methods\n}\n```",
+    "question": "Which statement about copy constructors in Java is correct?",
     "options": [
-      "Option 1",
-      "Option 2",
-      "Option 3",
-      "Both Option 1 and Option 2"
+      "Java provides a built-in copy constructor for every class automatically.",
+      "A copy constructor in Java is a user-defined constructor that accepts another object of the same class.",
+      "Copy constructors can only copy primitive fields, not reference fields.",
+      "Using a copy constructor always performs deep copy for every object graph."
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -6189,12 +6189,12 @@
   },
   {
     "id": 476,
-    "question": "MCQ (Coding): Which of the following code snippets correctly defines a user -defined unchecked exception? ```java\n// Option 1 class MyUncheckedException extends RuntimeException {\n  // Constructor and other methods\n} // Option 2 class MyUncheckedException extends Exception {\n  // Constructor and other methods\n} // Option 3 class MyUncheckedException extends Error {\n  // Constructor and other methods\n}\n```",
+    "question": "Why is constructor overloading useful in Java?",
     "options": [
-      "Option 1",
-      "Option 2",
-      "Option 3",
-      "Both Option 1 and Option 2"
+      "It lets a class offer multiple ways to initialize an object depending on available input.",
+      "It allows constructors to override inherited methods.",
+      "It avoids the need for all field initializers and setters permanently.",
+      "It forces every object to be immutable."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6202,12 +6202,12 @@
   },
   {
     "id": 477,
-    "question": "Which use of field initialization is most appropriate?",
+    "question": "Which use of field initialization is most appropriate in Java?",
     "options": [
       "Assigning initial values to instance variables when an object is created.",
-      "An ordered collection interface that allows duplicates and positional access.",
-      "A constructor that receives arguments to initialize object state.",
-      "Defining multiple constructors with different parameter lists in one class."
+      "Converting instance variables into local variables before constructor execution.",
+      "Replacing constructors with getter methods for all fields.",
+      "Making all fields static so they are initialized only once for every program."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6217,10 +6217,10 @@
     "id": 478,
     "question": "What is the main purpose of object creation in Java?",
     "options": [
-      "To reserve heap memory for an instance and initialize it through a constructor.",
-      "To convert every class into an interface automatically.",
-      "To copy bytecode into the JDK source directory.",
-      "To prevent methods from accessing instance fields."
+      "To allocate memory for an instance and initialize it through constructors and field initialization.",
+      "To copy compiled bytecode into the JDK installation directory.",
+      "To convert a class automatically into an interface.",
+      "To prevent instance methods from accessing object state."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6230,10 +6230,10 @@
     "id": 479,
     "question": "Which statement best describes instance initialization in Java?",
     "options": [
-      "It is the process of assigning initial state to an object through field initializers, blocks, and constructors.",
-      "It means turning all instance members into static members.",
+      "It is the process of assigning initial state to an object through field initializers, instance initializer blocks, and constructors.",
+      "It means converting all instance fields into static fields before execution.",
       "It happens only when the garbage collector runs.",
-      "It can occur only in abstract classes."
+      "It is available only for abstract classes."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6618,12 +6618,12 @@
   },
   {
     "id": 509,
-    "question": "What happens if a non-abstract subclass fails to implement all the abstract methods from its abstract superclass?",
+    "question": "What happens if a non-abstract subclass does not implement all inherited abstract methods?",
     "options": [
-      "The subclass will inherit the abstract methods and become abstract itself.",
-      "The subclass will have a default implementation of the missing abstract methods.",
-      "The code will not compile, resulting in a compilation error.",
-      "The abstract methods will be automatically inherited from the Object class."
+      "The subclass automatically gets default implementations from `Object`.",
+      "The subclass compiles, but the missing methods throw runtime exceptions.",
+      "The code does not compile unless the subclass itself is declared `abstract`.",
+      "The compiler silently removes the abstract methods from the hierarchy."
     ],
     "answer": 2,
     "subject": "JAVA",
@@ -6709,12 +6709,12 @@
   },
   {
     "id": 516,
-    "question": "Consider the following abstract class: ```java\nabstract class Shape {\n  int sides;\nabstract void draw();\nvoid displaySides() {\n  System.out.println(\"Number of sides: \" + sides);\n}\n}\n``` Which of the following subclass definitions is correct?",
+    "question": "Which subclass definition is valid for the following abstract class? ```java\nabstract class Shape {\n    int sides;\n\n    abstract void draw();\n\n    void displaySides() {\n        System.out.println(\"Number of sides: \" + sides);\n    }\n}\n```",
     "options": [
-      "```java\nclass Circle extends Shape {\n  void draw() {\n  System.out.println(\"Drawing a circle.\");\n}\n}\n```",
-      "```java\nclass Triangle extends Shape {\n  void draw() {\n  System.out.println(\"Drawing a triangle.\");\n} void displaySides() {\n  System.out.println(\"Number of sides: 3\");\n}\n}\n```",
-      "```java\nclass Square extends Shape {\n  void displaySides() {\n  System.out.println(\"Number of sides: 4\");\n}\n}\n```",
-      "```java\nclass Rectangle extends Shape {\n  void draw() {\n  System.out.println(\"Drawing a rectangle.\");\n}\n}\n```"
+      "```java\nclass Circle extends Shape {\n    @Override\n    void draw() {\n        System.out.println(\"Drawing a circle.\");\n    }\n}\n```",
+      "```java\nclass Square extends Shape {\n    void displaySides() {\n        System.out.println(\"4\");\n    }\n}\n```",
+      "```java\nclass Triangle extends Shape {\n}\n```",
+      "```java\nclass Rectangle extends Shape {\n    int draw() {\n        return 1;\n    }\n}\n```"
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6722,12 +6722,12 @@
   },
   {
     "id": 517,
-    "question": "What will be the output of the following code? ```java\nabstract class Animal {\n  abstract void makeSound();\n} class Dog extends Animal {\n  void makeSound() {\n  System.out.println(\"Dog barks.\");\n}\n} class Cat extends Animal {\n  void makeSound() {\n  System.out.println(\"Cat meows.\");\n}\n} public class Main {\n  public static void main(String[] args) {\n  Animal dog = new Dog();\nAnimal cat = new Cat();\ndog.makeSound();\ncat.makeSound();\n}\n}\n```",
+    "question": "What will be printed by the following code? ```java\nabstract class Animal {\n    abstract void makeSound();\n}\n\nclass Dog extends Animal {\n    void makeSound() {\n        System.out.println(\"Dog barks.\");\n    }\n}\n\nclass Cat extends Animal {\n    void makeSound() {\n        System.out.println(\"Cat meows.\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Animal dog = new Dog();\n        Animal cat = new Cat();\n        dog.makeSound();\n        cat.makeSound();\n    }\n}\n```",
     "options": [
-      "\"Dog barks. Cat meows.\"",
-      "\"Dog barks. Dog barks.\"",
-      "\"Cat meows. Cat meows.\"",
-      "Compilation error due to abstract methods in the Animal class."
+      "Dog barks. followed by Cat meows.",
+      "Dog barks. followed by Dog barks.",
+      "Cat meows. followed by Cat meows.",
+      "Compilation error because `Animal` is abstract."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6748,12 +6748,12 @@
   },
   {
     "id": 519,
-    "question": "Consider the following code: ```java\nabstract class Vehicle {\n  abstract void start();\n} class Car extends Vehicle {\n  void start() {\n  System.out.println(\"Car started.\");\n}\n} class Bike extends Vehicle {\n  void start() {\n  System.out.println(\"Bike started.\");\n}\n} public class Main {\n  public static void main(String[] args) {\n  Vehicle vehicle = new Car();\nvehicle.start();\n}\n}\n``` What will be the output when the Main class is executed?",
+    "question": "What will be the output when this program runs? ```java\nabstract class Vehicle {\n    abstract void start();\n}\n\nclass Car extends Vehicle {\n    void start() {\n        System.out.println(\"Car started.\");\n    }\n}\n\nclass Bike extends Vehicle {\n    void start() {\n        System.out.println(\"Bike started.\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Vehicle vehicle = new Car();\n        vehicle.start();\n    }\n}\n```",
     "options": [
-      "\"Car started.\"",
-      "\"Bike started.\"",
-      "Compilation error due to abstract methods in the Vehicle class.",
-      "Runtime error due to the abstract start() method not being implemented."
+      "Car started.",
+      "Bike started.",
+      "Compilation error",
+      "Runtime error"
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6800,14 +6800,14 @@
   },
   {
     "id": 523,
-    "question": "Consider the following code: ```java\nclass Animal {\n  void makeSound() {\n  System.out.println(\"Animal makes a sound\");\n}\n} class Dog extends Animal {\n  void makeSound() {\n  System.out.println(\"Dog barks\");\n}\n} class Cat extends Animal {\n  void makeSound() {\n  System.out.println(\"Cat meows\");\n}\n}\n``` What will happen when you try to compile and run the following code snippet? ```java\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\ncat.makeSound();\n```",
+    "question": "What happens in the following code? ```java\nclass Animal { }\nclass Dog extends Animal { }\nclass Cat extends Animal { }\n\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\n```",
     "options": [
-      "It will print \"Animal makes a sound.\"",
-      "It will print \"Dog barks.\"",
-      "It will print \"Cat meows.\"",
-      "It will result in a compilation error or a ClassCastException at runtime."
+      "It compiles and safely converts `Dog` into `Cat` because both extend `Animal`.",
+      "It fails at compile time because sibling subclasses can never be cast.",
+      "It compiles, but throws `ClassCastException` at runtime.",
+      "It prints `Animal makes a sound` before throwing an exception."
     ],
-    "answer": 3,
+    "answer": 2,
     "subject": "JAVA",
     "topic": "Exception Handling"
   },
@@ -6826,12 +6826,12 @@
   },
   {
     "id": 525,
-    "question": "MCQ: What happens when you try to access an element outside the bounds of an array?",
+    "question": "What happens when Java code accesses an array index outside the valid range?",
     "options": [
-      "The program crashes with an \"ArrayIndexOutOfBoundsException.\"",
-      "The program continues execution, and the element is initialized to 0.",
-      "The program automatically expands the array to include the new element.",
-      "The program displays an error message but continues execution."
+      "A runtime `ArrayIndexOutOfBoundsException` is thrown.",
+      "The array automatically grows to include the requested index.",
+      "The JVM returns the default value for that element type.",
+      "The compiler converts the invalid access into `null`."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6839,12 +6839,12 @@
   },
   {
     "id": 526,
-    "question": "MCQ: What happens if you try to access an element of the 'employees' array that is out of bounds?",
+    "question": "If `employees[employees.length]` is accessed in Java, what happens?",
     "options": [
-      "The program will crash with an error message.",
-      "Java automatically extends the size of the array and initializes the element to 'null'.",
-      "The program will display a warning but continue execution.",
-      "It depends on the compiler used."
+      "The program throws `ArrayIndexOutOfBoundsException` at runtime.",
+      "Java extends the array and initializes the new slot to `null`.",
+      "The access is valid because arrays are one-indexed internally.",
+      "The compiler replaces the expression with the last valid element."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6852,12 +6852,12 @@
   },
   {
     "id": 527,
-    "question": "MCQ: What happens if you try to use a class from another package without importing it in Java?",
+    "question": "What happens if you try to use a class from another package without importing it and without using its fully qualified name?",
     "options": [
-      "The code will not compile.",
-      "The code will compile, but the class will not be accessible.",
-      "The code will compile, and the class will be automatically imported.",
-      "The code will compile, but the class will be treated as if it's in the same package."
+      "The code does not compile because the type cannot be resolved.",
+      "The code compiles, but the class becomes package-private automatically.",
+      "The JVM imports the class implicitly at runtime.",
+      "The code compiles only if the class has public methods."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6865,38 +6865,38 @@
   },
   {
     "id": 528,
-    "question": "MCQ: What happens if you try to access a 'protected' member from a non-subclass and non-package class?",
+    "question": "What happens if a non-subclass in a different package tries to access a `protected` member?",
     "options": [
-      "The code will not compile.",
-      "The code will compile, but the 'protected' member will be inaccessible.",
-      "The code will compile, but the 'protected' member will be 'null'.",
-      "The code will compile, but the 'protected' member will have default (package -private) access."
+      "The access is allowed because `protected` means visible everywhere.",
+      "The code does not compile because the member is not accessible there.",
+      "The member is treated as `public` at runtime.",
+      "The member becomes `null` instead of throwing a compile-time error."
+    ],
+    "answer": 1,
+    "subject": "JAVA",
+    "topic": "Exception Handling"
+  },
+  {
+    "id": 529,
+    "question": "What happens if `finalize()` throws an uncaught exception in Java?",
+    "options": [
+      "The exception is ignored by the JVM, and finalization of that object terminates.",
+      "The exception is propagated to the code that requested garbage collection.",
+      "The JVM restarts `finalize()` until it completes successfully.",
+      "The whole application always terminates immediately."
     ],
     "answer": 0,
     "subject": "JAVA",
     "topic": "Exception Handling"
   },
   {
-    "id": 529,
-    "question": "MCQ: What happens if an uncaught exception is thrown inside the 'finalize()' method?",
-    "options": [
-      "The JVM will automatically handle the exception and continue garbage collection.",
-      "The exception will be propagated to the calling code that triggered garbage collection.",
-      "The JVM will skip the 'finalize()' method and proceed with garbage collection.",
-      "The JVM will terminate the application."
-    ],
-    "answer": 2,
-    "subject": "JAVA",
-    "topic": "Exception Handling"
-  },
-  {
     "id": 530,
-    "question": "MCQ: What happens if you try to unbox a 'null' wrapper object in Java?",
+    "question": "What happens if you unbox a `null` wrapper reference in Java?",
     "options": [
-      "It will result in a runtime exception.",
-      "It will automatically convert to the default value of the corresponding primitive data type.",
-      "It will result in a compilation error.",
-      "It will return 'null'."
+      "A runtime `NullPointerException` is thrown.",
+      "The wrapper is converted to the default primitive value automatically.",
+      "A compile-time error occurs because `null` cannot appear in wrappers.",
+      "The expression evaluates to `null` even for primitive targets."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -6904,12 +6904,12 @@
   },
   {
     "id": 531,
-    "question": "MCQ: Which class is at the top of the Java Exception hierarchy?",
+    "question": "Which type is at the root of Java's exception and error hierarchy?",
     "options": [
-      "'RuntimeException'",
-      "'Exception'",
-      "'Error'",
-      "'Throwable'"
+      "`RuntimeException`",
+      "`Exception`",
+      "`Error`",
+      "`Throwable`"
     ],
     "answer": 3,
     "subject": "JAVA",
@@ -6917,25 +6917,25 @@
   },
   {
     "id": 532,
-    "question": "MCQ: What is the key difference between checked and unchecked exceptions in Java?",
+    "question": "What is the key difference between checked and unchecked exceptions in Java?",
     "options": [
-      "Checked exceptions are explicitly handled by the programmer, while unchecked exceptions are handled by the JVM.",
-      "Checked exceptions are always related to syntax or compilation errors, while unchecked exceptions are runtime errors.",
-      "Checked exceptions are subclasses of 'Exception', while unchecked exceptions are subclasses of 'RuntimeException'.",
-      "Checked exceptions require explicit handling using try-catch or throws, while unchecked exceptions do not."
+      "Checked exceptions must be declared or handled; unchecked exceptions do not have that compile-time requirement.",
+      "Checked exceptions are handled only by the JVM, while unchecked exceptions are handled only by programmers.",
+      "Checked exceptions are syntax errors, while unchecked exceptions are logic errors.",
+      "Unchecked exceptions can never be caught with `try-catch`."
     ],
-    "answer": 3,
+    "answer": 0,
     "subject": "JAVA",
     "topic": "Exception Handling"
   },
   {
     "id": 533,
-    "question": "MCQ (Coding): Which of the following statements correctly demonstrates an unchecked exception in Java? ```java\n// Option 1 int result = 10 / 0;\n// Option 2 String str = null;\nint length = str.length();\n// Option 3 int[] arr = {\n  1, 2, 3\n};\nint value = arr[5];\n```",
+    "question": "Which of the following are examples of unchecked exceptions in Java?",
     "options": [
-      "Option 1",
-      "Option 2",
-      "Option 3",
-      "Both Option 1 and Option 3"
+      "Only division by zero in integer arithmetic.",
+      "Only `NullPointerException` caused by dereferencing `null`.",
+      "Only `ArrayIndexOutOfBoundsException` caused by invalid array access.",
+      "All three: `ArithmeticException`, `NullPointerException`, and `ArrayIndexOutOfBoundsException`."
     ],
     "answer": 3,
     "subject": "JAVA",
@@ -6943,25 +6943,25 @@
   },
   {
     "id": 534,
-    "question": "MCQ: What are Errors in Java?",
+    "question": "What are `Error` types in Java generally used to represent?",
     "options": [
-      "Errors are exceptions that occur due to programming errors or invalid input.",
-      "Errors are runtime issues that are caught and handled by the programmer.",
-      "Errors are critical problems that cannot be recovered, and usually, the application should terminate.",
-      "Errors are another name for checked exceptions."
+      "Recoverable business-rule violations that callers should handle normally.",
+      "Critical problems that applications typically are not expected to recover from.",
+      "Another name for checked exceptions.",
+      "Only input-validation failures caused by users."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Exception Handling"
   },
   {
     "id": 535,
-    "question": "MCQ: Which of the following statements about the 'RuntimeException' class is true?",
+    "question": "Which statement about `RuntimeException` is true?",
     "options": [
-      "'RuntimeException' is a checked exception.",
-      "'RuntimeException' is an unchecked exception.",
-      "'RuntimeException' is an Error.",
-      "'RuntimeException' is a subclass of 'Exception'."
+      "`RuntimeException` is a checked exception.",
+      "`RuntimeException` is an unchecked exception.",
+      "`RuntimeException` is a subclass of `Error`.",
+      "`RuntimeException` cannot be caught with `catch`."
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -6969,25 +6969,25 @@
   },
   {
     "id": 536,
-    "question": "MCQ: When should you use checked exceptions in your code?",
+    "question": "When should checked exceptions usually be used in Java?",
     "options": [
-      "Checked exceptions should be used for all possible errors, even minor ones.",
-      "Checked exceptions should be used for critical issues that might lead to the termination of the application.",
-      "Checked exceptions should be used only for issues that can be reasonably handled by the calling code.",
-      "Checked exceptions should not be used in Java."
+      "For every minor programming mistake, including `NullPointerException`.",
+      "Only for situations that calling code can reasonably be expected to recover from or handle.",
+      "Only for problems that should always terminate the application.",
+      "Never, because modern Java does not support checked exceptions."
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Exception Handling"
   },
   {
     "id": 537,
-    "question": "MCQ (Coding): What is the output of the following Java code snippet? ```java\npublic void performOperation() throws IOException {\n  // Some code that may throw an IOException\n} public static void main(String[] args) {\n  try {\n  performOperation();\nSystem.out.println(\"Operation successful.\");\n} catch (IOException e) {\n  System.out.println(\"An error occurred: \" + e.getMessage());\n}\n}\n```",
+    "question": "Why will the following code fail to compile as written? ```java\npublic void performOperation() throws IOException {\n    // Some code\n}\n\npublic static void main(String[] args) {\n    try {\n        performOperation();\n        System.out.println(\"Operation successful.\");\n    } catch (IOException e) {\n        System.out.println(\"An error occurred: \" + e.getMessage());\n    }\n}\n```",
     "options": [
-      "Operation successful.",
-      "An error occurred: (the error message)",
-      "Compilation error",
-      "Runtime exception"
+      "`IOException` can never be caught inside `main`.",
+      "`performOperation()` is an instance method but is being called from `static main` without an object.",
+      "`throws IOException` is illegal in Java.",
+      "`System.out.println` cannot be used inside a try block."
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -6995,12 +6995,12 @@
   },
   {
     "id": 538,
-    "question": "MCQ: What is exception propagation in Java?",
+    "question": "What is exception propagation in Java?",
     "options": [
-      "Exception propagation is the process of throwing an exception from a method to its calling method.",
-      "Exception propagation is the process of catching an exception in a try -catch block.",
-      "Exception propagation is the process of handling checked exceptions.",
-      "Exception propagation is the process of converting an unchecked exception to a checked exception."
+      "The movement of an exception up the call stack until some caller handles it or the program ends.",
+      "The automatic conversion of a checked exception into an unchecked exception.",
+      "The process of turning a `catch` block into a `throws` clause.",
+      "The JVM's optimization of repeated exception objects."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7008,25 +7008,25 @@
   },
   {
     "id": 539,
-    "question": "MCQ (Coding): What will happen if an exception is thrown from a method, and the method does not have a try-catch block to handle it? ```java\npublic void methodA() {\n  throw new RuntimeException(\"Exception in methodA\");\n} public void methodB() {\n  methodA();\n}\n```",
+    "question": "What happens if a method throws an exception and does not catch it locally?",
     "options": [
-      "The program will terminate abruptly with an error message.",
-      "The exception will be caught and handled by the JVM.",
-      "The exception will be caught and handled by methodB.",
-      "The exception will propagate up the call stack until it is caught or the program terminates."
+      "The exception is always swallowed silently by the JVM.",
+      "The exception automatically returns `null` to the caller.",
+      "The exception propagates up the call stack until some caller handles it or the program terminates.",
+      "The exception is converted into a checked exception automatically."
     ],
-    "answer": 3,
+    "answer": 2,
     "subject": "JAVA",
     "topic": "Exception Handling"
   },
   {
     "id": 540,
-    "question": "MCQ: Which Java interface is used to represent a collection that maintains an ordered sequence of elements with duplicates allowed?",
+    "question": "Which Java interface represents an ordered collection that allows duplicate elements?",
     "options": [
-      "'List'",
-      "'Queue'",
-      "'Set'",
-      "'Map'"
+      "`List`",
+      "`Queue`",
+      "`Set`",
+      "`Map`"
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7034,12 +7034,12 @@
   },
   {
     "id": 541,
-    "question": "MCQ: Which Java interface is used to represent a collection that maintains an ordered sequence of elements with no duplicates allowed?",
+    "question": "Which Java interface represents a collection that does not allow duplicate elements?",
     "options": [
-      "'List'",
-      "'Queue'",
-      "'Set'",
-      "'Map'"
+      "`List`",
+      "`Queue`",
+      "`Set`",
+      "`Map`"
     ],
     "answer": 2,
     "subject": "JAVA",
@@ -7047,12 +7047,12 @@
   },
   {
     "id": 542,
-    "question": "MCQ: Which Java interface is used to represent a collection that stores key-value pairs?",
+    "question": "Which Java interface is used for key-value mappings?",
     "options": [
-      "'List'",
-      "'Queue'",
-      "'Set'",
-      "'Map'"
+      "`List`",
+      "`Queue`",
+      "`Set`",
+      "`Map`"
     ],
     "answer": 3,
     "subject": "JAVA",
@@ -7060,12 +7060,12 @@
   },
   {
     "id": 543,
-    "question": "MCQ: What is the main difference between 'ArrayList' and 'LinkedList' in Java?",
+    "question": "What is the main structural difference between `ArrayList` and `LinkedList` in Java?",
     "options": [
-      "'ArrayList' is a resizable array-based implementation, while 'LinkedList' is a doubly-linked list- based implementation.",
-      "'ArrayList' allows null elements, while 'LinkedList' does not allow null elements.",
-      "'ArrayList' is a thread-safe collection, while 'LinkedList' is not thread-safe.",
-      "'ArrayList' allows constant-time insertion and deletion, while 'LinkedList' allows constant-time search."
+      "`ArrayList` is backed by a resizable array, while `LinkedList` is backed by linked nodes.",
+      "`ArrayList` disallows `null`, while `LinkedList` allows `null`.",
+      "`ArrayList` is synchronized by default, while `LinkedList` is immutable.",
+      "`LinkedList` provides constant-time indexed access, while `ArrayList` does not."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7073,12 +7073,12 @@
   },
   {
     "id": 544,
-    "question": "MCQ: What is the main advantage of using 'LinkedList' over 'ArrayList' in Java?",
+    "question": "What is a common advantage of `LinkedList` over `ArrayList`?",
     "options": [
-      "'LinkedList' allows constant-time access to elements by index.",
-      "'LinkedList' allows constant-time insertion and deletion.",
-      "'LinkedList' uses less memory compared to 'ArrayList'.",
-      "'LinkedList' allows duplicate elements."
+      "It gives faster random indexed access in the general case.",
+      "It can perform insertions or deletions at known positions without shifting large blocks of elements.",
+      "It never uses extra object memory for node links.",
+      "It automatically keeps elements sorted."
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -7086,12 +7086,12 @@
   },
   {
     "id": 545,
-    "question": "MCQ: Which class in Java provides a thread-safe implementation of a dynamic array similar to 'ArrayList'?",
+    "question": "Which legacy Java class provides a synchronized dynamic array similar to `ArrayList`?",
     "options": [
-      "'ArrayList'",
-      "'LinkedList'",
-      "'Vector'",
-      "'HashSet'"
+      "`ArrayList`",
+      "`LinkedList`",
+      "`Vector`",
+      "`HashSet`"
     ],
     "answer": 2,
     "subject": "JAVA",
@@ -7099,12 +7099,12 @@
   },
   {
     "id": 546,
-    "question": "MCQ: Which method is used to insert an element at the end of a 'Vector' in Java?",
+    "question": "Which `Vector` method can be used to append an element to the end of the collection?",
     "options": [
-      "'insert()'",
-      "'add()'",
-      "'append()'",
-      "'push()'"
+      "`insert()`",
+      "`add()`",
+      "`append()`",
+      "`push()`"
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -7112,12 +7112,12 @@
   },
   {
     "id": 547,
-    "question": "MCQ (Coding): Which method is used to delete an element at a specific index from a 'Vector' in Java?",
+    "question": "Which `Vector` method removes the element at a specified index?",
     "options": [
-      "'delete()'",
-      "'remove()'",
-      "'erase()'",
-      "'pop()'"
+      "`delete()`",
+      "`remove()`",
+      "`erase()`",
+      "`pop()`"
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -7125,12 +7125,12 @@
   },
   {
     "id": 548,
-    "question": "MCQ: Which interface in Java is used to represent a collection that stores elements in a queue (first - in, first-out) manner?",
+    "question": "Which Java interface represents FIFO-style queue behavior?",
     "options": [
-      "'List'",
-      "'Queue'",
-      "'Set'",
-      "'Map'"
+      "`List`",
+      "`Queue`",
+      "`Set`",
+      "`Map`"
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -7138,12 +7138,12 @@
   },
   {
     "id": 549,
-    "question": "MCQ: What is the primary difference between the 'Queue' interface and the 'LinkedList' class?",
+    "question": "What is the relationship between `Queue` and `LinkedList` in Java?",
     "options": [
-      "'Queue' is an interface, and 'LinkedList' is a class.",
-      "'Queue' is a class, and 'LinkedList' is an interface.",
-      "Both 'Queue' and 'LinkedList' are classes.",
-      "Both 'Queue' and 'LinkedList' are interfaces."
+      "`Queue` is an interface, and `LinkedList` is one class that can implement queue behavior.",
+      "`Queue` is a class, and `LinkedList` is its parent interface.",
+      "Both `Queue` and `LinkedList` are interfaces.",
+      "Both `Queue` and `LinkedList` are abstract classes only."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7151,38 +7151,38 @@
   },
   {
     "id": 550,
-    "question": "MCQ: Which method is used to insert an element at the end of a queue?",
+    "question": "Which standard `Queue` method inserts an element into a queue when capacity restrictions are not the focus?",
     "options": [
-      "'enqueue()'",
-      "'add()'",
-      "'insert()'",
-      "'push()'"
+      "`enqueue()`",
+      "`add()`",
+      "`insert()`",
+      "`push()`"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Collections"
   },
   {
     "id": 551,
-    "question": "MCQ: Which method is used to remove the element at the front of a queue?",
+    "question": "Which standard `Queue` method removes the element at the head of the queue?",
     "options": [
-      "'dequeue()'",
-      "'remove()'",
-      "'pop()'",
-      "'delete()'"
+      "`dequeue()`",
+      "`remove()`",
+      "`pop()`",
+      "`delete()`"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Collections"
   },
   {
     "id": 552,
-    "question": "MCQ: Which Java collection class guarantees no duplicate elements and does not maintain insertion order?",
+    "question": "Which collection guarantees no duplicate elements and does not preserve insertion order?",
     "options": [
-      "'HashSet'",
-      "'LinkedHashSet'",
-      "'TreeSet'",
-      "'ArrayList'"
+      "`HashSet`",
+      "`LinkedHashSet`",
+      "`TreeSet`",
+      "`ArrayList`"
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7190,12 +7190,12 @@
   },
   {
     "id": 553,
-    "question": "MCQ: Which Java collection class maintains insertion order, allowing ele ments to be retrieved in the order they were added?",
+    "question": "Which set implementation preserves insertion order?",
     "options": [
-      "'HashSet'",
-      "'LinkedHashSet'",
-      "'TreeSet'",
-      "'ArrayList'"
+      "`HashSet`",
+      "`LinkedHashSet`",
+      "`TreeSet`",
+      "`ArrayList`"
     ],
     "answer": 1,
     "subject": "JAVA",
@@ -7203,12 +7203,12 @@
   },
   {
     "id": 554,
-    "question": "MCQ: Which Java collection class maintains elements in sorted order (natural order or custom order) and does not allow duplicate elements?",
+    "question": "Which set implementation keeps elements sorted according to natural order or a comparator?",
     "options": [
-      "'HashSet'",
-      "'LinkedHashSet'",
-      "'TreeSet'",
-      "'ArrayList'"
+      "`HashSet`",
+      "`LinkedHashSet`",
+      "`TreeSet`",
+      "`ArrayList`"
     ],
     "answer": 2,
     "subject": "JAVA",
@@ -7216,12 +7216,12 @@
   },
   {
     "id": 555,
-    "question": "MCQ: Which Java collection class is synchronized and does not allow null keys or values?",
+    "question": "Which map implementation is synchronized and does not allow `null` keys or `null` values?",
     "options": [
-      "'Hashtable'",
-      "'HashMap'",
-      "'LinkedHashMap'",
-      "'TreeMap'"
+      "`Hashtable`",
+      "`HashMap`",
+      "`LinkedHashMap`",
+      "`TreeMap`"
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7229,12 +7229,12 @@
   },
   {
     "id": 556,
-    "question": "MCQ: Which Java collection class maintains insertion order of keys and allows null keys and values?",
+    "question": "Which map implementation preserves insertion order and allows `null` keys and values?",
     "options": [
-      "'Hashtable'",
-      "'HashMap'",
-      "'LinkedHashMap'",
-      "'TreeMap'"
+      "`Hashtable`",
+      "`HashMap`",
+      "`LinkedHashMap`",
+      "`TreeMap`"
     ],
     "answer": 2,
     "subject": "JAVA",
@@ -7242,12 +7242,12 @@
   },
   {
     "id": 557,
-    "question": "MCQ: Which Java collection class sorts keys in natural order or based on a custom comparator?",
+    "question": "Which map implementation keeps keys sorted by natural order or a provided comparator?",
     "options": [
-      "'Hashtable'",
-      "'HashMap'",
-      "'LinkedHashMap'",
-      "'TreeMap'"
+      "`Hashtable`",
+      "`HashMap`",
+      "`LinkedHashMap`",
+      "`TreeMap`"
     ],
     "answer": 3,
     "subject": "JAVA",
@@ -7255,12 +7255,12 @@
   },
   {
     "id": 558,
-    "question": "MCQ (Coding): Which concurrent collection class in Java allows multiple threads to access and modify elements in a thread-safe manner, similar to a regular queue (first-in, first-out)?",
+    "question": "Which concurrent collection type is designed for thread-safe queue-style operations in Java?",
     "options": [
-      "'ConcurrentList'",
-      "'ConcurrentMap'",
-      "'ConcurrentQueue'",
-      "'ConcurrentDeque'"
+      "`ConcurrentList`",
+      "`ConcurrentMap`",
+      "`ConcurrentQueue`",
+      "`ConcurrentDeque`"
     ],
     "answer": 2,
     "subject": "JAVA",
@@ -7697,12 +7697,12 @@
   },
   {
     "id": 592,
-    "question": "Which data types are always passed by value in Java?",
+    "question": "How are method arguments passed in Java?",
     "options": [
-      "Primitive data types.",
-      "Reference data types.",
-      "Both primitive and reference data types.",
-      "None of the above."
+      "Both primitive values and object references are passed by value.",
+      "Primitive values are passed by value, but object references are passed by reference.",
+      "All objects are passed by reference, but primitives are passed by value-return.",
+      "Java chooses pass-by-value or pass-by-reference depending on object size."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7788,12 +7788,12 @@
   },
   {
     "id": 599,
-    "question": "How is memory management different for the heap and stack memory in Java?",
+    "question": "How is memory management typically handled for heap and stack memory in Java?",
     "options": [
-      "Heap memory is automatically managed by the Java Virtual Machine (JVM), while stack memory needs manual management.",
-      "Stack memory is automatically managed by the JVM, while heap memory needs manual management.",
-      "Both heap and stack memory require manual memory management.",
-      "Java does not differentiate between heap and stack memory management."
+      "Heap objects are generally managed by the JVM and garbage collector, while stack frames are created and removed automatically during method calls.",
+      "Heap memory requires manual `free()` calls, while stack memory is garbage-collected.",
+      "Both heap and stack memory must be managed manually by Java programmers.",
+      "Java does not distinguish between heap and stack memory in execution."
     ],
     "answer": 0,
     "subject": "JAVA",
@@ -7866,14 +7866,14 @@
   },
   {
     "id": 605,
-    "question": "What is the latest version of HTML as of now?",
+    "question": "Which doctype declaration is used for HTML5 documents?",
     "options": [
-      "HTML4",
-      "HTML5",
-      "XHTML",
-      "HTML6"
+      "<!DOCTYPE html>",
+      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\">",
+      "<!DOCTYPE xhtml>",
+      "<!HTML5>"
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "WEB",
     "topic": "HTML5"
   },
@@ -7892,12 +7892,12 @@
   },
   {
     "id": 607,
-    "question": "Which HTML5 element is used to define a section that can be reused throughout the document?",
+    "question": "Which HTML5 element is used to represent a self-contained piece of content such as a blog post or news article?",
     "options": [
       "<section>",
-      "<div>",
       "<article>",
-      "<header>"
+      "<aside>",
+      "<footer>"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -8048,12 +8048,12 @@
   },
   {
     "id": 619,
-    "question": "How can you control the volume of an audio or video element using HTML5?",
+    "question": "How can the playback volume of an HTMLMediaElement be controlled in the browser?",
     "options": [
-      "There is no volume control in HTML5; it must be controlled by external scripts.",
-      "Using the volume attribute with values between 0.0 (silent) and 1.0 (full vo lume)",
-      "By adding volume control buttons next to the audio or video element",
-      "By specifying the volume in the CSS style of the <audio> or <video> tag"
+      "Only with the volume HTML attribute in markup",
+      "By using JavaScript and setting the element's volume property",
+      "It cannot be controlled once media starts",
+      "Only by changing the file format"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -8841,12 +8841,12 @@
   },
   {
     "id": 680,
-    "question": "Domain names are used to",
+    "question": "What does DOM stand for in web development?",
     "options": [
-      "Identify websites",
-      "Send emails",
-      "Download files",
-      "Host web servers"
+      "Document Object Model",
+      "Data Object Mapper",
+      "Distributed Output Module",
+      "Document Orientation Method"
     ],
     "answer": 0,
     "subject": "WEB",
@@ -8854,25 +8854,25 @@
   },
   {
     "id": 681,
-    "question": "What does DNS stand for in Domain Name Service servers?",
+    "question": "What does the DOM represent?",
     "options": [
-      "Domain Name System",
-      "Dynamic Network Server",
-      "Data Naming Service",
-      "Digital Naming Scheme"
+      "Only CSS rules",
+      "A programming interface for HTML and XML documents",
+      "A database schema for web pages",
+      "A server-side template engine"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "WEB",
     "topic": "DOM Manipulation"
   },
   {
     "id": 682,
-    "question": "When you type a domain name in your browser, what does the DNS server do?",
+    "question": "Which JavaScript method selects an element by its id?",
     "options": [
-      "It downloads the website's content to your computer.",
-      "It translates the domain name into an IP address.",
-      "It checks if the domain name is available for registration.",
-      "It establishes a secure connection with the website."
+      "queryElements()",
+      "getElementById()",
+      "getElementsByClass()",
+      "selectById()"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -8880,25 +8880,25 @@
   },
   {
     "id": 683,
-    "question": "Which organization oversees the allocation and management of domain names and IP addresses?",
+    "question": "Which method returns the first element that matches a CSS selector?",
     "options": [
-      "IETF",
-      "W3C",
-      "ICANN",
-      "IEEE"
+      "querySelector()",
+      "getElementById()",
+      "matchSelector()",
+      "firstElement()"
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "WEB",
     "topic": "DOM Manipulation"
   },
   {
     "id": 684,
-    "question": "What is the purpose of a top-level domain (TLD)?",
+    "question": "Which property is commonly used to change the text inside an element?",
     "options": [
-      "It represents the geographic location of a website.",
-      "It identifies the type of organization associated with the domain.",
-      "It ensures that a website is secure and uses HTTPS.",
-      "It serves as a unique identifier for a specific website."
+      "nodeValueOnly",
+      "innerText",
+      "displayText",
+      "fontValue"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -8906,66 +8906,66 @@
   },
   {
     "id": 685,
-    "question": "What is the Document Object Model (DOM) in HTML?",
+    "question": "Which property allows you to insert HTML markup inside an element?",
     "options": [
-      "It is a programming language used to create dynamic web pages.",
-      "It is a style sheet language used to format the appearance of web pages.",
-      "It is an application programming interface (API) that represents the structur e of an HTML document as objects.",
-      "It is a scripting language used for server-side programming."
+      "innerHTML",
+      "outerStyle",
+      "textValue",
+      "srcHTML"
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "WEB",
     "topic": "DOM Manipulation"
   },
   {
     "id": 686,
-    "question": "document as objects. How can JavaScript interact with the DOM?",
+    "question": "How can you create a new DOM element in JavaScript?",
     "options": [
-      "By directly modifying the HTML file",
-      "By using CSS to control the document's appearance",
-      "By querying and manipulating the HTML elements and attributes using JavaScript",
-      "By accessing the server's database"
-    ],
-    "answer": 2,
-    "subject": "WEB",
-    "topic": "DOM Manipulation"
-  },
-  {
-    "id": 687,
-    "question": "In the DOM, what is a node?",
-    "options": [
-      "A web browser used to view HTML documents",
-      "A single HTML element in a web page",
-      "A script used to enhance the functionality of a web page",
-      "A server that serves HTML documents to clients"
+      "document.newElement()",
+      "document.createElement()",
+      "window.makeElement()",
+      "element.cloneNode(false) only"
     ],
     "answer": 1,
     "subject": "WEB",
     "topic": "DOM Manipulation"
   },
   {
-    "id": 688,
-    "question": "Which method is used to access an HTML element by its ID in JavaScript?",
+    "id": 687,
+    "question": "Which method appends a child node to a parent element?",
     "options": [
-      "getElementByClass",
-      "getElementByTag",
-      "getElementByName",
-      "getElementById"
+      "appendChild()",
+      "insertHTML()",
+      "addNode()",
+      "pushNode()"
     ],
-    "answer": 3,
+    "answer": 0,
+    "subject": "WEB",
+    "topic": "DOM Manipulation"
+  },
+  {
+    "id": 688,
+    "question": "Which method removes an element from the DOM when called on its parent?",
+    "options": [
+      "deleteChild()",
+      "remove()",
+      "removeChild()",
+      "detachNode()"
+    ],
+    "answer": 2,
     "subject": "WEB",
     "topic": "DOM Manipulation"
   },
   {
     "id": 689,
-    "question": "The DOM allows you to add event listeners to HTML elements. What are event listeners used for?",
+    "question": "What is event bubbling in the DOM?",
     "options": [
-      "To modify the appearance of HTML elements",
-      "To add new HTML elements to a web page",
-      "To handle user interactions with HTML elements, such as clicks or input",
-      "To query and manipulate the document's structure"
+      "An event moves from the target element up through its ancestors.",
+      "An event runs only on the window object.",
+      "An event is automatically cancelled.",
+      "An event skips the target element and starts at the document root."
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "WEB",
     "topic": "DOM Manipulation"
   },
@@ -10141,12 +10141,12 @@
   },
   {
     "id": 780,
-    "question": "When was the Internet first developed?",
+    "question": "What is web hosting?",
     "options": [
-      "1960s",
-      "1970s",
-      "1980s",
-      "1990s"
+      "A CSS framework",
+      "A service that stores and delivers website files over the internet",
+      "A browser extension",
+      "A JavaScript runtime"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -10154,25 +10154,25 @@
   },
   {
     "id": 781,
-    "question": "Which project was instrumental in the development of the early Internet?",
+    "question": "What is a domain name?",
     "options": [
-      "ARPANET",
-      "World Wide Web",
-      "ENIAC",
-      "UNIX"
+      "The physical server cabinet",
+      "A human-readable address used to access a website",
+      "A type of database index",
+      "A JavaScript library"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
     "id": 782,
-    "question": "What year was the World Wide Web (WWW) proposed by Tim Berners-Lee?",
+    "question": "What is DNS used for?",
     "options": [
-      "1989",
-      "1991",
-      "1993",
-      "1995"
+      "Compressing image files",
+      "Mapping domain names to IP addresses",
+      "Styling HTML pages",
+      "Encrypting passwords in forms"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -10180,51 +10180,51 @@
   },
   {
     "id": 783,
-    "question": "The term \"Internet\" is a contraction of which two words?",
+    "question": "What does HTTP stand for?",
     "options": [
-      "International Network",
-      "Interlinked Network",
-      "Integrated Network",
-      "Internet Network"
-    ],
-    "answer": 1,
-    "subject": "WEB",
-    "topic": "Web Hosting Basics"
-  },
-  {
-    "id": 784,
-    "question": "What technology enables devices to connect and communicate with each other over the Internet?",
-    "options": [
-      "HTTP",
-      "TCP/IP",
-      "DNS",
-      "HTML"
-    ],
-    "answer": 1,
-    "subject": "WEB",
-    "topic": "Web Hosting Basics"
-  },
-  {
-    "id": 785,
-    "question": "Which device is responsible for directing data packets to their destination across networks?",
-    "options": [
-      "Router",
-      "Modem",
-      "Hub",
-      "Switch"
+      "HyperText Transfer Protocol",
+      "HighText Transmission Process",
+      "Hosted Transfer Text Platform",
+      "Hyperlink Transport Terminal Process"
     ],
     "answer": 0,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
-    "id": 786,
-    "question": "Which network component provides physical connections between devices within a local network?",
+    "id": 784,
+    "question": "Which protocol is the secure version of HTTP?",
     "options": [
-      "Router",
-      "Switch",
-      "Modem",
-      "Hub"
+      "FTP",
+      "SMTP",
+      "HTTPS",
+      "SSH"
+    ],
+    "answer": 2,
+    "subject": "WEB",
+    "topic": "Web Hosting Basics"
+  },
+  {
+    "id": 785,
+    "question": "What is an IP address?",
+    "options": [
+      "A CSS selector for internet pages",
+      "A unique network address used to identify a device on a network",
+      "A browser cache key",
+      "A type of HTML tag"
+    ],
+    "answer": 1,
+    "subject": "WEB",
+    "topic": "Web Hosting Basics"
+  },
+  {
+    "id": 786,
+    "question": "What is the role of a web server?",
+    "options": [
+      "To compile Java source code",
+      "To store, process, and deliver web content to clients",
+      "To design page layouts",
+      "To replace DNS completely"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -10232,51 +10232,51 @@
   },
   {
     "id": 787,
-    "question": "Which method is used to update or create a resource on the server?",
+    "question": "Which of the following is a common web server software?",
     "options": [
-      "GET",
-      "POST",
-      "PUT",
-      "HEAD"
+      "Apache HTTP Server",
+      "Bootstrap",
+      "Mongo shell",
+      "Figma"
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
     "id": 788,
-    "question": "The DELETE method is used to",
+    "question": "What is shared hosting?",
     "options": [
-      "Retrieve data from the server",
-      "Modify existing data on the server",
-      "Send data to the server for processing",
-      "Delete a resource from the server"
+      "Each website gets a dedicated physical server",
+      "Multiple websites use the resources of the same server",
+      "Hosting only for mobile apps",
+      "A hosting plan without internet access"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
     "id": 789,
-    "question": "The URL of a web page specifies the web page's",
+    "question": "What is a benefit of cloud hosting?",
     "options": [
-      "HTML code",
-      "CSS styles",
-      "IP address",
-      "Address on the World Wide Web"
+      "No need for internet access",
+      "Better scalability and resource flexibility",
+      "It supports only static HTML pages",
+      "It cannot host databases"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
     "id": 790,
-    "question": "The client-side scripts in web development are executed by the",
+    "question": "What is bandwidth in the context of web hosting?",
     "options": [
-      "Web server",
-      "Web browser",
-      "DNS server",
-      "Database server"
+      "The amount of memory in the browser",
+      "The amount of data that can be transferred over a period",
+      "The number of HTML tags on a page",
+      "The speed of the CPU only"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -10284,64 +10284,64 @@
   },
   {
     "id": 791,
-    "question": "Which HTML tag is used to create a hyperlink?",
+    "question": "What does uptime refer to in hosting?",
     "options": [
-      "<link>",
-      "<href>",
-      "<a>",
-      "<hyperlink>"
-    ],
-    "answer": 2,
-    "subject": "WEB",
-    "topic": "Web Hosting Basics"
-  },
-  {
-    "id": 792,
-    "question": "The <h1> to <h6> tags are used for",
-    "options": [
-      "Creating ordered lists",
-      "Defining headings of different levels",
-      "Embedding images",
-      "Creating tables"
+      "How long a developer is logged in",
+      "The percentage of time a server is available",
+      "How long CSS takes to load",
+      "The size of the hosting dashboard"
     ],
     "answer": 1,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
-    "id": 793,
-    "question": "What does the <img> tag represent in HTML?",
+    "id": 792,
+    "question": "What is FTP commonly used for?",
     "options": [
-      "An image",
-      "A link to another webpage",
-      "A list item",
-      "A paragraph of text"
+      "Uploading and downloading files to a server",
+      "Styling responsive layouts",
+      "Validating JSON responses",
+      "Running SQL joins"
     ],
     "answer": 0,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
-    "id": 794,
-    "question": "Which HTML tag is used to create an unordered list?",
+    "id": 793,
+    "question": "What is cPanel or a similar control panel used for?",
     "options": [
-      "<ol>",
-      "<dl>",
-      "<ul>",
-      "<li>"
+      "Writing JavaScript logic in the browser",
+      "Managing hosting resources, files, domains, and email",
+      "Compiling C++ templates",
+      "Replacing the web server binary"
     ],
-    "answer": 2,
+    "answer": 1,
+    "subject": "WEB",
+    "topic": "Web Hosting Basics"
+  },
+  {
+    "id": 794,
+    "question": "What is SSL/TLS mainly used for on websites?",
+    "options": [
+      "Compressing CSS files",
+      "Encrypting data exchanged between client and server",
+      "Creating database triggers",
+      "Rendering canvas graphics"
+    ],
+    "answer": 1,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
     "id": 795,
-    "question": "What is the purpose of the <iframe> tag in HTML?",
+    "question": "What is deployment in web development?",
     "options": [
-      "To create a hyperlink",
-      "To embed external content in a web page",
-      "To define a table",
-      "To format text"
+      "Deleting a project from version control",
+      "Making an application available on a server for users",
+      "Only designing UI mockups",
+      "Renaming HTML files locally"
     ],
     "answer": 1,
     "subject": "WEB",
@@ -10349,38 +10349,38 @@
   },
   {
     "id": 796,
-    "question": "The Geolocation API requires user permission to access the user's location. How does the browser prompt the user for permission?",
+    "question": "What is a static website?",
     "options": [
-      "By automatically allowing access without prompting the user",
-      "By displaying a message requesting permission to access location information",
-      "By displaying a map showing the user's current location and asking for confirmation",
-      "By redirecting the user to the device's location settings"
+      "A website whose content is served largely as fixed files",
+      "A website that cannot be accessed online",
+      "A site that never uses HTML",
+      "A site that always requires a database"
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
     "id": 797,
-    "question": "What information does the Geolocation API provide about the user's location?",
+    "question": "What is a dynamic website?",
     "options": [
-      "The user's name and contact information",
-      "The latitude and longitude coordinates of the user's current position",
-      "The user's home address and zip code",
-      "The user's IP address and internet service provider"
+      "A website generated with server-side logic or changing data",
+      "A website that uses only CSS animations",
+      "A website without any files on a server",
+      "A website that can only run offline"
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
   {
     "id": 798,
-    "question": "Can the Geolocation API be used on all devices and browsers?",
+    "question": "Why are backups important in web hosting?",
     "options": [
-      "Yes, it is supported on all devices and browsers.",
-      "No, it is only supported on mobile devices and some modern browsers.",
-      "Yes, but it requires a specific plugin to be installed on the browser.",
-      "No, it is not supported on any devices or browsers."
+      "They increase font size automatically.",
+      "They help restore the site after accidental loss, corruption, or failure.",
+      "They replace the need for testing.",
+      "They are used only for HTML validation."
     ],
     "answer": 1,
     "subject": "WEB",
@@ -10388,14 +10388,14 @@
   },
   {
     "id": 799,
-    "question": "In HTML, the \"id\" attribute is used to",
+    "question": "What is the main purpose of a CDN in web delivery?",
     "options": [
-      "Apply multiple styles to an element",
-      "Group similar elements together",
-      "Identify a unique element on the page",
-      "Define the box model of an element"
+      "To store browser passwords",
+      "To distribute static assets across geographically distributed servers for faster delivery",
+      "To replace DNS with HTML5",
+      "To execute SQL queries in the browser"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "WEB",
     "topic": "Web Hosting Basics"
   },
@@ -10531,51 +10531,51 @@
   },
   {
     "id": 810,
-    "question": "What is the primary advantage of using linked lists over arrays?",
+    "question": "Which operation is generally efficient in an array because elements are stored contiguously?",
     "options": [
-      "Linked lists are more memory-efficient",
-      "Linked lists provide faster access to elements",
-      "Linked lists offer constant-time insertion and deletion",
-      "Linked lists have a fixed size"
+      "Random access by index",
+      "Insertion at the beginning",
+      "Deletion from the middle",
+      "Insertion in sorted order"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Arrays"
+  },
+  {
+    "id": 811,
+    "question": "What is the worst-case time complexity of inserting an element at the beginning of an array?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
     ],
     "answer": 2,
     "subject": "DSA",
     "topic": "Arrays"
   },
   {
-    "id": 811,
-    "question": "What is node-based storage in the context of linked lists?",
+    "id": 812,
+    "question": "What is the worst-case time complexity of deleting an element from the middle of an array?",
     "options": [
-      "A method of storing linked lists using arrays",
-      "A method of storing linked lists using nodes",
-      "A method of storing linked lists using pointers",
-      "A method of storing linked lists using circular arrays"
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
     ],
     "answer": 1,
     "subject": "DSA",
     "topic": "Arrays"
   },
   {
-    "id": 812,
-    "question": "What is a node in the context of linked lists?",
-    "options": [
-      "An element in an array",
-      "A collection of unrelated elements",
-      "A data structure containing data and a pointer to the next element",
-      "A hierarchical data structure"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Arrays"
-  },
-  {
     "id": 813,
-    "question": "How are elements connected in a node-based storage linked list?",
+    "question": "Which statement about arrays is correct?",
     "options": [
-      "Each node points to the previous node",
-      "Each node points to the next node",
-      "Each node points to all other nodes",
-      "Each node does not point to any node"
+      "Array elements may have different data types in a standard static array.",
+      "Array elements are typically stored in contiguous memory locations.",
+      "Arrays do not support indexing.",
+      "Arrays always grow automatically in every language."
     ],
     "answer": 1,
     "subject": "DSA",
@@ -10583,25 +10583,25 @@
   },
   {
     "id": 814,
-    "question": "What is the time complexity for accessing an element in a node-based storage linked list at a specific index?",
+    "question": "If an array has n elements, what is the valid index range in zero-based indexing?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n^2)"
+      "1 to n",
+      "0 to n",
+      "0 to n - 1",
+      "1 to n - 1"
     ],
-    "answer": 1,
+    "answer": 2,
     "subject": "DSA",
     "topic": "Arrays"
   },
   {
     "id": 815,
-    "question": "What is the primary advantage of using node-based storage with arrays over standard arrays?",
+    "question": "Which searching algorithm requires the array to be sorted?",
     "options": [
-      "It provides faster access to elements",
-      "It allows constant-time insertion and deletion",
-      "It requires less memory per element",
-      "It provides faster traversal in both directions"
+      "Linear search",
+      "Binary search",
+      "Jump search only",
+      "Hash search"
     ],
     "answer": 1,
     "subject": "DSA",
@@ -10609,53 +10609,53 @@
   },
   {
     "id": 816,
-    "question": "What is the time complexity for inserting an element at the end of a node-based storage linked list?",
+    "question": "What is the space complexity of an array containing n elements?",
     "options": [
       "O(1)",
-      "O(n)",
       "O(log n)",
+      "O(n)",
       "O(n^2)"
     ],
-    "answer": 0,
+    "answer": 2,
     "subject": "DSA",
     "topic": "Arrays"
   },
   {
     "id": 817,
-    "question": "How do you add an element to the beginning of a node-based storage linked list?",
+    "question": "What is the main drawback of a fixed-size array?",
     "options": [
-      "Change the pointer of the first node to point to the new node",
-      "Change the pointer of the last node to point to the new node",
-      "Create a new list with the new element and append it to the existing list",
-      "Node-based storage linked lists do not support adding elements to the beginning"
+      "Elements cannot be accessed by index.",
+      "Its capacity cannot change after creation.",
+      "It cannot store primitive values.",
+      "It does not occupy contiguous memory."
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Arrays"
   },
   {
     "id": 818,
-    "question": "What is the time complexity for inserting an element at the beginning of a node -based storage linked list?",
+    "question": "When traversing an array from left to right, how many elements are visited in a complete traversal?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n^2)"
+      "1",
+      "log n",
+      "n",
+      "n / 2"
     ],
-    "answer": 0,
+    "answer": 2,
     "subject": "DSA",
     "topic": "Arrays"
   },
   {
     "id": 819,
-    "question": "How do you remove an element from the middle of a node-based storage linked list?",
+    "question": "Which pattern is commonly used with arrays to solve subarray problems efficiently?",
     "options": [
-      "Change the pointer of the previous node to point to the next node",
-      "Change the pointer of the next node to point to the previous node",
-      "Remove the node and update the pointers of adjacent nodes",
-      "Node-based storage linked lists do not support removal of elements from the middle"
+      "Backtracking only",
+      "Prefix sums",
+      "Multiple inheritance",
+      "Garbage collection"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Arrays"
   },
@@ -11181,103 +11181,103 @@
   },
   {
     "id": 860,
-    "question": "What is the primary objective of learning about Abstract Data Types (ADTs) in algorithm design?",
+    "question": "What is a tree in data structures?",
     "options": [
-      "Creating complex algorithms with unique data structures",
-      "Ignoring the concept of data structures",
-      "Implementing physical components of a computer",
-      "Encapsulating data and operations in a reusable manner"
+      "A linear structure with sequential access only",
+      "A non-linear hierarchical structure of nodes",
+      "A structure used only for sorting numbers",
+      "A hash-based key-value store"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Trees"
   },
   {
     "id": 861,
-    "question": "How do Abstract Data Types (ADTs) contribute to algorithm design?",
+    "question": "What is the topmost node of a tree called?",
     "options": [
-      "They make algorithms more difficult to implement",
-      "They offer ready-made solutions to complex issues",
-      "They provide a high-level description of data and operations",
-      "ADTs have no relevance to algorithm design"
+      "Leaf",
+      "Root",
+      "Parent",
+      "Sibling"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Trees"
   },
   {
     "id": 862,
-    "question": "What distinguishes an Abstract Data Type (ADT) from a concrete data type?",
+    "question": "A node with no children is called",
     "options": [
-      "ADTs have no specific operations associated with them",
-      "ADTs are limited to primitive data types",
-      "ADTs are solely used in theoretical computer science",
-      "Concrete data types have no relationship with algorithms"
+      "Root node",
+      "Internal node",
+      "Leaf node",
+      "Ancestor node"
     ],
-    "answer": 0,
+    "answer": 2,
     "subject": "DSA",
     "topic": "Trees"
   },
   {
     "id": 863,
-    "question": "How do Abstract Data Types (ADTs) promote modularity in algorithm design?",
+    "question": "In a binary tree, what is the maximum number of children a node can have?",
     "options": [
-      "They lead to monolithic and inflexible algorithms",
-      "They encourage interdependence among data structures",
-      "They allow algorithms to be designed independently of their implementation details",
-      "ADTs do not contribute to modularity in algorithm design"
+      "1",
+      "2",
+      "3",
+      "Unlimited"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Trees"
   },
   {
     "id": 864,
-    "question": "Why is encapsulation essential in the design of Abstract Data Types (ADTs)?",
+    "question": "Which traversal visits nodes in the order left subtree, root, right subtree?",
     "options": [
-      "Encapsulation hinders data abstraction",
-      "Encapsulation limits the reuse of code",
-      "Encapsulation protects the internal details of data structures",
-      "Encapsulation is irrelevant in data structure design"
+      "Preorder",
+      "Inorder",
+      "Postorder",
+      "Level order"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Trees"
   },
   {
     "id": 865,
-    "question": "Which of the following is NOT a common Abstract Data Type (ADT)?",
+    "question": "Which traversal visits the root before its subtrees?",
     "options": [
-      "Stack",
-      "Queue",
-      "Binary search tree",
-      "Loop"
-    ],
-    "answer": 3,
-    "subject": "DSA",
-    "topic": "Trees"
-  },
-  {
-    "id": 866,
-    "question": "How does an Abstract Data Type (ADT) differ from a concrete data type in programming?",
-    "options": [
-      "ADTs are only used in theoretical computer science",
-      "Concrete data types are more versatile than ADTs",
-      "ADTs provide a high-level description without specifying the implementation",
-      "Concrete data types are limited to primitive data structures"
+      "Inorder",
+      "Postorder",
+      "Preorder",
+      "Reverse order"
     ],
     "answer": 2,
     "subject": "DSA",
     "topic": "Trees"
   },
   {
-    "id": 867,
-    "question": "What does \"data abstraction\" mean in the context of Abstract Data Types (ADTs)?",
+    "id": 866,
+    "question": "Which data structure is commonly used to perform level-order traversal of a tree?",
     "options": [
-      "Hiding the internal details of data structures",
-      "Displaying all the details of data structures",
-      "Ignoring the implementation of data structures",
-      "Avoiding the use of data structures in algorithms"
+      "Stack",
+      "Queue",
+      "Heap",
+      "Set"
+    ],
+    "answer": 1,
+    "subject": "DSA",
+    "topic": "Trees"
+  },
+  {
+    "id": 867,
+    "question": "In a binary search tree (BST), which property is true for every node?",
+    "options": [
+      "All left subtree values are smaller and all right subtree values are larger.",
+      "All left subtree values are larger and all right subtree values are smaller.",
+      "Both subtrees must have the same number of nodes.",
+      "Each node must have exactly two children."
     ],
     "answer": 0,
     "subject": "DSA",
@@ -11285,27 +11285,27 @@
   },
   {
     "id": 868,
-    "question": "Why do programmers use Abstract Data Types (ADTs) in algorithm design?",
+    "question": "What is the height of a tree?",
     "options": [
-      "To make algorithms less efficient",
-      "To make algorithms more complicated",
-      "To encapsulate data and operations for easy reuse and maintenance",
-      "To reduce the modularity of code"
+      "The number of leaf nodes only",
+      "The number of edges on the longest path from root to a leaf",
+      "The number of siblings of the root",
+      "The total number of nodes divided by two"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Trees"
   },
   {
     "id": 869,
-    "question": "How do Abstract Data Types (ADTs) contribute to the object-oriented programming paradigm?",
+    "question": "Which operation on a balanced BST usually has time complexity O(log n)?",
     "options": [
-      "By eliminating the use of objects in programming",
-      "By promoting procedural programming practices",
-      "By encapsulating data and behavior into objects",
-      "ADTs have no relevance to object-oriented programming"
+      "Search",
+      "Traversal of all nodes",
+      "Printing every leaf",
+      "Building an adjacency matrix"
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DSA",
     "topic": "Trees"
   },
@@ -12481,90 +12481,90 @@
   },
   {
     "id": 960,
-    "question": "One approach to handling hash collisions is to use a separate data structure to store multiple values that share the same hash index. What is this data structure called?",
+    "question": "What is dynamic programming primarily used for?",
     "options": [
-      "Linked list",
-      "Binary tree",
-      "Stack",
-      "Queue"
+      "Solving problems by repeated random trials",
+      "Solving problems with overlapping subproblems and optimal substructure",
+      "Only sorting arrays",
+      "Only traversing graphs"
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Dynamic Programming"
   },
   {
     "id": 961,
-    "question": "Collision occurs in a hash table when",
+    "question": "Which two key properties make a problem suitable for dynamic programming?",
     "options": [
-      "The hash function produces the same value for two different keys",
-      "The hash table is full",
-      "The hash table is empty",
-      "The hash function is not deterministic"
+      "Backtracking and recursion depth",
+      "Optimal substructure and overlapping subproblems",
+      "Heap order and hashing",
+      "FIFO and LIFO behavior"
+    ],
+    "answer": 1,
+    "subject": "DSA",
+    "topic": "Dynamic Programming"
+  },
+  {
+    "id": 962,
+    "question": "What is memoization?",
+    "options": [
+      "Storing results of solved subproblems to avoid recomputation",
+      "Deleting repeated values from an array",
+      "Sorting subproblems by size",
+      "A graph traversal strategy"
     ],
     "answer": 0,
     "subject": "DSA",
     "topic": "Dynamic Programming"
   },
   {
-    "id": 962,
-    "question": "Collision resolution techniques are used to",
-    "options": [
-      "Increase the size of the hash table",
-      "Avoid collisions",
-      "Handle and resolve collisions",
-      "Reduce the load factor of the hash table"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Dynamic Programming"
-  },
-  {
     "id": 963,
-    "question": "Which of the following is NOT a common collision resolution technique?",
+    "question": "What is tabulation in dynamic programming?",
     "options": [
-      "Linear probing",
-      "Quadratic probing",
-      "Binary search",
-      "Double hashing"
+      "Top-down recursion with caching",
+      "Bottom-up computation using a table",
+      "Recursive backtracking without storage",
+      "A pointer arithmetic technique"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Dynamic Programming"
   },
   {
     "id": 964,
-    "question": "Collision resolution techniques aim to maintain the property of",
+    "question": "Which classic problem is commonly used to explain dynamic programming?",
     "options": [
-      "Determinism",
-      "Collisions",
-      "Load factor",
-      "Uniform distribution"
+      "Binary search",
+      "Fibonacci sequence",
+      "Circular queue overflow",
+      "Linked-list reversal"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Dynamic Programming"
   },
   {
     "id": 965,
-    "question": "Which of the following statements is true about collision resolution techniques?",
+    "question": "Compared with naive recursion, dynamic programming usually improves performance by",
     "options": [
-      "Linear probing always guarantees no collisions in a hash table.",
-      "Quadratic probing is less prone to clustering than linear probing.",
-      "Double hashing always requires a larger hash table size than other techniques.",
-      "Separate chaining uses an additional data structure to store collided elements."
+      "Increasing stack usage intentionally",
+      "Reusing solutions to smaller subproblems",
+      "Avoiding all loops",
+      "Replacing arrays with linked lists"
     ],
-    "answer": 3,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Dynamic Programming"
   },
   {
     "id": 966,
-    "question": "In the separate chaining collision resolution technique, each bucket in the hash table is a",
+    "question": "Which approach is top-down dynamic programming?",
     "options": [
-      "Linked list",
-      "Binary tree",
-      "Fixed-size array",
-      "Circular queue"
+      "Memoization",
+      "Tabulation",
+      "Selection sort",
+      "Level-order traversal"
     ],
     "answer": 0,
     "subject": "DSA",
@@ -12572,25 +12572,25 @@
   },
   {
     "id": 967,
-    "question": "The main advantage of separate chaining is",
+    "question": "Which approach is bottom-up dynamic programming?",
     "options": [
-      "Reduced memory usage",
-      "Efficient space utilization",
-      "Lower time complexity for insertion and search",
-      "Higher load factor for the hash table"
+      "Memoization",
+      "Tabulation",
+      "Backtracking",
+      "Depth-first search"
     ],
-    "answer": 2,
+    "answer": 1,
     "subject": "DSA",
     "topic": "Dynamic Programming"
   },
   {
     "id": 968,
-    "question": "The performance of separate chaining depends on",
+    "question": "In the 0/1 knapsack problem, an item can be chosen",
     "options": [
-      "The size of the hash table",
-      "The type of hashing algorithm used",
-      "The number of hash collisions",
-      "The number of elements in the hash table"
+      "Any number of times",
+      "Exactly twice",
+      "At most once",
+      "Only if its weight is even"
     ],
     "answer": 2,
     "subject": "DSA",
@@ -12598,12 +12598,12 @@
   },
   {
     "id": 969,
-    "question": "Linear probing is a collision resolution technique that",
+    "question": "Why is dynamic programming often preferred over plain recursion for optimization problems?",
     "options": [
-      "Uses a linked list to store collided elements",
-      "Searches for an empty slot by incrementing the index linearly",
-      "Searches for an empty slot by decrementing the index linearly",
-      "Rehashes the key to resolve collisions"
+      "It guarantees constant-time execution.",
+      "It avoids solving the same subproblem repeatedly.",
+      "It never uses extra memory.",
+      "It works only on sorted input."
     ],
     "answer": 1,
     "subject": "DSA",
@@ -12741,64 +12741,64 @@
   },
   {
     "id": 980,
-    "question": "What is the primary purpose of \"defining the problem\" in problem-solving?",
+    "question": "What does Big-O notation describe?",
     "options": [
-      "To ignore the problem",
-      "To identify multiple problems",
-      "To understand the underlying issues and requirements",
-      "To guess a solution"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 981,
-    "question": "When should you define the problem during the problem-solving process?",
-    "options": [
-      "At the end",
-      "After finding a solution",
-      "After identifying the problem",
-      "At the beginning"
-    ],
-    "answer": 3,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 982,
-    "question": "What does \"scope\" refer to when defining a problem?",
-    "options": [
-      "The difficulty level of the problem",
-      "The timeline for solving the problem",
-      "The specific elements and boundaries of the problem",
-      "The financial cost of solving the problem"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 983,
-    "question": "Which of the following statements is true?",
-    "options": [
-      "A well-defined problem has only one possible solution",
-      "A well-defined problem has multiple possible solutions",
-      "A well-defined problem has no solution",
-      "Problem definition is not essential in problem-solving"
+      "The exact running time of an algorithm on every machine",
+      "An upper bound on growth rate as input size increases",
+      "Only the memory used by Java programs",
+      "The compiler version required to run code"
     ],
     "answer": 1,
     "subject": "DSA",
     "topic": "Complexity & Java Patterns"
   },
   {
-    "id": 984,
-    "question": "What is the first step in the process of defining a problem?",
+    "id": 981,
+    "question": "Which complexity is better for large input sizes?",
     "options": [
-      "Listing possible solutions",
-      "Identifying the problem",
-      "Recognizing the symptoms of the problem",
-      "Analyzing the consequences of the problem"
+      "O(n^2)",
+      "O(n log n)",
+      "O(2^n)",
+      "O(n!)"
+    ],
+    "answer": 1,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 982,
+    "question": "What is the time complexity of accessing an element by index in an array?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 983,
+    "question": "What is the worst-case time complexity of linear search?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n^2)"
+    ],
+    "answer": 2,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 984,
+    "question": "What is the worst-case time complexity of binary search?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
     ],
     "answer": 1,
     "subject": "DSA",
@@ -12806,77 +12806,77 @@
   },
   {
     "id": 985,
-    "question": "How can defining the problem accurately help in problem-solving?",
+    "question": "Which notation describes a tight asymptotic bound?",
     "options": [
-      "It narrows down the scope of the problem",
-      "It guarantees finding the correct solution",
-      "It makes the problem more challenging",
-      "It is not relevant to problem-solving"
+      "Big-Omega",
+      "Big-Theta",
+      "Big-O",
+      "Little-o"
+    ],
+    "answer": 1,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 986,
+    "question": "Which statement best describes space complexity?",
+    "options": [
+      "The number of CPU instructions only",
+      "The amount of extra memory used by an algorithm",
+      "The size of the input data type name",
+      "The number of comments in code"
+    ],
+    "answer": 1,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 987,
+    "question": "Which coding pattern is commonly used when working with sorted arrays from both ends?",
+    "options": [
+      "Two pointers",
+      "Recursion only",
+      "Circular queue",
+      "Hash chaining"
     ],
     "answer": 0,
     "subject": "DSA",
     "topic": "Complexity & Java Patterns"
   },
   {
-    "id": 986,
-    "question": "What is the significance of understanding the problem before attempting to solve it?",
-    "options": [
-      "It reduces the chances of finding a solution",
-      "It helps in finding irrelevant solutions",
-      "It ensures the problem is ignored",
-      "It ensures a more focused and effective problem-solving process"
-    ],
-    "answer": 3,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 987,
-    "question": "Which of the following is NOT a benefit of defining the problem accurately?",
-    "options": [
-      "Saves time and resources",
-      "Avoids the need for problem-solving",
-      "Increases the chances of finding a suitable solution",
-      "Helps in setting clear objectives"
-    ],
-    "answer": 1,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
     "id": 988,
-    "question": "How does problem definition contribute to effective communicat ion in problem-solving?",
+    "question": "Which pattern is useful for finding properties of contiguous subarrays or substrings?",
     "options": [
-      "It hinders communication among team members",
-      "It creates confusion and misunderstanding",
-      "It establishes a common understanding among stakeholders",
-      "It is not relevant to communication"
+      "Sliding window",
+      "Multiple inheritance",
+      "Tree rotation",
+      "Open addressing"
     ],
-    "answer": 2,
+    "answer": 0,
     "subject": "DSA",
     "topic": "Complexity & Java Patterns"
   },
   {
     "id": 989,
-    "question": "What happens if the problem is not properly defined in the problem -solving process?",
+    "question": "Which pattern stores cumulative values to answer range-sum queries efficiently?",
     "options": [
-      "It guarantees finding the best solution",
-      "It reduces the likelihood of finding a solution",
-      "It eliminates the need for finding a solution",
-      "It helps in finding all possible solutions"
+      "Prefix sum",
+      "Backtracking",
+      "Topological sort",
+      "Heapify"
     ],
-    "answer": 1,
+    "answer": 0,
     "subject": "DSA",
     "topic": "Complexity & Java Patterns"
   },
   {
     "id": 990,
-    "question": "What is the primary goal of \"identifying the problem\" in problem-solving?",
+    "question": "Which technique is commonly used to detect a cycle in a linked list?",
     "options": [
-      "Finding a solution immediately",
-      "Understanding the context and nature of the problem",
-      "Ignoring the problem",
-      "Avoiding the problem"
+      "Binary search",
+      "Fast and slow pointers",
+      "Breadth-first search",
+      "Matrix multiplication"
     ],
     "answer": 1,
     "subject": "DSA",
@@ -12884,119 +12884,236 @@
   },
   {
     "id": 991,
-    "question": "How is \"identifying the problem\" different from \"defining the problem\"?",
+    "question": "What does amortized analysis study?",
     "options": [
-      "They are the same",
-      "Identifying the problem comes after defining the problem",
-      "Defining the problem comes after identifying the problem",
-      "They are not related to problem-solving"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 992,
-    "question": "When should you identify the problem during the problem-solving process?",
-    "options": [
-      "At the beginning",
-      "At the end",
-      "Somewhere in the middle",
-      "It is not necessary to identify the problem"
-    ],
-    "answer": 0,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 993,
-    "question": "What is the first step in the process of identifying a problem?",
-    "options": [
-      "Listing possible solutions",
-      "Analyzing the consequences of the problem",
-      "Recognizing and acknowledging the existence of the problem",
-      "Assuming there is no problem"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 994,
-    "question": "How can problem identification help in the problem-solving process?",
-    "options": [
-      "It guarantees finding the correct solution",
-      "It makes the problem more complicated",
-      "It helps in defining the scope of the problem",
-      "It is not relevant to problem-solving"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 995,
-    "question": "What does \"identifying the problem\" involve?",
-    "options": [
-      "Guessing the solution",
-      "Focusing only on the symptoms of the problem",
-      "Analyzing the consequences of the problem",
-      "Recognizing the underlying causes of the problem"
-    ],
-    "answer": 3,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 996,
-    "question": "Why is it essential to identify the problem accurately?",
-    "options": [
-      "It guarantees finding the best solution",
-      "It helps in avoiding the problem",
-      "It reduces the chances of finding a solution",
-      "It helps in finding an appropriate solution"
-    ],
-    "answer": 3,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 997,
-    "question": "How does problem identification contribute to effective communication in problem-solving?",
-    "options": [
-      "It hinders communication among team members",
-      "It creates confusion and misunderstanding",
-      "It establishes a common understanding among stakeholders",
-      "It is not relevant to communication"
-    ],
-    "answer": 2,
-    "subject": "DSA",
-    "topic": "Complexity & Java Patterns"
-  },
-  {
-    "id": 998,
-    "question": "What happens if the problem is not properly identified in the problem -solving process?",
-    "options": [
-      "It guarantees finding the best solution",
-      "It reduces the likelihood of finding a solution",
-      "It eliminates the need for finding a solution",
-      "It helps in finding all possible solutions"
+      "The worst single operation only",
+      "Average cost of operations over a sequence",
+      "Only compile-time memory usage",
+      "The syntax of loop constructs"
     ],
     "answer": 1,
     "subject": "DSA",
     "topic": "Complexity & Java Patterns"
   },
   {
-    "id": 999,
-    "question": "What is problem-solving?",
+    "id": 992,
+    "question": "Which complexity grows faster as n becomes very large?",
     "options": [
-      "Avoiding problems",
-      "Finding multiple solutions to a problem",
-      "Analyzing the consequences of a problem",
-      "Process of finding solutions to difficult or complex issues"
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n^2)"
     ],
     "answer": 3,
     "subject": "DSA",
     "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 993,
+    "question": "Which pattern is helpful for next greater element problems?",
+    "options": [
+      "Monotonic stack",
+      "Prefix tree",
+      "Circular linked list",
+      "Hash bucket"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 994,
+    "question": "Which recursive technique explores choices and undoes them when needed?",
+    "options": [
+      "Backtracking",
+      "Memoization",
+      "Heap sort",
+      "Hash probing"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 995,
+    "question": "Why do we usually ignore constant factors in asymptotic analysis?",
+    "options": [
+      "They are always zero.",
+      "Growth rate matters more than machine-specific constants for large inputs.",
+      "Constants can be optimized only in Java.",
+      "Compilers remove all constants automatically."
+    ],
+    "answer": 1,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 996,
+    "question": "What is the best-case time complexity of binary search?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n^2)"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 997,
+    "question": "Which pattern is often used to solve problems involving cumulative frequency or counting prefixes?",
+    "options": [
+      "Prefix sum / frequency map pattern",
+      "AVL rotation pattern",
+      "Destructor pattern",
+      "Queue adapter pattern"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 998,
+    "question": "Which choice best improves readability and maintainability when implementing DSA in Java?",
+    "options": [
+      "Using meaningful method names and small helper methods",
+      "Using a single 500-line method for speed",
+      "Avoiding all comments and tests",
+      "Using global mutable state everywhere"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 999,
+    "question": "Why is time-complexity analysis important?",
+    "options": [
+      "It replaces the need to test code.",
+      "It helps compare algorithm scalability as input size grows.",
+      "It guarantees bug-free programs.",
+      "It makes memory usage irrelevant."
+    ],
+    "answer": 1,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 1000,
+    "question": "Which loop is most appropriate when the number of iterations is known in advance?",
+    "options": [
+      "for loop",
+      "do-while loop only",
+      "goto statement",
+      "switch statement"
+    ],
+    "answer": 0,
+    "subject": "CPP",
+    "topic": "Structure of C++ Programs"
+  },
+  {
+    "id": 1001,
+    "question": "Which STL algorithm can be used to count how many times a value appears in a range?",
+    "options": [
+      "count",
+      "accumulate",
+      "erase",
+      "reserve"
+    ],
+    "answer": 0,
+    "subject": "CPP",
+    "topic": "Standard Template Library"
+  },
+  {
+    "id": 1002,
+    "question": "Which smart pointer owns an object exclusively in modern C++?",
+    "options": [
+      "shared_ptr",
+      "weak_ptr",
+      "unique_ptr",
+      "raw_ptr"
+    ],
+    "answer": 2,
+    "subject": "CPP",
+    "topic": "Dynamic Memory & OOP Applications"
+  },
+  {
+    "id": 1003,
+    "question": "Which array technique is useful when multiple range-sum queries need to be answered quickly?",
+    "options": [
+      "Prefix sum",
+      "Recursion tree",
+      "Hash chaining",
+      "Level-order traversal"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Arrays"
+  },
+  {
+    "id": 1004,
+    "question": "Which traversal of a BST produces keys in sorted order?",
+    "options": [
+      "Preorder",
+      "Postorder",
+      "Inorder",
+      "Level order"
+    ],
+    "answer": 2,
+    "subject": "DSA",
+    "topic": "Trees"
+  },
+  {
+    "id": 1005,
+    "question": "Which problem-solving pattern commonly compares a window of adjacent elements and expands or shrinks it?",
+    "options": [
+      "Sliding window",
+      "Heap sort",
+      "Open addressing",
+      "Matrix transpose"
+    ],
+    "answer": 0,
+    "subject": "DSA",
+    "topic": "Complexity & Java Patterns"
+  },
+  {
+    "id": 1006,
+    "question": "Which DOM method is commonly used to attach an event handler without overwriting existing handlers?",
+    "options": [
+      "onclick()",
+      "addEventListener()",
+      "innerHTML()",
+      "querySelectorAll()"
+    ],
+    "answer": 1,
+    "subject": "WEB",
+    "topic": "DOM Manipulation"
+  },
+  {
+    "id": 1007,
+    "question": "Which attribute makes an input field mandatory before form submission in HTML5?",
+    "options": [
+      "placeholder",
+      "required",
+      "readonly",
+      "patternonly"
+    ],
+    "answer": 1,
+    "subject": "WEB",
+    "topic": "Frontend Validation"
+  },
+  {
+    "id": 1008,
+    "question": "Which hosting option is usually preferred when an application needs easy horizontal scaling?",
+    "options": [
+      "Cloud hosting",
+      "Manual file storage on a local PC",
+      "Static image hosting only",
+      "Offline USB deployment"
+    ],
+    "answer": 0,
+    "subject": "WEB",
+    "topic": "Web Hosting Basics"
   }
 ]
