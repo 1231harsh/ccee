@@ -15,10 +15,12 @@ import java.util.stream.Collectors;
 
 @Service
 public class QuestionService {
+    private static final int RECENT_ATTEMPT_WINDOW = 3;
 
     private final List<Question> questions;
     private final TestAttemptRepository testAttemptRepository;
     private final Map<String, List<Question>> activeTests = new ConcurrentHashMap<>();
+    private final Random random = new Random();
 
      QuestionService(TestAttemptRepository testAttemptRepository) {
         this.testAttemptRepository = testAttemptRepository;
@@ -37,14 +39,15 @@ public class QuestionService {
     }
 
     public List<Question> generateTestForUser(String userId, String subject) {
-        List<Question> generatedQuestions = generateTest(subject);
+        List<Question> generatedQuestions = generateTest(userId, subject);
         activeTests.put(buildAttemptKey(userId, subject), generatedQuestions);
         return generatedQuestions;
     }
 
-    private List<Question> generateTest(String subject) {
+    private List<Question> generateTest(String userId, String subject) {
 
         Map<String, Integer> blueprint = getBlueprint(subject);
+        SelectionHistory history = getSelectionHistory(userId, subject);
 
         List<Question> subjectQs = questions.stream()
                 .filter(q -> q.subject.equalsIgnoreCase(subject))
@@ -58,16 +61,93 @@ public class QuestionService {
         for (String topic : blueprint.keySet()) {
 
             List<Question> pool = byTopic.getOrDefault(topic.trim().toLowerCase(), new ArrayList<>());
-            Collections.shuffle(pool, new Random());
-
             int required = blueprint.get(topic);
-            int take = Math.min(required, pool.size());
-
-            finalTest.addAll(pool.subList(0, take));
+            finalTest.addAll(selectQuestionsForTopic(pool, required, history));
         }
 
-        Collections.shuffle(finalTest);
+        Collections.shuffle(finalTest, random);
         return finalTest;
+    }
+
+    private SelectionHistory getSelectionHistory(String userId, String subject) {
+        if (userId == null || userId.isBlank()) {
+            return new SelectionHistory(Map.of(), Map.of(), Set.of());
+        }
+
+        List<TestAttempt> attempts = testAttemptRepository
+                .findByUserIdAndSubjectIgnoreCaseOrderByTimestampDesc(userId, subject);
+
+        Map<Integer, Integer> seenCountByQuestionId = new HashMap<>();
+        Map<Integer, Integer> lastSeenRankByQuestionId = new HashMap<>();
+        Set<Integer> recentQuestionIds = new HashSet<>();
+
+        int attemptRank = 0;
+        for (TestAttempt attempt : attempts) {
+            attemptRank++;
+
+            if (attempt.getQuestionReviews() == null) {
+                continue;
+            }
+
+            for (AttemptQuestionReview review : attempt.getQuestionReviews()) {
+                int questionId = review.getQuestionId();
+                seenCountByQuestionId.merge(questionId, 1, Integer::sum);
+                lastSeenRankByQuestionId.putIfAbsent(questionId, attemptRank);
+
+                if (attemptRank <= RECENT_ATTEMPT_WINDOW) {
+                    recentQuestionIds.add(questionId);
+                }
+            }
+        }
+
+        return new SelectionHistory(seenCountByQuestionId, lastSeenRankByQuestionId, recentQuestionIds);
+    }
+
+    private List<Question> selectQuestionsForTopic(List<Question> pool, int required, SelectionHistory history) {
+        if (pool.isEmpty() || required <= 0) {
+            return new ArrayList<>();
+        }
+
+        List<Question> shuffledPool = new ArrayList<>(pool);
+        Collections.shuffle(shuffledPool, random);
+
+        Comparator<Question> priorityComparator = buildQuestionPriorityComparator(history);
+
+        List<Question> freshCandidates = shuffledPool.stream()
+                .filter(q -> !history.recentQuestionIds().contains(q.id))
+                .sorted(priorityComparator)
+                .toList();
+
+        List<Question> fallbackCandidates = shuffledPool.stream()
+                .filter(q -> history.recentQuestionIds().contains(q.id))
+                .sorted(priorityComparator)
+                .toList();
+
+        List<Question> selected = new ArrayList<>();
+        addUpTo(selected, freshCandidates, required);
+        addUpTo(selected, fallbackCandidates, required);
+        return selected;
+    }
+
+    private Comparator<Question> buildQuestionPriorityComparator(SelectionHistory history) {
+        return Comparator
+                .comparingInt((Question question) -> history.seenCountByQuestionId().getOrDefault(question.id, 0))
+                .thenComparing(
+                        Comparator.comparingInt(
+                                (Question question) -> history.lastSeenRankByQuestionId()
+                                        .getOrDefault(question.id, Integer.MAX_VALUE)
+                        ).reversed()
+                );
+    }
+
+    private void addUpTo(List<Question> selected, List<Question> candidates, int required) {
+        for (Question question : candidates) {
+            if (selected.size() >= required) {
+                return;
+            }
+
+            selected.add(question);
+        }
     }
 
     private Map<String, Integer> getBlueprint(String subject) {
@@ -306,5 +386,12 @@ public class QuestionService {
 
     private String buildAttemptKey(String userId, String subject) {
         return userId + "::" + subject.trim().toUpperCase();
+    }
+
+    private record SelectionHistory(
+            Map<Integer, Integer> seenCountByQuestionId,
+            Map<Integer, Integer> lastSeenRankByQuestionId,
+            Set<Integer> recentQuestionIds
+    ) {
     }
 }

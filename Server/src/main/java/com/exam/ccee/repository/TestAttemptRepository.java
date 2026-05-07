@@ -9,4 +9,6 @@ public interface TestAttemptRepository extends JpaRepository<TestAttempt, Long> 
 
     List<TestAttempt> findByUserIdOrderByTimestampAsc(String userId);
 
+    List<TestAttempt> findByUserIdAndSubjectIgnoreCaseOrderByTimestampDesc(String userId, String subject);
+
 }

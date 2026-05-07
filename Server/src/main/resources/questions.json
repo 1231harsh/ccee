@@ -1002,14 +1002,14 @@
   },
   {
     "id": 77,
-    "question": "Which of the following are true about virtual functions",
+    "question": "Which statement about virtual functions in C++ is correct?",
     "options": [
-      "They cannot be static members",
-      "The virtual functions must be members of same class",
-      "They are accessed using object pointers",
-      "All of above"
+      "A virtual function cannot be declared static.",
+      "A virtual function must be defined outside the class body.",
+      "A virtual function can be called only through an object pointer and never through a reference.",
+      "A virtual function cannot be overridden in a derived class."
     ],
-    "answer": 3,
+    "answer": 0,
     "subject": "CPP",
     "topic": "Inheritance & Polymorphism"
   },
@@ -5539,7 +5539,7 @@
   },
   {
     "id": 426,
-    "question": "Which primitive data type is used to store numbers with decimal points in Java?",
+    "question": "Which primitive data type is the default type for decimal literals in Java?",
     "options": [
       "int",
       "float",
@@ -5630,7 +5630,7 @@
   },
   {
     "id": 433,
-    "question": "Which data type is used to store whole numbers in Java?",
+    "question": "Which primitive data type in Java is a 32-bit signed integer?",
     "options": [
       "int",
       "float",
@@ -6605,14 +6605,14 @@
   },
   {
     "id": 508,
-    "question": "If a class extends an abstract class, what are the options regarding the abstract methods in the subclass?",
+    "question": "If a concrete class extends an abstract class in Java, what must it do with the inherited abstract methods?",
     "options": [
-      "The subclass can choose to implement all, some, or none of the abstract methods.",
-      "The subclass must override all the abstract methods to provide implementations.",
-      "The subclass can only override the non-abstract methods from the abstract class.",
-      "The subclass inherits the concrete methods and cannot override the abstract methods."
+      "It may ignore all inherited abstract methods.",
+      "It must override all inherited abstract methods or the subclass must itself be declared abstract.",
+      "It can override only the concrete methods from the abstract class.",
+      "It cannot override methods inherited from an abstract class."
     ],
-    "answer": 0,
+    "answer": 1,
     "subject": "JAVA",
     "topic": "Interfaces"
   },
@@ -7775,7 +7775,7 @@
   },
   {
     "id": 598,
-    "question": "Which memory area is used for storing references to objects in Java?",
+    "question": "Where are local reference variables typically stored during method execution in Java?",
     "options": [
       "Heap memory",
       "Stack memory",
@@ -9725,9 +9725,9 @@
   },
   {
     "id": 748,
-    "question": "HTTP is a protocol used for",
+    "question": "HTTP is primarily used for",
     "options": [
-      "Transferring files over the Internet",
+      "Transferring web pages and related resources between a client and a server",
       "Securing websites",
       "Sending emails",
       "Managing domain names"
@@ -10518,7 +10518,7 @@
   },
   {
     "id": 809,
-    "question": "What are some advantages of using arrays?",
+    "question": "Which of the following is an advantage of using arrays?",
     "options": [
       "They provide dynamic memory allocation",
       "They allow efficient element access and modification",
@@ -11038,7 +11038,7 @@
   },
   {
     "id": 849,
-    "question": "What are some common applications of stacks in computer science?",
+    "question": "Which of the following is a common application of a stack?",
     "options": [
       "Sorting algorithms",
       "Implementing recursive functions",
@@ -11168,7 +11168,7 @@
   },
   {
     "id": 859,
-    "question": "What are some common applications of queues in computer science?",
+    "question": "Which of the following is a common application of a queue?",
     "options": [
       "Sorting algorithms",
       "Implementing recursive functions",
