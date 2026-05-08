@@ -8,10 +8,15 @@ async function request(path, options = {}) {
     ...(options.headers || {}),
   };
 
-  const response = await fetch(`${BASE_URL}${path}`, {
-    ...options,
-    headers,
-  });
+  let response;
+  try {
+    response = await fetch(`${BASE_URL}${path}`, {
+      ...options,
+      headers,
+    });
+  } catch {
+    throw new Error("Could not connect to the server. Please check your network or try again in a moment.");
+  }
 
   const contentType = response.headers.get("content-type") || "";
   const payload = contentType.includes("application/json")
@@ -36,13 +41,13 @@ export const fetchTest = (subject) =>
     },
   });
 
-export const submitTest = (answers, subject) =>
+export const submitTest = (answers, sessionId) =>
   request("/api/exam/submit-test", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },
-    body: JSON.stringify({ answers, subject }),
+    body: JSON.stringify({ answers, sessionId }),
   });
 
 export const fetchAnalysis = () =>

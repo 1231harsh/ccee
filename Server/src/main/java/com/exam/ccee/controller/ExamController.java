@@ -1,5 +1,6 @@
 package com.exam.ccee.controller;
 
+import com.exam.ccee.dto.StartTestResponse;
 import com.exam.ccee.dto.TestQuestionResponse;
 import com.exam.ccee.entity.Question;
 import com.exam.ccee.entity.TestAttempt;
@@ -37,14 +38,19 @@ public class ExamController {
     }
 
     @GetMapping("/start-test/{subject}")
-    public List<TestQuestionResponse> startTest(
+    public StartTestResponse startTest(
             @RequestHeader("Authorization") String token,
             @PathVariable String subject) {
         String username = jwtUtil.extractUsername(token.replace("Bearer ", ""));
+        QuestionService.GeneratedTestSession generatedTestSession = questionService.generateTestForUser(username, subject);
 
-        return questionService.generateTestForUser(username, subject).stream()
-                .map(this::toTestQuestionResponse)
-                .toList();
+        return new StartTestResponse(
+                generatedTestSession.sessionId(),
+                generatedTestSession.subject(),
+                generatedTestSession.questions().stream()
+                        .map(this::toTestQuestionResponse)
+                        .toList()
+        );
     }
 
     @PostMapping("/submit-test")
@@ -55,10 +61,9 @@ public class ExamController {
         String username = jwtUtil.extractUsername(token.replace("Bearer ", ""));
 
         Map<Integer, Integer> answers = parseAnswers(payload.get("answers"));
+        String sessionId = parseSessionId(payload.get("sessionId"));
 
-        String subject = (String) payload.get("subject");
-
-        return questionService.evaluateAndSave(username, subject, answers);
+        return questionService.evaluateAndSave(username, sessionId, answers);
     }
 
     @GetMapping("/analysis")
@@ -253,6 +258,15 @@ public class ExamController {
         }
 
         return parsedAnswers;
+    }
+
+    private String parseSessionId(Object sessionIdPayload) {
+        String sessionId = sessionIdPayload == null ? "" : String.valueOf(sessionIdPayload).trim();
+        if (sessionId.isEmpty()) {
+            throw new IllegalArgumentException("Test session data is missing. Please restart the test.");
+        }
+
+        return sessionId;
     }
 }
 

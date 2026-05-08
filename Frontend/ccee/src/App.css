@@ -45,14 +45,21 @@ body {
 .result-actions,
 .sidebar-actions,
 .test-nav {
+  align-items: center;
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
 }
 
 .user-chip {
-  background: #eff8f1;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #eff8f1, #eef7fb);
+  border: 1px solid rgba(15, 118, 110, 0.12);
   border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 180px;
   padding: 10px 14px;
 }
 
@@ -60,6 +67,22 @@ body {
 .muted,
 .hero-copy {
   color: #56708a;
+}
+
+.user-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.user-name {
+  color: #17324a;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .eyebrow {
@@ -609,6 +632,15 @@ body {
   .analysis-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .topbar-actions {
+    width: 100%;
+  }
+
+  .user-chip {
+    min-width: 0;
+    width: 100%;
   }
 }
 

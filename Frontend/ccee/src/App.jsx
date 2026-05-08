@@ -33,8 +33,13 @@ function App() {
     setError("");
 
     try {
-      const questions = await fetchTest(subject);
-      setTestSession({ subject, questions, startedAt: Date.now() });
+      const testData = await fetchTest(subject);
+      setTestSession({
+        subject: testData.subject,
+        sessionId: testData.sessionId,
+        questions: testData.questions,
+        startedAt: Date.now(),
+      });
       setView("test");
     } catch (err) {
       setError(err.message);
@@ -77,7 +82,7 @@ function App() {
         <div className="topbar-actions">
           <div className="user-chip">
             <span className="user-label">Signed in as</span>
-            <strong>{auth.username || "Candidate"}</strong>
+            <strong className="user-name">{auth.username || "Candidate"}</strong>
           </div>
           <button className="button button-secondary" onClick={handleLogout}>
             Logout

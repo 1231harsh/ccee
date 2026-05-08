@@ -4,7 +4,7 @@ import { submitTest } from "../services/api";
 const TEST_DURATION_SECONDS = 60 * 60;
 
 function TestPage({ session, onCancel, onComplete }) {
-  const { subject, questions } = session;
+  const { subject, questions, sessionId } = session;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [error, setError] = useState("");
@@ -33,7 +33,10 @@ function TestPage({ session, onCancel, onComplete }) {
     setError("");
 
     try {
-      const result = await submitTest(answers, subject);
+      const result = await submitTest(
+        answers,
+        sessionId
+      );
       onComplete({
         ...result,
         submittedAnswers: answers,

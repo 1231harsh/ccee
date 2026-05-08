@@ -1,10 +1,15 @@
 package com.exam.ccee.service;
 
 import com.exam.ccee.entity.AttemptQuestionReview;
+import com.exam.ccee.entity.IssuedTestSession;
 import com.exam.ccee.entity.Question;
 import com.exam.ccee.entity.TestAttempt;
+import com.exam.ccee.exception.ApiException;
+import com.exam.ccee.repository.IssuedTestSessionRepository;
 import com.exam.ccee.repository.TestAttemptRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tools.jackson.databind.ObjectMapper;
 
 import java.io.InputStream;
@@ -19,11 +24,15 @@ public class QuestionService {
 
     private final List<Question> questions;
     private final TestAttemptRepository testAttemptRepository;
+    private final IssuedTestSessionRepository issuedTestSessionRepository;
     private final Map<String, List<Question>> activeTests = new ConcurrentHashMap<>();
     private final Random random = new Random();
 
-     QuestionService(TestAttemptRepository testAttemptRepository) {
+     QuestionService(
+             TestAttemptRepository testAttemptRepository,
+             IssuedTestSessionRepository issuedTestSessionRepository) {
         this.testAttemptRepository = testAttemptRepository;
+        this.issuedTestSessionRepository = issuedTestSessionRepository;
         this.questions = loadQuestions();
     }
 
@@ -38,10 +47,22 @@ public class QuestionService {
         }
     }
 
-    public List<Question> generateTestForUser(String userId, String subject) {
+    public GeneratedTestSession generateTestForUser(String userId, String subject) {
         List<Question> generatedQuestions = generateTest(userId, subject);
-        activeTests.put(buildAttemptKey(userId, subject), generatedQuestions);
-        return generatedQuestions;
+        String normalizedSubject = subject.trim().toUpperCase();
+        String sessionId = UUID.randomUUID().toString();
+
+        IssuedTestSession issuedTestSession = new IssuedTestSession();
+        issuedTestSession.setSessionId(sessionId);
+        issuedTestSession.setUserId(userId);
+        issuedTestSession.setSubject(normalizedSubject);
+        issuedTestSession.setCreatedAt(LocalDateTime.now());
+        issuedTestSession.setQuestionIds(generatedQuestions.stream().map(q -> q.id).toList());
+
+        issuedTestSessionRepository.save(issuedTestSession);
+        activeTests.put(sessionId, generatedQuestions);
+
+        return new GeneratedTestSession(sessionId, normalizedSubject, generatedQuestions);
     }
 
     private List<Question> generateTest(String userId, String subject) {
@@ -278,12 +299,25 @@ public class QuestionService {
 //        return result;
 //    }
 
-    public Map<String, Object> evaluateAndSave(String userId, String subject, Map<Integer, Integer> answers) {
-        String attemptKey = buildAttemptKey(userId, subject);
-        List<Question> issuedQuestions = activeTests.remove(attemptKey);
+    @Transactional
+    public Map<String, Object> evaluateAndSave(String userId, String sessionId, Map<Integer, Integer> answers) {
+        IssuedTestSession issuedTestSession = issuedTestSessionRepository
+                .findBySessionIdAndUserId(sessionId, userId)
+                .orElseThrow(() -> new ApiException(
+                        HttpStatus.BAD_REQUEST,
+                        "Your test session could not be found. Please restart the test."
+                ));
 
+        if (issuedTestSession.getConsumedAt() != null) {
+            throw new ApiException(
+                    HttpStatus.CONFLICT,
+                    "This test has already been submitted."
+            );
+        }
+
+        List<Question> issuedQuestions = activeTests.remove(sessionId);
         if (issuedQuestions == null || issuedQuestions.isEmpty()) {
-            throw new IllegalStateException("No active test found for this user and subject");
+            issuedQuestions = resolveQuestionsFromSession(issuedTestSession);
         }
 
         int score = 0;
@@ -310,7 +344,10 @@ public class QuestionService {
 
         for (Integer submittedQuestionId : answers.keySet()) {
             if (!issuedQuestionIds.contains(submittedQuestionId)) {
-                throw new IllegalArgumentException("Submitted answers contain questions not present in the active test");
+                throw new ApiException(
+                        HttpStatus.BAD_REQUEST,
+                        "Submitted answers do not match the current test session. Please restart the test."
+                );
             }
         }
 
@@ -318,7 +355,7 @@ public class QuestionService {
 
         TestAttempt attempt = new TestAttempt();
         attempt.setUserId(userId);
-        attempt.setSubject(subject);
+        attempt.setSubject(issuedTestSession.getSubject());
         attempt.setScore(score);
         attempt.setTotal(total);
         attempt.setTimestamp(LocalDateTime.now());
@@ -326,6 +363,8 @@ public class QuestionService {
         attempt.setQuestionReviews(questionReviews);
 
         testAttemptRepository.save(attempt);
+        issuedTestSession.setConsumedAt(LocalDateTime.now());
+        issuedTestSessionRepository.save(issuedTestSession);
 
         Map<String, Object> result = new HashMap<>();
         result.put("score", score);
@@ -333,6 +372,37 @@ public class QuestionService {
         result.put("wrongPerTopic", wrongPerTopic);
 
         return result;
+    }
+
+    private List<Question> resolveQuestionsFromSession(IssuedTestSession issuedTestSession) {
+        List<Integer> questionIds = issuedTestSession.getQuestionIds();
+        if (questionIds == null || questionIds.isEmpty()) {
+            return new ArrayList<>();
+        }
+
+        Set<Integer> uniqueQuestionIds = new LinkedHashSet<>(questionIds);
+
+        List<Question> resolvedQuestions = questions.stream()
+                .filter(q -> q.subject.equalsIgnoreCase(issuedTestSession.getSubject()))
+                .filter(q -> uniqueQuestionIds.contains(q.id))
+                .toList();
+
+        if (resolvedQuestions.size() != uniqueQuestionIds.size()) {
+            throw new ApiException(
+                    HttpStatus.BAD_REQUEST,
+                    "Some questions from this test session are missing on the server. Please restart the test."
+            );
+        }
+
+        Map<Integer, Question> questionsById = resolvedQuestions.stream()
+                .collect(Collectors.toMap(q -> q.id, q -> q));
+
+        List<Question> orderedQuestions = new ArrayList<>();
+        for (Integer questionId : uniqueQuestionIds) {
+            orderedQuestions.add(questionsById.get(questionId));
+        }
+
+        return orderedQuestions;
     }
 
     public List<TestAttempt> hydrateAttemptReviews(List<TestAttempt> attempts) {
@@ -386,6 +456,13 @@ public class QuestionService {
 
     private String buildAttemptKey(String userId, String subject) {
         return userId + "::" + subject.trim().toUpperCase();
+    }
+
+    public record GeneratedTestSession(
+            String sessionId,
+            String subject,
+            List<Question> questions
+    ) {
     }
 
     private record SelectionHistory(
