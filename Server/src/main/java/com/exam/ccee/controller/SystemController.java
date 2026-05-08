@@ -9,7 +9,7 @@ import java.util.Map;
 @RestController
 public class SystemController {
 
-    @GetMapping("/")
+    @GetMapping("/api/system")
     public Map<String, Object> root() {
         return Map.of(
                 "status", "ok",
