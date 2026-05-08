@@ -7,6 +7,8 @@ import com.exam.ccee.entity.TestAttempt;
 import com.exam.ccee.exception.ApiException;
 import com.exam.ccee.repository.IssuedTestSessionRepository;
 import com.exam.ccee.repository.TestAttemptRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,6 +23,7 @@ import java.util.stream.Collectors;
 @Service
 public class QuestionService {
     private static final int RECENT_ATTEMPT_WINDOW = 3;
+    private static final Logger logger = LoggerFactory.getLogger(QuestionService.class);
 
     private final List<Question> questions;
     private final TestAttemptRepository testAttemptRepository;
@@ -37,19 +40,27 @@ public class QuestionService {
     }
 
     public List<Question> loadQuestions() {
-        try {
+        try (InputStream is = getClass().getResourceAsStream("/questions.json")) {
+            if (is == null) {
+                throw new IllegalStateException("questions.json could not be found on the application classpath.");
+            }
+
             ObjectMapper mapper = new ObjectMapper();
-            InputStream is = getClass().getResourceAsStream("/questions.json");
-            return Arrays.asList(mapper.readValue(is, Question[].class));
+            List<Question> loadedQuestions = Arrays.asList(mapper.readValue(is, Question[].class));
+            logger.info("Loaded {} questions into the question bank.", loadedQuestions.size());
+            return loadedQuestions;
         } catch (Exception e) {
-            e.printStackTrace();
-            return new ArrayList<>();
+            throw new IllegalStateException("Failed to load questions from questions.json.", e);
         }
     }
 
     public GeneratedTestSession generateTestForUser(String userId, String subject) {
-        List<Question> generatedQuestions = generateTest(userId, subject);
-        String normalizedSubject = subject.trim().toUpperCase();
+        String normalizedSubject = normalizeSubject(subject);
+        Map<String, Integer> blueprint = getBlueprint(normalizedSubject);
+        validateSubject(normalizedSubject, blueprint);
+
+        List<Question> generatedQuestions = generateTest(userId, normalizedSubject, blueprint);
+        validateGeneratedQuestions(normalizedSubject, blueprint, generatedQuestions);
         String sessionId = UUID.randomUUID().toString();
 
         IssuedTestSession issuedTestSession = new IssuedTestSession();
@@ -65,9 +76,7 @@ public class QuestionService {
         return new GeneratedTestSession(sessionId, normalizedSubject, generatedQuestions);
     }
 
-    private List<Question> generateTest(String userId, String subject) {
-
-        Map<String, Integer> blueprint = getBlueprint(subject);
+    private List<Question> generateTest(String userId, String subject, Map<String, Integer> blueprint) {
         SelectionHistory history = getSelectionHistory(userId, subject);
 
         List<Question> subjectQs = questions.stream()
@@ -88,6 +97,47 @@ public class QuestionService {
 
         Collections.shuffle(finalTest, random);
         return finalTest;
+    }
+
+    private String normalizeSubject(String subject) {
+        return subject == null ? "" : subject.trim().toUpperCase();
+    }
+
+    private void validateSubject(String subject, Map<String, Integer> blueprint) {
+        if (blueprint.isEmpty()) {
+            throw new ApiException(HttpStatus.BAD_REQUEST, "Unsupported subject: " + subject);
+        }
+    }
+
+    private void validateGeneratedQuestions(
+            String subject,
+            Map<String, Integer> blueprint,
+            List<Question> generatedQuestions) {
+
+        if (generatedQuestions.isEmpty()) {
+            logger.error("Generated 0 questions for subject {}. Blueprint topics: {}", subject, blueprint.keySet());
+            throw new ApiException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "No questions are available for " + subject + " right now. Please try again shortly."
+            );
+        }
+
+        int expectedTotal = blueprint.values().stream().mapToInt(Integer::intValue).sum();
+        if (generatedQuestions.size() != expectedTotal) {
+            Map<String, Long> actualByTopic = generatedQuestions.stream()
+                    .collect(Collectors.groupingBy(question -> question.topic, LinkedHashMap::new, Collectors.counting()));
+            logger.error(
+                    "Generated {} questions for subject {} but expected {}. Actual topic counts: {}",
+                    generatedQuestions.size(),
+                    subject,
+                    expectedTotal,
+                    actualByTopic
+            );
+            throw new ApiException(
+                    HttpStatus.INTERNAL_SERVER_ERROR,
+                    "The question set for " + subject + " is incomplete right now. Please try again shortly."
+            );
+        }
     }
 
     private SelectionHistory getSelectionHistory(String userId, String subject) {
@@ -452,10 +502,6 @@ public class QuestionService {
         }
 
         return question.options.get(optionIndex);
-    }
-
-    private String buildAttemptKey(String userId, String subject) {
-        return userId + "::" + subject.trim().toUpperCase();
     }
 
     public record GeneratedTestSession(

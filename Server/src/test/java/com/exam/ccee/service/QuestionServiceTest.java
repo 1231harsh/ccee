@@ -119,6 +119,37 @@ class QuestionServiceTest {
         assertEquals("This test has already been submitted.", ex.getMessage());
     }
 
+    @Test
+    void generateTestForUserRejectsUnsupportedSubject() {
+        TestAttemptRepository repository = mock(TestAttemptRepository.class);
+        IssuedTestSessionRepository issuedTestSessionRepository = mock(IssuedTestSessionRepository.class);
+        QuestionService service = new QuestionService(repository, issuedTestSessionRepository);
+
+        ApiException ex = assertThrows(ApiException.class, () ->
+                service.generateTestForUser("user1", "PYTHON")
+        );
+
+        assertEquals("Unsupported subject: PYTHON", ex.getMessage());
+    }
+
+    @Test
+    void generateTestForUserRejectsEmptyQuestionSet() {
+        TestAttemptRepository repository = mock(TestAttemptRepository.class);
+        IssuedTestSessionRepository issuedTestSessionRepository = mock(IssuedTestSessionRepository.class);
+        QuestionService service = new QuestionService(repository, issuedTestSessionRepository) {
+            @Override
+            public List<Question> loadQuestions() {
+                return List.of();
+            }
+        };
+
+        ApiException ex = assertThrows(ApiException.class, () ->
+                service.generateTestForUser("user1", "JAVA")
+        );
+
+        assertEquals("No questions are available for JAVA right now. Please try again shortly.", ex.getMessage());
+    }
+
     private TestAttempt buildAttempt(LocalDateTime timestamp, int... questionIds) {
         TestAttempt attempt = new TestAttempt();
         attempt.setTimestamp(timestamp);

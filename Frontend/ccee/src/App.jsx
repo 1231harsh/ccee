@@ -34,6 +34,12 @@ function App() {
 
     try {
       const testData = await fetchTest(subject);
+      if (!Array.isArray(testData.questions) || testData.questions.length === 0) {
+        throw new Error(
+          `The ${subject} test could not be started because no questions were issued. Please try again in a moment.`
+        );
+      }
+
       setTestSession({
         subject: testData.subject,
         sessionId: testData.sessionId,
