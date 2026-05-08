@@ -26,7 +26,7 @@ const SUBJECTS = [
   },
 ];
 
-function Home({ loading, loadingSubject, onStartTest, onViewAnalysis }) {
+function Home({ loadingSubject, onStartTest, onViewAnalysis }) {
   return (
     <main className="dashboard">
       <section className="hero-panel">
@@ -44,22 +44,24 @@ function Home({ loading, loadingSubject, onStartTest, onViewAnalysis }) {
       </section>
 
       <section className="subject-grid">
-        {SUBJECTS.map((subject) => (
-          <article className="panel-card subject-card" key={subject.code}>
-            <p className="subject-code">{subject.code}</p>
-            <h3>{subject.title}</h3>
-            <p>{subject.summary}</p>
-            <button
-              className="button button-primary"
-              disabled={loading && loadingSubject === subject.code}
-              onClick={() => onStartTest(subject.code)}
-            >
-              {loading && loadingSubject === subject.code
-                ? "Preparing..."
-                : `Start ${subject.code} Test`}
-            </button>
-          </article>
-        ))}
+        {SUBJECTS.map((subject) => {
+          const isPreparing = loadingSubject === subject.code;
+
+          return (
+            <article className="panel-card subject-card" key={subject.code}>
+              <p className="subject-code">{subject.code}</p>
+              <h3>{subject.title}</h3>
+              <p>{subject.summary}</p>
+              <button
+                className="button button-primary"
+                disabled={isPreparing}
+                onClick={() => onStartTest(subject.code)}
+              >
+                {isPreparing ? "Preparing..." : `Start ${subject.code} Test`}
+              </button>
+            </article>
+          );
+        })}
       </section>
     </main>
   );

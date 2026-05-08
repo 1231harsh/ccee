@@ -16,7 +16,6 @@ function App() {
   const [testSession, setTestSession] = useState(null);
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
   const [loadingSubject, setLoadingSubject] = useState("");
 
   const isLoggedIn = Boolean(auth.token);
@@ -30,7 +29,10 @@ function App() {
   };
 
   const handleStartTest = async (subject) => {
-    setLoading(true);
+    if (loadingSubject) {
+      return;
+    }
+
     setLoadingSubject(subject);
     setError("");
 
@@ -52,7 +54,6 @@ function App() {
     } catch (err) {
       setError(err.message);
     } finally {
-      setLoading(false);
       setLoadingSubject("");
     }
   };
@@ -103,7 +104,6 @@ function App() {
 
       {view === "home" ? (
         <Home
-          loading={loading}
           loadingSubject={loadingSubject}
           onStartTest={handleStartTest}
           onViewAnalysis={() => setView("analysis")}
